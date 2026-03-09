@@ -12,7 +12,7 @@ const Footer = () => {
 
   const handleSubscribe = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!email) {
       toast({
         title: "Error",
@@ -21,15 +21,15 @@ const Footer = () => {
       });
       return;
     }
-    
+
     setIsSubmitting(true);
-    
+
     try {
       // EmailJS configuration
       const EMAILJS_SERVICE_ID = "service_i3h66xg";
       const EMAILJS_TEMPLATE_ID = "template_fgq53nh";
       const EMAILJS_PUBLIC_KEY = "wQmcZvoOqTAhGnRZ3";
-      
+
       const templateParams = {
         from_name: "Website Subscriber",
         from_email: email,
@@ -37,24 +37,24 @@ const Footer = () => {
         to_name: 'Tanoshi Vietnam Team',
         reply_to: email
       };
-      
+
       await emailjs.send(
         EMAILJS_SERVICE_ID,
         EMAILJS_TEMPLATE_ID,
         templateParams,
         EMAILJS_PUBLIC_KEY
       );
-      
+
       toast({
         title: "Success!",
         description: "Thank you for subscribing to our newsletter.",
         variant: "default"
       });
-      
+
       setEmail("");
     } catch (error) {
       console.error("Error sending subscription:", error);
-      
+
       toast({
         title: "Error",
         description: "There was a problem subscribing. Please try again later.",
@@ -70,9 +70,9 @@ const Footer = () => {
       <div className="w-full px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 pb-10 border-b border-gray-700">
           <div className="lg:col-span-2">
-            <img 
-              src="/lovable-uploads/7d120ee6-3614-4b75-9c35-716d54490d67.png" 
-              alt="Tanoshi Vietnam Technologies Logo" 
+            <img
+              src="/lovable-uploads/7d120ee6-3614-4b75-9c35-716d54490d67.png"
+              alt="Tanoshi Vietnam Technologies Logo"
               className="h-10 w-auto mb-6 invert" // Added invert to make logo white
             />
             <p className="text-gray-300 mb-6">
@@ -83,25 +83,25 @@ const Footer = () => {
               117 26, Stockholm Sweden
             </p>
             <div className="flex space-x-4">
-              <a 
-                href="https://www.facebook.com/" 
-                target="_blank" 
-                rel="noopener noreferrer" 
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-300 transition-colors hover:bg-gray-700 hover:text-white"
               >
                 <Facebook size={20} />
               </a>
-              <a 
-                href="https://t.me/" 
-                target="_blank" 
-                rel="noopener noreferrer" 
+              <a
+                href="https://t.me/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-300 transition-colors hover:bg-gray-700 hover:text-white"
               >
                 <Send size={20} />
               </a>
             </div>
           </div>
-          
+
           <div>
             <h3 className="text-lg font-bold mb-4 text-white">Company</h3>
             <ul className="space-y-3">
@@ -117,25 +117,24 @@ const Footer = () => {
               <li><a href="https://tanoshivietnam.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">Tanoshivietnam</a></li>
               <li><a href="https://tanoshistore.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">Tanoshistore</a></li>
               <li><a href="https://tiengnhatvuive.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">Tiengnhatvuive</a></li>
-              <li><a href="https://sitilink.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">Sitilink P2P</a></li>
             </ul>
           </div>
-          
+
           <div>
             <h3 className="text-lg font-bold mb-4 text-white">Get in Touch</h3>
             <form className="space-y-4" onSubmit={handleSubscribe}>
               <div>
-                <input 
-                  type="email" 
-                  placeholder="Your email" 
+                <input
+                  type="email"
+                  placeholder="Your email"
                   className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-600 text-white placeholder-gray-400"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   disabled={isSubmitting}
                 />
               </div>
-              <button 
-                type="submit" 
+              <button
+                type="submit"
                 className="w-full px-4 py-2 bg-gray-700 text-white rounded-md hover:bg-gray-600 transition-colors flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed"
                 disabled={isSubmitting}
               >
@@ -149,7 +148,7 @@ const Footer = () => {
             </form>
           </div>
         </div>
-        
+
         <div className="pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm mb-4 md:mb-0">
             © {new Date().getFullYear()} Tanoshi Vietnam Technologies. All rights reserved.

@@ -3,6 +3,7 @@ import { ArrowLeft, CheckCircle, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { motion } from "framer-motion";
 import { useEffect } from 'react';
+import { cn } from '@/lib/utils';
 import PageLayout from '@/components/PageLayout';
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Card, CardContent } from "@/components/ui/card";
@@ -12,7 +13,7 @@ const About = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  
+
   return (
     <PageLayout>
       <section className="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
@@ -22,47 +23,47 @@ const About = () => {
               <ArrowLeft className="mr-2 h-4 w-4" />
               Back to Home
             </Link>
-            
-            <motion.h1 
-              initial={{ opacity: 0, y: -10 }} 
-              animate={{ opacity: 1, y: 0 }} 
-              transition={{ duration: 0.5 }} 
+
+            <motion.h1
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
               className="text-4xl font-bold mb-6"
             >
               About Tanoshi Vietnam Technologies
             </motion.h1>
-            
+
             <div className="prose prose-lg max-w-none">
-              <motion.p 
-                initial={{ opacity: 0 }} 
-                animate={{ opacity: 1 }} 
-                transition={{ duration: 0.5, delay: 0.2 }} 
+              <motion.p
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
                 className="text-xl text-gray-600 mb-12"
               >
                 We're a team of innovators dedicated to revolutionizing smart textile technology for industries worldwide.
               </motion.p>
-              
+
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
-                <motion.div 
-                  initial={{ opacity: 0, x: -20 }} 
-                  animate={{ opacity: 1, x: 0 }} 
+                <motion.div
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.6 }}
                   className="space-y-6"
                 >
                   <h2 className="text-3xl font-bold">Our Mission</h2>
                   <p className="text-gray-600">
-                    At Tanoshi Vietnam Technologies, we're on a mission to transform ordinary textiles into intelligent, 
+                    At Tanoshi Vietnam Technologies, we're on a mission to transform ordinary textiles into intelligent,
                     data-driven solutions that improve safety, performance, and quality of life across industries.
                   </p>
                   <p className="text-gray-600">
-                    We believe that by embedding intelligence into everyday fabrics, we can create a more 
+                    We believe that by embedding intelligence into everyday fabrics, we can create a more
                     connected, responsive, and safer world.
                   </p>
                 </motion.div>
-                
+
                 <motion.div
-                  initial={{ opacity: 0, x: 20 }} 
-                  animate={{ opacity: 1, x: 0 }} 
+                  initial={{ opacity: 0, x: 20 }}
+                  animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.6, delay: 0.2 }}
                   className="bg-gray-50 rounded-2xl p-8 border border-gray-100"
                 >
@@ -87,95 +88,150 @@ const About = () => {
                   </ul>
                 </motion.div>
               </div>
-              
-              <motion.div 
-                initial={{ opacity: 0, y: 20 }} 
-                animate={{ opacity: 1, y: 0 }} 
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
                 className="mb-16"
               >
                 <h2 className="text-3xl font-bold mb-6">Our Story</h2>
                 <div className="bg-white rounded-xl border border-gray-200 p-8 shadow-sm">
                   <p className="text-gray-600 mb-4">
-                    We started with the ambition to make an inherently scattered and complex development area modular, 
-                    smart and available to analog brands. After successfully raising millions of dollars for development, 
+                    We started with the ambition to make an inherently scattered and complex development area modular,
+                    smart and available to analog brands. After successfully raising millions of dollars for development,
                     we spent the first two years in full code mode.
                   </p>
                   <p className="text-gray-600 mb-4">
-                    The goal was to turn all the scattered hardware and building blocks into simple modules to be 
-                    assembled like Lego. During this time we took in a range of customers for whom we built prototypes - 
+                    The goal was to turn all the scattered hardware and building blocks into simple modules to be
+                    assembled like Lego. During this time we took in a range of customers for whom we built prototypes -
                     a way for us to make sure what we built had bearing in real world use cases.
                   </p>
                   <p className="text-gray-600">
-                    In 2023 we felt we had reached a technology level allowing us to start working on enterprise level. 
-                    Since then, we have focused on textile integrations because of the enormous potential smart textiles 
+                    In 2023 we felt we had reached a technology level allowing us to start working on enterprise level.
+                    Since then, we have focused on textile integrations because of the enormous potential smart textiles
                     have across multiple industries from healthcare to public safety.
                   </p>
                 </div>
               </motion.div>
-              
-              <motion.div 
-                initial={{ opacity: 0, y: 20 }} 
-                animate={{ opacity: 1, y: 0 }} 
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.5 }}
                 className="mb-16"
               >
                 <h2 className="text-3xl font-bold mb-6">Our Clients</h2>
                 <div className="bg-white rounded-xl border border-gray-200 p-8 shadow-sm">
                   <p className="text-gray-600 mb-8">
-                    We're proud to collaborate with industry leaders and innovative organizations worldwide. 
-                    Our clients trust us to deliver cutting-edge smart textile solutions that transform their operations 
+                    We're proud to collaborate with industry leaders and innovative organizations worldwide.
+                    Our clients trust us to deliver cutting-edge smart textile solutions that transform their operations
                     and enhance their products.
                   </p>
-                  
-                  <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center">
-                    {[
-                      { name: "Nike", logo: "https://logo.clearbit.com/nike.com" },
-                      { name: "Adidas", logo: "https://logo.clearbit.com/adidas.com" },
-                      { name: "Under Armour", logo: "https://logo.clearbit.com/underarmour.com" },
-                      { name: "Puma", logo: "https://logo.clearbit.com/puma.com" },
-                      { name: "Reebok", logo: "https://logo.clearbit.com/reebok.com" },
-                      { name: "New Balance", logo: "https://logo.clearbit.com/newbalance.com" },
-                      { name: "Columbia", logo: "https://logo.clearbit.com/columbia.com" },
-                      { name: "The North Face", logo: "https://logo.clearbit.com/thenorthface.com" },
-                      { name: "Patagonia", logo: "https://logo.clearbit.com/patagonia.com" },
-                      { name: "Lululemon", logo: "https://logo.clearbit.com/lululemon.com" },
-                      { name: "Arc'teryx", logo: "https://logo.clearbit.com/arcteryx.com" },
-                      { name: "Salomon", logo: "https://logo.clearbit.com/salomon.com" },
-                    ].map((client, i) => (
-                      <motion.div 
+
+                  {/* Row 1: Text clients - always on one line */}
+                  <div className="flex flex-wrap justify-start gap-x-12 gap-y-4 mb-8">
+                    {["IKIGAI", "TRIPLE J HOMES", "GIADUNGNHANH", "TOANCAU", "VANAN FENGSHUI", "DAVI"].map((name, i) => (
+                      <motion.span
                         key={i}
                         initial={{ opacity: 0, scale: 0.9 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.4, delay: 0.6 + (i * 0.05) }}
-                        className="flex items-center justify-center p-4 rounded-lg hover:bg-gray-50 transition-colors"
+                        style={{ fontSize: "1.5rem", fontWeight: 700, letterSpacing: "0.02em", color: "#111", whiteSpace: "nowrap" }}
                       >
-                        <img 
-                          src={client.logo} 
-                          alt={client.name}
-                          className="max-w-full h-12 object-contain filter grayscale hover:grayscale-0 transition-all"
-                          onError={(e) => {
-                            e.currentTarget.src = `https://ui-avatars.com/api/?name=${client.name}&size=100&background=f3f4f6&color=1f2937`;
-                          }}
-                        />
-                      </motion.div>
+                        {name}
+                      </motion.span>
+                    ))}
+                  </div>
+
+                  {/* Row 2: Text clients */}
+                  <div className="flex flex-wrap justify-start gap-x-12 gap-y-4 mb-8">
+                    {["PHATDAT REAL ESTATE", "BETTING", "THD GROUP", "TIENGNHATVUIVE", "TUYETTHINH"].map((name, i) => (
+                      <motion.span
+                        key={i}
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.4, delay: 0.8 + (i * 0.05) }}
+                        style={{ fontSize: "1.5rem", fontWeight: 700, letterSpacing: "0.02em", color: "#111", whiteSpace: "nowrap" }}
+                      >
+                        {name}
+                      </motion.span>
+                    ))}
+                  </div>
+
+                  {/* Row 3: Text clients */}
+                  <div className="flex flex-wrap justify-start gap-x-12 gap-y-4 mb-8">
+                    {["BETONABI", "ATOZLEARNINGENGLISH", "VELOCI HOMES", "NEWWINLAW", "GO PARKING"].map((name, i) => (
+                      <motion.span
+                        key={i}
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.4, delay: 1.0 + (i * 0.05) }}
+                        style={{ fontSize: "1.5rem", fontWeight: 700, letterSpacing: "0.02em", color: "#111", whiteSpace: "nowrap" }}
+                      >
+                        {name}
+                      </motion.span>
+                    ))}
+                  </div>
+
+                  {/* Row 4: Text clients */}
+                  <div className="flex flex-wrap justify-start gap-x-12 gap-y-4 mb-8">
+                    {["GOBI"].map((name, i) => (
+                      <motion.span
+                        key={i}
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.4, delay: 1.2 + (i * 0.05) }}
+                        style={{ fontSize: "1.5rem", fontWeight: 700, letterSpacing: "0.02em", color: "#111", whiteSpace: "nowrap" }}
+                      >
+                        {name}
+                      </motion.span>
                     ))}
                   </div>
                 </div>
               </motion.div>
-              
-              <motion.div 
-                initial={{ opacity: 0, y: 20 }} 
-                animate={{ opacity: 1, y: 0 }} 
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.6 }}
+                className="mb-16"
+              >
+                <h2 className="text-3xl font-bold mb-6">Our Partner</h2>
+                <div className="bg-white rounded-xl border border-gray-200 p-8 shadow-sm">
+                  <p className="text-gray-600 mb-8">
+                    We're proud to collaborate with industry leaders and innovative organizations worldwide.
+                    Our clients trust us to deliver cutting-edge smart textile solutions that transform their operations
+                    and enhance their products.
+                  </p>
+                  <div className="flex flex-wrap justify-start gap-x-12 gap-y-4">
+                    {["ODOO", "VMST VIETNAM"].map((name, i) => (
+                      <motion.span
+                        key={i}
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.4, delay: 0.7 + (i * 0.05) }}
+                        style={{ fontSize: "1.5rem", fontWeight: 700, letterSpacing: "0.02em", color: "#111", whiteSpace: "nowrap" }}
+                      >
+                        {name}
+                      </motion.span>
+                    ))}
+                  </div>
+                </div>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.7 }}
                 className="mb-16"
               >
                 <h2 className="text-3xl font-bold mb-6">Our Team</h2>
                 <p className="text-gray-600 mb-8">
-                  Our diverse team combines expertise in textile engineering, electronics, software development, 
+                  Our diverse team combines expertise in textile engineering, electronics, software development,
                   artificial intelligence, and industry-specific knowledge to deliver holistic solutions.
                 </p>
-                
+
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                   {[
                     {
@@ -207,10 +263,10 @@ const About = () => {
                       <CardContent className="p-6">
                         <div className="flex flex-col items-center text-center">
                           <div className="w-32 h-32 relative mb-4 rounded-full overflow-hidden">
-                            <img 
-                              src={member.image} 
-                              alt={member.name} 
-                              className="w-full h-full object-cover filter grayscale" 
+                            <img
+                              src={member.image}
+                              alt={member.name}
+                              className="w-full h-full object-cover filter grayscale"
                             />
                           </div>
                           <h3 className="font-bold text-lg">{member.name}</h3>
@@ -223,7 +279,7 @@ const About = () => {
                 </div>
               </motion.div>
             </div>
-            
+
             <div className="mt-16 pt-8 border-t border-gray-200">
               <Link to="/careers" className="inline-flex items-center px-5 py-3 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-all group">
                 Join Our Team
@@ -233,7 +289,7 @@ const About = () => {
           </div>
         </div>
       </section>
-    </PageLayout>
+    </PageLayout >
   );
 };
 
