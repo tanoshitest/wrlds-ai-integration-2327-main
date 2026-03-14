@@ -106,15 +106,6 @@ const PlatformService = () => {
         </div>
       </div>
 
-      <div className="mt-12 p-8 bg-gradient-to-r from-primary/10 to-primary/5 rounded-lg text-center">
-        <h3 className="text-2xl font-semibold mb-4">Hosting Wordpress Max Speed</h3>
-        <p className="text-muted-foreground mb-6">Khám phá các gói hosting hiệu suất cao cho website của bạn</p>
-        <Link to="/services/hosting-pricing">
-          <Button size="lg" className="font-semibold">
-            Xem bảng giá
-          </Button>
-        </Link>
-      </div>
     </ProjectPageLayout>
   );
 };
