@@ -46,14 +46,14 @@ const projects = [
     description: "Integrated pressure sensors and LED alignment guides for perfect form and practice.",
     image: "/showcase/project_yoga_mat_1774172221410.png",
     category: "Wellness",
-    link: "/projects/lifestyle"
+    link: "/industries/lifestyle"
   },
   {
     title: "Bio-sensing Sleep Mask",
     description: "Luxury ergonomic design with embedded EEG and heart rate sensors for optimized recovery.",
     image: "/showcase/project_sleep_mask_1774172235170.png",
     category: "Health & Sleep",
-    link: "/projects/lifestyle"
+    link: "/industries/lifestyle"
   },
   {
     title: "Solar-Powered Outerwear",
@@ -80,55 +80,46 @@ const projects = [
 
 const ProjectCard = ({ project, index }: { project: any; index: number }) => {
   return (
-    <section className="h-screen w-full sticky top-0 overflow-hidden flex items-center justify-center bg-white" style={{ zIndex: index + 1 }}>
-      <motion.div 
-        initial={{ y: "100vh" }}
-        whileInView={{ y: 0 }}
-        viewport={{ amount: 0.1 }}
-        transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-        className="relative w-full h-full sm:w-[94%] sm:h-[90%] bg-gray-900 sm:rounded-[2.5rem] overflow-hidden shadow-[0_50px_100px_-20px_rgba(0,0,0,0.5)] border border-white/10 group"
+    <section className="h-screen w-full sticky top-0 flex items-center justify-center bg-white z-[10]">
+      <div 
+        className="relative w-full h-full sm:w-[94%] sm:h-[90%] bg-gray-900 sm:rounded-[2rem] overflow-hidden shadow-2xl border border-white/10"
       >
-        {/* Full Image Background */}
         <div className="absolute inset-0 z-0">
           <img 
             src={project.image} 
             alt={project.title}
-            className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+            className="w-full h-full object-cover"
           />
-          {/* Overlay Gradient for readability */}
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
         </div>
         
-        {/* Content Overlay */}
-        <div className="absolute inset-0 z-10 p-8 sm:p-12 md:p-20 flex flex-col justify-end items-start text-white">
+        <div className="absolute inset-0 z-10 p-8 sm:p-20 flex flex-col justify-end items-start text-white">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3, duration: 0.8 }}
+            transition={{ duration: 0.6 }}
           >
-            <span className="inline-block px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md text-xs font-bold uppercase tracking-widest mb-4 border border-white/20">
+            <span className="inline-block px-3 py-1 rounded-full bg-white/10 text-[10px] font-bold uppercase tracking-widest mb-4 border border-white/20">
               {project.category}
             </span>
-            <h3 className="text-4xl md:text-6xl lg:text-7xl font-black mb-6 tracking-tighter uppercase leading-[0.9]">{project.title}</h3>
-            <p className="text-base md:text-lg text-gray-300 max-w-xl mb-10 font-light leading-relaxed">
+            <h3 className="text-4xl md:text-6xl font-black mb-4 uppercase leading-none">{project.title}</h3>
+            <p className="text-sm md:text-base text-gray-300 max-w-lg mb-8 font-light">
               {project.description}
             </p>
             
             <Link 
               to={project.link}
-              className="group/btn relative inline-flex items-center px-10 py-5 bg-white text-black rounded-full font-black text-sm uppercase tracking-widest overflow-hidden transition-all hover:pr-14 active:scale-95 shadow-2xl"
+              className="inline-flex items-center px-8 py-4 bg-white text-black rounded-full font-bold text-xs uppercase tracking-widest hover:bg-gray-200 transition-colors"
             >
-              <span className="relative z-10">View Project</span>
-              <ArrowRight className="absolute right-5 opacity-0 group-hover/btn:opacity-100 transition-all duration-300 group-hover/btn:translate-x-2" />
+              View Project <ArrowRight className="ml-2 h-4 w-4" />
             </Link>
           </motion.div>
         </div>
 
-        {/* Floating Index Indicator */}
-        <div className="absolute top-10 right-10 text-white/10 font-black text-6xl md:text-8xl italic pointer-events-none">
+        <div className="absolute top-8 right-8 text-white/10 font-black text-6xl italic pointer-events-none">
           {String(index + 1).padStart(2, '0')}
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 };
@@ -140,46 +131,32 @@ const Portfolio = () => {
 
   return (
     <PageLayout>
-      {/* Hero Banner - No sticky, just fixed height */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden bg-black">
         <div className="absolute inset-0 z-0">
           <img 
             src="/showcase/showcase_banner_1774171566836.png" 
             alt="Showcase Banner"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover opacity-60"
           />
-          <div className="absolute inset-0 bg-black/60 backdrop-blur-[3px]" />
         </div>
 
         <div className="container relative z-10 px-4 text-center">
           <motion.div
-            initial={{ opacity: 0, y: 40 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, ease: "circOut" }}
+            transition={{ duration: 0.8 }}
           >
-            <span className="text-gray-400 font-bold uppercase tracking-[.4em] text-xs mb-8 block">Project Collection</span>
-            <h1 className="text-7xl md:text-[12rem] font-black text-white mb-8 tracking-tighter uppercase leading-[0.8]">
+            <h1 className="text-7xl md:text-[10rem] font-black text-white mb-6 uppercase leading-none">
               STUDIO
             </h1>
-            <p className="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto font-light leading-relaxed">
-              A decade of breakthroughs in smart textile engineering, 
-              defining the future of human-data interaction.
+            <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto font-light">
+              Innovating at the intersection of material science and digital intelligence.
             </p>
           </motion.div>
         </div>
-
-        <motion.div 
-          animate={{ y: [0, 10, 0] }}
-          transition={{ repeat: Infinity, duration: 2 }}
-          className="absolute bottom-12 left-1/2 -translate-x-1/2 text-white/30 text-xs font-bold uppercase tracking-[.3em] flex flex-col items-center gap-4"
-        >
-          Scroll
-          <div className="w-[1px] h-12 bg-gradient-to-b from-white/50 to-transparent" />
-        </motion.div>
       </section>
 
-      {/* Main Stacking Section */}
-      <div className="relative bg-white">
+      <div className="bg-white">
         {projects.map((project, index) => (
           <ProjectCard 
             key={index} 
@@ -189,24 +166,17 @@ const Portfolio = () => {
         ))}
       </div>
 
-      {/* Closing CTA */}
-      <section className="relative h-screen flex items-center justify-center bg-black text-white z-50">
+      <section className="h-screen flex items-center justify-center bg-black text-white">
         <div className="container px-4 text-center">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
+          <h3 className="text-4xl md:text-7xl font-black mb-10 uppercase italic">
+            Let's build <br /> together
+          </h3>
+          <Link 
+            to="/about"
+            className="inline-flex items-center px-10 py-5 bg-white text-black rounded-full font-bold uppercase tracking-widest hover:bg-gray-200 transition-colors"
           >
-            <h3 className="text-5xl md:text-8xl font-black mb-12 uppercase tracking-tighter leading-none italic">
-              Let's build the <br /> future together
-            </h3>
-            <Link 
-              to="/about"
-              className="inline-flex items-center px-12 py-6 bg-white text-black rounded-full font-black text-lg uppercase tracking-widest hover:scale-105 transition-all shadow-2xl"
-            >
-              Get in Touch <ArrowRight className="ml-3 h-6 w-6" />
-            </Link>
-          </motion.div>
+            Contact Us <ArrowRight className="ml-2 h-5 w-5" />
+          </Link>
         </div>
       </section>
     </PageLayout>
