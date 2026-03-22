@@ -129,59 +129,18 @@ const About = () => {
                     and enhance their products.
                   </p>
 
-                  {/* Row 1: Text clients - always on one line */}
-                  <div className="flex flex-wrap justify-start gap-x-12 gap-y-4 mb-8">
-                    {["IKIGAI", "TRIPLE J HOMES", "GIADUNGNHANH", "TOANCAU", "VANAN FENGSHUI", "DAVI"].map((name, i) => (
+                  <div className="flex flex-wrap justify-center gap-x-12 gap-y-8 mb-8">
+                    {[
+                      "IKIGAI", "TRIPLE J HOMES", "GIADUNGNHANH", "TOANCAU", "VANAN FENGSHUI", "DAVI",
+                      "PHATDAT REAL ESTATE", "BETTING", "THD GROUP", "TIENGNHATVUIVE", "TUYETTHINH",
+                      "BETONABI", "ATOZLEARNINGENGLISH", "VELOCI HOMES", "NEWWINLAW", "GO PARKING",
+                      "GOBI", "TIGERSTRUCKS", "VC GROUP", "PERDIGI", "MKT", "EVIL ECOM", "OLANGVIEN CLINIC", "SITILINK"
+                    ].map((name, i) => (
                       <motion.span
                         key={i}
                         initial={{ opacity: 0, scale: 0.9 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.4, delay: 0.6 + (i * 0.05) }}
-                        style={{ fontSize: "1.25rem", fontWeight: 700, letterSpacing: "0.02em", color: "#111", whiteSpace: "nowrap" }}
-                      >
-                        {name}
-                      </motion.span>
-                    ))}
-                  </div>
-
-                  {/* Row 2: Text clients */}
-                  <div className="flex flex-wrap justify-start gap-x-12 gap-y-4 mb-8">
-                    {["PHATDAT REAL ESTATE", "BETTING", "THD GROUP", "TIENGNHATVUIVE", "TUYETTHINH"].map((name, i) => (
-                      <motion.span
-                        key={i}
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.4, delay: 0.8 + (i * 0.05) }}
-                        style={{ fontSize: "1.25rem", fontWeight: 700, letterSpacing: "0.02em", color: "#111", whiteSpace: "nowrap" }}
-                      >
-                        {name}
-                      </motion.span>
-                    ))}
-                  </div>
-
-                  {/* Row 3: Text clients */}
-                  <div className="flex flex-wrap justify-start gap-x-12 gap-y-4 mb-8">
-                    {["BETONABI", "ATOZLEARNINGENGLISH", "VELOCI HOMES", "NEWWINLAW", "GO PARKING"].map((name, i) => (
-                      <motion.span
-                        key={i}
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.4, delay: 1.0 + (i * 0.05) }}
-                        style={{ fontSize: "1.25rem", fontWeight: 700, letterSpacing: "0.02em", color: "#111", whiteSpace: "nowrap" }}
-                      >
-                        {name}
-                      </motion.span>
-                    ))}
-                  </div>
-
-                  {/* Row 4: Text clients */}
-                  <div className="flex flex-wrap justify-start gap-x-12 gap-y-4 mb-8">
-                    {["GOBI", "TIGERSTRUCKS", "VC GROUP", "PERDIGI", "MKT", "EVIL ECOM", "OLANGVIEN CLINIC"].map((name, i) => (
-                      <motion.span
-                        key={i}
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.4, delay: 1.2 + (i * 0.05) }}
                         style={{ fontSize: "1.25rem", fontWeight: 700, letterSpacing: "0.02em", color: "#111", whiteSpace: "nowrap" }}
                       >
                         {name}
