@@ -383,7 +383,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: '3',
-    title: 'From Idea to Launch: Our Smart Product Development Process',
+    title: 'Your Idea, Our Process — From Concept to Launch with Tanoshi',
     slug: 'from-idea-to-launch-development-process',
     excerpt: 'Take a behind-the-scenes look at how Tanoshi Vietnam transforms ideas into market-ready smart products through our proven 5-step development process.',
     date: 'May 15, 2025',
