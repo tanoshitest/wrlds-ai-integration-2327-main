@@ -110,14 +110,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div>
-            <h3 className="text-lg font-bold mb-4 text-white">Our Business</h3>
-            <ul className="space-y-3">
-              <li><a href="https://tanoshivietnam.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">Tanoshivietnam</a></li>
-              <li><a href="https://tanoshistore.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">Tanoshistore</a></li>
-              <li><a href="https://tiengnhatvuive.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">Tiengnhatvuive</a></li>
-            </ul>
-          </div>
 
           <div>
             <h3 className="text-lg font-bold mb-4 text-white">Get in Touch</h3>
