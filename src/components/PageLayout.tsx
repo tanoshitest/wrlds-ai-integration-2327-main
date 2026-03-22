@@ -20,7 +20,7 @@ const PageLayout = ({ children, showContact = true }: PageLayoutProps) => {
   }, [location]);
 
   return (
-    <div className="min-h-screen bg-white w-full max-w-[100vw] overflow-x-hidden">
+    <div className="min-h-screen bg-white w-full max-w-[100vw]" style={{ overflowX: 'clip' }}>
       <Navbar />
       {children}
       {showContact && <ContactForm />}
