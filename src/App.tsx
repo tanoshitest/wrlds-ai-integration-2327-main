@@ -43,7 +43,6 @@ import RealEstateCRM from "./pages/crm/RealEstateCRM";
 import ServerSolutionService from "./pages/ServerSolutionService";
 import HostingPricing from "./pages/HostingPricing";
 import HostingCheckout from "./pages/HostingCheckout";
-import Portfolio from "./pages/Portfolio";
 
 const App = () => {
   const [queryClient] = useState(() => new QueryClient());
@@ -93,7 +92,6 @@ const App = () => {
             <Route path="/projects/server-solutions" element={<ServerSolutionService />} />
             <Route path="/services/hosting-pricing" element={<HostingPricing />} />
             <Route path="/services/hosting-checkout" element={<HostingCheckout />} />
-            <Route path="/portfolio" element={<Portfolio />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>

@@ -79,13 +79,6 @@ const Navbar = () => {
                   </Link>
                 </NavigationMenuItem>
 
-                <NavigationMenuItem>
-                  <Link to="/portfolio">
-                    <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), isScrolled ? "text-gray-700 hover:text-gray-900" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
-                      Showcase
-                    </NavigationMenuLink>
-                  </Link>
-                </NavigationMenuItem>
 
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className={cn(isScrolled ? "text-gray-700 hover:text-gray-900" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
@@ -199,12 +192,6 @@ const Navbar = () => {
             About Us
           </Link>
 
-          <Link to="/portfolio" className={cn("block px-3 py-1.5 rounded-md text-sm", isScrolled ? "text-gray-700 hover:bg-gray-50" : "text-gray-200 hover:bg-gray-900")} onClick={() => {
-            setIsMenuOpen(false);
-            window.scrollTo(0, 0);
-          }}>
-            Showcase
-          </Link>
 
           {/* Our Capacity Dropdown */}
           <div>
