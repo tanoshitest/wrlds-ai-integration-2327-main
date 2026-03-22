@@ -78,63 +78,121 @@ const projects = [
   }
 ];
 
-const ProjectCard = ({ project, index }: { project: any; index: number }) => {
-  const container = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: container,
-    offset: ['start end', 'start start']
-  });
+/* 
+ * Each card slides up from below to cover the previous card.
+ * We track scroll progress of the ENTIRE tall container,
+ * then derive each card's Y position from it.
+ * Card i appears at progress = i / total.
+ * Card 0 is always at y=0 (visible from the start).
+ * Card 1 slides from y=100% to y=0% when progress goes from 0/10 to 1/10.
+ * etc.
+ */
+const CardSlide = ({ 
+  project, 
+  index, 
+  progress, 
+  total 
+}: { 
+  project: any; 
+  index: number; 
+  progress: any; 
+  total: number;
+}) => {
+  // First card is always visible (y=0). 
+  // Subsequent cards slide up from 100% to 0% during their scroll segment.
+  const segmentStart = index / total;
+  const segmentEnd = (index + 0.7) / total; // finish the slide at 70% of the segment
 
-  // Scale reduction for the card under the next one
-  const scale = useTransform(scrollYProgress, [0, 1], [1, 0.95]);
+  const y = index === 0 
+    ? "0%" 
+    : useTransform(progress, [segmentStart, segmentEnd], ["100%", "0%"]);
 
   return (
-    <div 
-      ref={container}
-      className="h-screen w-full sticky top-0 flex items-center justify-center overflow-hidden bg-white"
-      style={{ zIndex: index + 1 }}
+    <motion.div
+      className="absolute inset-0"
+      style={{ y, zIndex: index + 1 }}
     >
-      <motion.div 
-        style={{ scale }}
-        className="relative w-full h-[85%] sm:w-[94%] sm:h-[85%] bg-gray-900 sm:rounded-[2.5rem] overflow-hidden shadow-[0_40px_80px_rgba(0,0,0,0.5)] border border-white/10 group"
-      >
-        <div className="absolute inset-0 z-0">
-          <img 
-            src={project.image} 
-            alt={project.title}
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
-        </div>
-        
-        <div className="absolute inset-0 z-10 p-8 sm:p-20 flex flex-col justify-end items-start text-white">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1, duration: 0.8 }}
-          >
-            <span className="inline-block px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md text-[10px] font-bold uppercase tracking-widest mb-4 border border-white/20">
+      {/* Card container with padding for rounded corners */}
+      <div className="w-full h-full flex items-center justify-center bg-white p-2 sm:p-6">
+        <div className="relative w-full h-full bg-gray-900 rounded-2xl sm:rounded-[2rem] overflow-hidden shadow-2xl border border-white/10 group">
+          {/* Full Image Background */}
+          <div className="absolute inset-0 z-0">
+            <img 
+              src={project.image} 
+              alt={project.title}
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+          </div>
+          
+          {/* Content Overlay */}
+          <div className="absolute inset-0 z-10 p-6 sm:p-12 md:p-20 flex flex-col justify-end items-start text-white">
+            <span className="inline-block px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md text-[10px] font-bold uppercase tracking-widest mb-3 border border-white/20">
               {project.category}
             </span>
-            <h3 className="text-4xl md:text-7xl font-black mb-6 uppercase tracking-tighter leading-none italic">{project.title}</h3>
-            <p className="text-sm md:text-xl text-gray-300 max-w-xl mb-10 font-light leading-relaxed">
+            <h3 className="text-3xl sm:text-5xl md:text-7xl font-black mb-4 uppercase tracking-tighter leading-none">
+              {project.title}
+            </h3>
+            <p className="text-sm md:text-lg text-gray-300 max-w-xl mb-8 font-light leading-relaxed">
               {project.description}
             </p>
             
             <Link 
               to={project.link}
-              className="group/btn relative inline-flex items-center px-10 py-5 bg-white text-black rounded-full font-black text-xs uppercase tracking-widest transition-all hover:pr-14 hover:bg-gray-100"
+              className="inline-flex items-center px-8 py-4 bg-white text-black rounded-full font-bold text-xs uppercase tracking-widest hover:bg-gray-100 transition-colors"
             >
-              View Project
-              <ArrowRight className="absolute right-5 opacity-0 group-hover/btn:opacity-100 transition-all duration-300 group-hover/btn:translate-x-2" />
+              View Project <ArrowRight className="ml-2 h-4 w-4" />
             </Link>
-          </motion.div>
-        </div>
+          </div>
 
-        <div className="absolute top-10 right-10 text-white/10 font-black text-6xl md:text-[10rem] italic pointer-events-none">
-          {String(index + 1).padStart(2, '0')}
+          {/* Floating Index */}
+          <div className="absolute top-6 right-6 sm:top-10 sm:right-10 text-white/10 font-black text-5xl sm:text-8xl italic pointer-events-none">
+            {String(index + 1).padStart(2, '0')}
+          </div>
         </div>
-      </motion.div>
+      </div>
+    </motion.div>
+  );
+};
+
+const StackingProjects = () => {
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start start", "end end"]
+  });
+
+  return (
+    /* 
+     * This tall container creates the scroll space.
+     * Height = (N+1) * 100vh so we have enough room to scroll through all cards.
+     * Inside, a "viewport" div that stays fixed in the viewport using 
+     * position:fixed (applied via Framer Motion), containing all card layers.
+     */
+    <div 
+      ref={containerRef} 
+      style={{ height: `${(projects.length + 1) * 100}vh` }}
+      className="relative"
+    >
+      {/* This div stays pinned to the viewport */}
+      <div 
+        className="h-screen w-full overflow-hidden"
+        style={{ position: 'sticky', top: 0 }}
+      >
+        {/* Fallback: if sticky doesn't work, use JS-based fixed positioning */}
+        <div className="relative w-full h-full">
+          {projects.map((project, index) => (
+            <CardSlide 
+              key={index} 
+              project={project} 
+              index={index} 
+              progress={scrollYProgress}
+              total={projects.length}
+            />
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
@@ -145,16 +203,16 @@ const Portfolio = () => {
   }, []);
 
   return (
-    <PageLayout>
+    <PageLayout showContact={false}>
       {/* Hero Banner */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden bg-black z-[100]">
+      <section className="relative h-screen flex items-center justify-center overflow-hidden bg-black">
         <div className="absolute inset-0 z-0">
           <img 
             src="/showcase/showcase_banner_1774171566836.png" 
             alt="Showcase Banner"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-black/70 backdrop-blur-[4px]" />
+          <div className="absolute inset-0 bg-black/70" />
         </div>
 
         <div className="container relative z-10 px-4 text-center">
@@ -163,43 +221,41 @@ const Portfolio = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
           >
-            <h1 className="text-8xl md:text-[15rem] font-black text-white mb-2 tracking-tighter uppercase italic leading-[0.8] opacity-20">
-              Showcase
-            </h1>
-            <h1 className="text-6xl md:text-[8rem] font-black text-white mb-10 tracking-tighter uppercase relative z-10 -mt-10 md:-mt-32">
+            <h1 className="text-6xl sm:text-8xl md:text-[12rem] font-black text-white mb-4 uppercase tracking-tighter italic leading-[0.8]">
               Studio
             </h1>
-            <p className="text-xl md:text-2xl text-gray-400 max-w-2xl mx-auto font-light leading-relaxed">
-              Experience our curated milestones in intelligent material engineering.
+            <p className="text-lg md:text-2xl text-gray-400 max-w-2xl mx-auto font-light leading-relaxed">
+              Innovating at the intersection of material science and digital intelligence.
             </p>
           </motion.div>
         </div>
+
+        <motion.div 
+          animate={{ y: [0, 10, 0] }}
+          transition={{ repeat: Infinity, duration: 2 }}
+          className="absolute bottom-10 left-1/2 -translate-x-1/2 text-white/30 text-xs font-bold uppercase tracking-widest flex flex-col items-center gap-3"
+        >
+          Scroll
+          <div className="w-[1px] h-10 bg-gradient-to-b from-white/50 to-transparent" />
+        </motion.div>
       </section>
 
-      {/* Main Stacking Section */}
-      <div className="relative bg-white">
-        {projects.map((project, index) => (
-          <ProjectCard 
-            key={index} 
-            project={project} 
-            index={index} 
-          />
-        ))}
-      </div>
+      {/* Stacking Projects Section */}
+      <StackingProjects />
 
       {/* Closing CTA */}
-      <section className="relative h-screen flex items-center justify-center bg-black text-white z-[100]">
+      <section className="h-screen flex items-center justify-center bg-black text-white">
         <div className="container px-4 text-center">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
           >
-            <h3 className="text-6xl md:text-[10rem] font-black mb-12 uppercase tracking-tighter italic leading-none">
+            <h3 className="text-4xl sm:text-6xl md:text-8xl font-black mb-12 uppercase tracking-tighter italic leading-none">
               Start your <br /> project
             </h3>
             <Link 
               to="/about"
-              className="inline-flex items-center px-12 py-6 bg-white text-black rounded-full font-black text-lg uppercase tracking-widest hover:scale-105 transition-all shadow-2xl"
+              className="inline-flex items-center px-12 py-6 bg-white text-black rounded-full font-bold text-lg uppercase tracking-widest hover:scale-105 transition-all shadow-2xl"
             >
               Contact Now <ArrowRight className="ml-3 h-6 w-6" />
             </Link>
