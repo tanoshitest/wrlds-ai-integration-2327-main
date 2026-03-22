@@ -405,67 +405,75 @@ export const blogPosts: BlogPost[] = [
     content: [
       {
         type: 'paragraph',
-        content: 'At Tanoshi Vietnam, we simplify the journey from an idea to a finished smart product. Whether you\'re starting from scratch or already have a clear concept ready to scale, we\'re here to support you exactly where you need us.'
+        content: 'At Tanoshi Vietnam, we simplify the journey from a business idea to a fully working digital product. Whether you\'re starting from scratch or already have a concept ready to build, we\'re here to support you exactly where you need us.'
       },
       {
         type: 'paragraph',
-        content: 'Let\'s walk through our process with an example: Imagine you come to us with the idea of a smart glove. This glove automatically senses the outside temperature and adjusts its own warmth accordingly. It also connects to an app where you can control settings and view temperature information.'
+        content: 'Let\'s walk through our process with an example: Imagine you come to us with the idea of an online platform where businesses can manage their orders, track deliveries in real time, and automatically send invoices to customers — all in one place.'
       },
       {
         type: 'heading',
-        content: 'Step 1: Understanding Your Idea'
+        content: 'Step 1: Design & UI/UX'
       },
       {
         type: 'paragraph',
-        content: 'It all starts with a clear conversation. When you bring us your glove idea, we first meet to fully understand your vision and requirements. We\'ll discuss key points: What problem does the product solve? Who will use it? After that, we set a clear and practical roadmap.'
+        content: 'It all starts with a clear conversation. When you bring us your idea, we meet to fully understand your vision, your users, and your business goals. We\'ll discuss key questions: What problem does this solve? Who will use it daily? What does success look like in 6 months?'
       },
       {
         type: 'paragraph',
-        content: 'If you already have a basic prototype or idea, we\'ll quickly identify how we can help scale it effectively.'
+        content: 'From there, we translate everything into wireframes and interactive prototypes — so you can see and feel the product before a single line of code is written. Every screen is reviewed and signed off together with you, ensuring the design fits your brand and your users before we move forward.'
+      },
+      {
+        type: 'paragraph',
+        content: 'If you already have a design or brand guidelines, we\'ll build on top of what you have and make it better.'
       },
       {
         type: 'heading',
-        content: 'Step 2: Building the First Prototype'
+        content: 'Step 2: Development & Code'
       },
       {
         type: 'paragraph',
-        content: 'Once the plan is set, our team moves quickly to develop the first working prototype. For your smart glove, we design temperature sensors, heating elements, electronics, and the companion app to work seamlessly together.'
+        content: 'Once the design is approved, our engineering team moves quickly to bring it to life. For your order management platform, we design the system architecture, build the frontend interface your team will use every day, and develop the backend that handles all the logic — orders, statuses, notifications, user roles.'
       },
       {
         type: 'paragraph',
-        content: 'We use rapid prototyping techniques like 3D printing and quick electronics integration. Within weeks, you get a tangible product to test and gather feedback.'
+        content: 'Every feature goes through code review and testing before it reaches you. We write clean, well-structured code so that when your business grows and needs new features, adding them is straightforward — not a headache.'
       },
       {
         type: 'heading',
-        content: 'Step 3: Testing & Refinement'
+        content: 'Step 3: Server & Infrastructure'
       },
       {
         type: 'paragraph',
-        content: 'With your prototype ready, we jump into testing. You\'ll evaluate the glove under real-world conditions to identify improvements. Together, we\'ll adjust designs, optimize the heating response, enhance the app, and retest frequently.'
+        content: 'A great product needs a reliable home. We set up and configure cloud infrastructure that keeps your platform fast, secure, and always online. For your platform, this means automated deployments so updates go live without downtime, regular backups so your data is never at risk, and real-time monitoring so we catch issues before your users do.'
       },
       {
         type: 'paragraph',
-        content: 'This process is quick, iterative, and practical, bringing you closer to a reliable, user-friendly product.'
+        content: 'We aim for 99.9% uptime — because your business doesn\'t stop on weekends, and neither do we.'
       },
       {
         type: 'heading',
-        content: 'Step 4: Preparing for Production'
+        content: 'Step 4: Automation & Workflow'
       },
       {
         type: 'paragraph',
-        content: 'Next, we prepare the glove for large-scale manufacturing. We refine the design for efficient production, select reliable components, and ensure quality at scale.'
+        content: 'This is where we save your team real hours every week. We look at the repetitive tasks inside your business and automate them. For your platform, that means automatic invoice generation when an order is completed, alert emails when a delivery is delayed, and a dashboard that updates in real time without anyone having to pull reports manually.'
       },
       {
         type: 'paragraph',
-        content: 'If you already have a manufacturing partner, we\'ll work closely with them. If not, we\'ll help you find the best production solution. In either case, we\'ll integrate the technology smoothly into the production process.'
+        content: 'We also connect your new platform to the tools you already use — CRM systems, accounting software, communication tools — so everything works together seamlessly.'
       },
       {
         type: 'heading',
-        content: 'Step 5: Product Launch'
+        content: 'Step 5: SEO & Growth'
       },
       {
         type: 'paragraph',
-        content: 'Finally, it\'s launch day. You introduce your smart glove, thoroughly tested and production-ready, to the market. Tanoshi Vietnam provides ongoing support to ensure a smooth launch—from technical documentation to supporting the app\'s release.'
+        content: 'Launching is just the beginning. After your platform goes live, we optimize it so it loads fast, ranks well on search engines, and converts visitors into users. We set up analytics tracking so you always know where your traffic comes from, which features your users engage with most, and where people drop off.'
+      },
+      {
+        type: 'paragraph',
+        content: 'From there, we work with you continuously — improving, refining, and adding features as your business evolves. You\'re not left on your own after launch. We grow with you.'
       },
       {
         type: 'heading',
