@@ -137,7 +137,7 @@ const About = () => {
                         initial={{ opacity: 0, scale: 0.9 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.4, delay: 0.6 + (i * 0.05) }}
-                        style={{ fontSize: "1.5rem", fontWeight: 700, letterSpacing: "0.02em", color: "#111", whiteSpace: "nowrap" }}
+                        style={{ fontSize: "1.25rem", fontWeight: 700, letterSpacing: "0.02em", color: "#111", whiteSpace: "nowrap" }}
                       >
                         {name}
                       </motion.span>
@@ -152,7 +152,7 @@ const About = () => {
                         initial={{ opacity: 0, scale: 0.9 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.4, delay: 0.8 + (i * 0.05) }}
-                        style={{ fontSize: "1.5rem", fontWeight: 700, letterSpacing: "0.02em", color: "#111", whiteSpace: "nowrap" }}
+                        style={{ fontSize: "1.25rem", fontWeight: 700, letterSpacing: "0.02em", color: "#111", whiteSpace: "nowrap" }}
                       >
                         {name}
                       </motion.span>
@@ -167,7 +167,7 @@ const About = () => {
                         initial={{ opacity: 0, scale: 0.9 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.4, delay: 1.0 + (i * 0.05) }}
-                        style={{ fontSize: "1.5rem", fontWeight: 700, letterSpacing: "0.02em", color: "#111", whiteSpace: "nowrap" }}
+                        style={{ fontSize: "1.25rem", fontWeight: 700, letterSpacing: "0.02em", color: "#111", whiteSpace: "nowrap" }}
                       >
                         {name}
                       </motion.span>
@@ -182,7 +182,7 @@ const About = () => {
                         initial={{ opacity: 0, scale: 0.9 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.4, delay: 1.2 + (i * 0.05) }}
-                        style={{ fontSize: "1.5rem", fontWeight: 700, letterSpacing: "0.02em", color: "#111", whiteSpace: "nowrap" }}
+                        style={{ fontSize: "1.25rem", fontWeight: 700, letterSpacing: "0.02em", color: "#111", whiteSpace: "nowrap" }}
                       >
                         {name}
                       </motion.span>
@@ -211,7 +211,7 @@ const About = () => {
                         initial={{ opacity: 0, scale: 0.9 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.4, delay: 0.7 + (i * 0.05) }}
-                        style={{ fontSize: "1.5rem", fontWeight: 700, letterSpacing: "0.02em", color: "#111", whiteSpace: "nowrap" }}
+                        style={{ fontSize: "1.25rem", fontWeight: 700, letterSpacing: "0.02em", color: "#111", whiteSpace: "nowrap" }}
                       >
                         {name}
                       </motion.span>
