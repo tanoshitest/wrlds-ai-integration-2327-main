@@ -65,7 +65,12 @@ const BlogPostDetail = () => {
                 
                 {/* Mobile-optimized title */}
                 <h1 className="text-white text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight break-words max-w-full">
-                  {post.title}
+                  {post.title.includes('—') ? (
+                    <>
+                      {post.title.split('—')[0].trim()}<br />
+                      {post.title.split('—').slice(1).join('—').trim()}
+                    </>
+                  ) : post.title}
                 </h1>
                 
                 {/* Compact mobile metadata */}
