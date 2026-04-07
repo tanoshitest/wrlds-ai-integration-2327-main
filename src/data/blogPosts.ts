@@ -33,6 +33,8 @@ export interface ContentSection {
   featureGridData?: {
     title: string;
     subtitle?: string;
+    prototypeLink?: string;
+    status?: string;
     groups: {
       title: string;
       items: string[];
@@ -94,6 +96,10 @@ export const blogPosts: BlogPost[] = [
         ]
       },
       {
+        type: 'heading',
+        content: 'Chứng minh qua con số'
+      },
+      {
         type: 'stats',
         statsData: [
           {
@@ -126,6 +132,7 @@ export const blogPosts: BlogPost[] = [
         featureGridData: {
           title: '1. Quỳnh BOKI Learn — LMS kế toán Nhật Bản',
           subtitle: 'Nền tảng bán khoá học video + thi online cho chứng chỉ Nissho Boki',
+          status: 'Prototype',
           groups: [
             {
               title: 'Học viên',
@@ -160,6 +167,7 @@ export const blogPosts: BlogPost[] = [
         featureGridData: {
           title: '2. JLTC Manager — quản lý trung tâm tiếng Nhật',
           subtitle: '3 role: Admin, Giáo viên, Học viên | CRM lead + thi JLPT mô phỏng',
+          status: 'Go-live',
           groups: [
             {
               title: 'Admin',
@@ -198,6 +206,7 @@ export const blogPosts: BlogPost[] = [
         featureGridData: {
           title: '3. Kiều Liên (Menglish) — trung tâm tiếng Anh trẻ em',
           subtitle: 'Hệ sinh thái đầy đủ nhất: CRM + tài chính + kho + phát âm + phụ huynh',
+          status: 'Development',
           groups: [
             {
               title: 'CRM',
@@ -240,6 +249,7 @@ export const blogPosts: BlogPost[] = [
         featureGridData: {
           title: '4. Nihongo Chiyou Lab — nền tảng tự học tiếng Nhật',
           subtitle: 'Học liệu khổng lồ: 50 bài Minna + Kanji + JLPT N5-N4 + ngữ pháp tổng hợp',
+          status: 'Development',
           groups: [
             {
               title: 'Minna no Nihongo',
@@ -274,6 +284,7 @@ export const blogPosts: BlogPost[] = [
         featureGridData: {
           title: '5. Tấn Thành — trung tâm luyện thi Văn-Toán',
           subtitle: '3 portal riêng biệt: Admin, Giáo viên, Phụ huynh | Đánh giá 6 tiêu chí',
+          status: 'Development',
           groups: [
             {
               title: 'Admin portal',
@@ -308,6 +319,7 @@ export const blogPosts: BlogPost[] = [
         featureGridData: {
           title: '6. Thảo Lê Japan — bán khoá học tiếng Nhật online',
           subtitle: 'Hệ thống học tập và bán hàng tích hợp | Bank simulator xác nhận thanh toán',
+          status: 'Prototype',
           groups: [
             {
               title: 'Trang công khai',
@@ -338,6 +350,7 @@ export const blogPosts: BlogPost[] = [
         featureGridData: {
           title: '7. Echo English Lab — AI English platform',
           subtitle: 'Trí tuệ nhân tạo chấm phát âm tự động + Anti-cheat chống gian lận',
+          status: 'Go-live',
           groups: [
             {
               title: 'Học viên',

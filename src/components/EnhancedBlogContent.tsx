@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { ContentSection } from '@/data/blogPosts';
-import { DollarSign, Users, TrendingUp, Shield, Zap, Settings, Database, ChevronDown, ChevronUp, AlertCircle, FileText, Check, HeartCrack } from 'lucide-react';
+import { DollarSign, Users, TrendingUp, Shield, Zap, Settings, Database, ChevronDown, ChevronUp, AlertCircle, FileText, Check, HeartCrack, ArrowRight } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -23,12 +23,9 @@ const iconMap = {
 const EnhancedBlogContent: React.FC<EnhancedBlogContentProps> = ({ content }) => {
   const [expandedIndices, setExpandedIndices] = useState<Set<number>>(new Set());
 
-  // Auto-expand the first feature-grid on mount as requested
+  // Auto-expand removed as requested
   useEffect(() => {
-    const firstFeatureGridIndex = content.findIndex(section => section.type === 'feature-grid');
-    if (firstFeatureGridIndex !== -1) {
-      setExpandedIndices(new Set([firstFeatureGridIndex]));
-    }
+    // No-op
   }, [content]);
 
   const toggleExpand = (index: number) => {
@@ -247,7 +244,14 @@ const EnhancedBlogContent: React.FC<EnhancedBlogContentProps> = ({ content }) =>
                     <tr key={rowIndex} className={rowIndex % 2 === 0 ? 'bg-gray-50' : 'bg-white'}>
                       {row.map((cell, cellIndex) => (
                         <td key={cellIndex} className="p-4 border-b border-gray-200">
-                          {cell}
+                          <div className="flex items-center gap-3">
+                            {cellIndex === 2 && row.length === 3 && (
+                              <ArrowRight className="h-4 w-4 text-black shrink-0" />
+                            )}
+                            <span className={cellIndex === 2 ? "font-bold text-black" : "text-gray-700"}>
+                              {cell}
+                            </span>
+                          </div>
                         </td>
                       ))}
                     </tr>
@@ -284,8 +288,19 @@ const EnhancedBlogContent: React.FC<EnhancedBlogContentProps> = ({ content }) =>
                   <p className="text-gray-600 font-medium text-sm md:text-base mt-1">{section.featureGridData.subtitle}</p>
                 )}
               </div>
-              <div className={`p-2 rounded-full transition-all duration-300 ${isExpanded ? 'bg-black text-white' : 'bg-gray-100 text-black group-hover:bg-black group-hover:text-white'}`}>
-                {isExpanded ? <ChevronUp className="h-5 w-5" /> : <ChevronDown className="h-5 w-5" />}
+              <div className="flex items-center gap-3">
+                {section.featureGridData.status && (
+                  <span className={`text-[10px] md:text-xs font-black uppercase tracking-widest px-2.5 py-1 rounded-lg border-2 ${
+                    section.featureGridData.status === 'Go-live' ? 'border-black bg-black text-white' : 
+                    section.featureGridData.status === 'Prototype' ? 'border-black bg-gray-100 text-black' : 
+                    'border-gray-200 bg-white text-gray-500'
+                  }`}>
+                    {section.featureGridData.status}
+                  </span>
+                )}
+                <div className={`p-2 rounded-full transition-all duration-300 ${isExpanded ? 'bg-black text-white' : 'bg-gray-100 text-black group-hover:bg-black group-hover:text-white'}`}>
+                  {isExpanded ? <ChevronUp className="h-5 w-5" /> : <ChevronDown className="h-5 w-5" />}
+                </div>
               </div>
             </button>
 
@@ -298,29 +313,44 @@ const EnhancedBlogContent: React.FC<EnhancedBlogContentProps> = ({ content }) =>
                   transition={{ duration: 0.5, ease: [0.04, 0.62, 0.23, 0.98] }}
                   className="overflow-hidden"
                 >
-                  <div className="p-6 md:p-8 border-2 border-t-0 border-black rounded-b-xl bg-white mb-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-                    {section.featureGridData.groups.map((group, groupIndex) => (
-                      <Card 
-                        key={groupIndex} 
-                        className={`border-2 ${group.highlight ? 'border-black bg-gray-50' : 'border-gray-100'} h-full transition-all hover:border-black shadow-sm group/card`}
+                  <div className="p-6 md:p-8 border-2 border-t-0 border-black rounded-b-xl bg-white mb-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+                      {section.featureGridData.groups.map((group, groupIndex) => (
+                        <Card 
+                          key={groupIndex} 
+                          className={`border-2 ${group.highlight ? 'border-black bg-gray-50' : 'border-gray-100'} h-full transition-all hover:border-black shadow-sm group/card`}
+                        >
+                          <CardContent className="p-5 h-full flex flex-col">
+                            <div className="mb-4">
+                              <h4 className={`text-lg font-bold ${group.highlight ? 'text-black' : 'text-gray-700'}`}>
+                                {group.title}
+                              </h4>
+                            </div>
+                            <ul className="space-y-3 flex-grow">
+                              {group.items.map((item, itemIndex) => (
+                                <li key={itemIndex} className="flex items-start text-sm md:text-base">
+                                  <span className="mr-3 text-black mt-1 font-bold">→</span>
+                                  <span className="text-gray-600 leading-snug group-hover/card:text-black transition-colors">{item}</span>
+                                </li>
+                              ))}
+                            </ul>
+                          </CardContent>
+                        </Card>
+                      ))}
+                    </div>
+                    
+                    {/* View Prototype Button */}
+                    <div className="mt-8 pt-6 border-t-2 border-dashed border-gray-200 flex justify-start">
+                      <a 
+                        href={section.featureGridData.prototypeLink || "#"} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-white text-black font-bold rounded-full border-2 border-black hover:bg-black hover:text-white hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all duration-300 group/btn"
                       >
-                        <CardContent className="p-5 h-full flex flex-col">
-                          <div className="mb-4">
-                            <h4 className={`text-lg font-bold ${group.highlight ? 'text-black' : 'text-gray-700'}`}>
-                              {group.title}
-                            </h4>
-                          </div>
-                          <ul className="space-y-3 flex-grow">
-                            {group.items.map((item, itemIndex) => (
-                              <li key={itemIndex} className="flex items-start text-sm md:text-base">
-                                <span className="mr-3 text-black mt-1 font-bold">→</span>
-                                <span className="text-gray-600 leading-snug group-hover/card:text-black transition-colors">{item}</span>
-                              </li>
-                            ))}
-                          </ul>
-                        </CardContent>
-                      </Card>
-                    ))}
+                        View prototype
+                        <span className="group-hover/btn:rotate-45 group-hover/btn:translate-x-1 transition-all duration-300">↗</span>
+                      </a>
+                    </div>
                   </div>
                 </motion.div>
               )}
