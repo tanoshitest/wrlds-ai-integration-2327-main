@@ -13,8 +13,9 @@ export interface BlogPost {
 }
 
 export interface ContentSection {
-  type: 'paragraph' | 'heading' | 'subheading' | 'list' | 'quote' | 'table' | 'stats' | 'chart' | 'icon-list' | 'bibliography';
+  type: 'paragraph' | 'heading' | 'subheading' | 'list' | 'quote' | 'table' | 'stats' | 'chart' | 'icon-list' | 'bibliography' | 'feature-grid' | 'split-image-list';
   content?: string;
+  image?: string;
   items?: string[];
   tableData?: {
     headers: string[];
@@ -29,9 +30,383 @@ export interface ContentSection {
     title: string;
     data: { name: string; value: number; }[];
   };
+  featureGridData?: {
+    title: string;
+    subtitle?: string;
+    groups: {
+      title: string;
+      items: string[];
+      highlight?: boolean;
+    }[];
+  };
 }
 
 export const blogPosts: BlogPost[] = [
+  {
+    id: '7',
+    title: 'Boost Your Education Center\'s Growth with Us: From Manual Management to AI-Powered LMS',
+    slug: 'boost-your-education-center-growth',
+    excerpt: 'Khám phá hành trình số hóa và tối ưu vận hành cho 7 trung tâm giáo dục tiêu biểu. Từ quản lý Excel rời rạc đến hệ thống LMS/Web App chuyên nghiệp tích hợp AI Agent.',
+    date: 'April 7, 2026',
+    author: 'Tanoshi Vietnam EdTech Team',
+    category: 'EdTech Solutions',
+    imageUrl: '/lovable-uploads/edtech_lms_growth_blog.png',
+    keywords: [
+      'EdTech Vietnam',
+      'LMS Development',
+      'AI in Education',
+      'Education Management System',
+      'Tanoshi Vietnam',
+      'Case Study LMS',
+      'AI Agent Education',
+      'Quỳnh BOKI Learn',
+      'JLTC Manager',
+      'Echo English Lab'
+    ],
+    metaDescription: 'Tư vấn giải pháp EdTech toàn diện cho chủ trung tâm giáo dục. Chuyển đổi từ quản lý thủ công sang hệ thống Web App/LMS hiện đại với AI chấm điểm tự động.',
+    content: [
+      {
+        type: 'paragraph',
+        content: 'Bạn đang đau đầu vì quản lý hàng trăm học viên qua Excel? Bạn mệt mỏi vì lịch dạy chồng chéo và thu học phí sai sót? Tại Tanoshi Vietnam, chúng tôi hiểu rằng "nỗi đau" lớn nhất của các chủ trung tâm không phải là thiếu học viên, mà là sự kiệt sức vì bộ máy vận hành thủ công cồng kềnh.'
+      },
+      {
+        type: 'heading',
+        content: 'Nỗi Đau Chung Của 100% Trung Tâm Vận Hành Thủ Công'
+      },
+      {
+        type: 'split-image-list',
+        image: '/lovable-uploads/pain_icon.png',
+        items: [
+          'Quản lý học viên bằng Excel rời rạc, dễ mất dữ liệu và khó tra cứu lịch sử.',
+          'Xếp lịch dạy và điểm danh thủ công dẫn đến sai sót, nhầm lẫn phòng học.',
+          'Thu học phí không rõ ràng, khó đối soát dòng tiền và lịch sử thanh toán.',
+          'Thiếu kênh báo cáo tiến độ học tập chuyên nghiệp cho phụ huynh.',
+          'Tài liệu bài giảng và đề thi phân tán trên Drive, USB, khó kiểm soát bản quyền.',
+          'CRM yếu kém khiến việc theo dõi khách hàng tiềm năng bị đứt quãng.'
+        ]
+      },
+      {
+        type: 'stats',
+        statsData: [
+          {
+            value: '7+',
+            label: 'Dự án LMS thực chiến đã hoàn thành',
+            icon: 'Layout'
+          },
+          {
+            value: '4+',
+            label: 'Lĩnh vực: Nhật, Anh, Kế toán, Văn-Toán',
+            icon: 'BookOpen'
+          },
+          {
+            value: '60+',
+            label: 'Tính năng chuyên sâu đã triển khai',
+            icon: 'Zap'
+          }
+        ]
+      },
+      {
+        type: 'heading',
+        content: 'Portfolio: 7 Case Study "Xương Máu" Từ Tanoshi Vietnam'
+      },
+      {
+        type: 'paragraph',
+        content: 'Chúng tôi không chỉ viết code, chúng tôi xây dựng giải pháp dựa trên quy trình thực tế của từng khách hàng. Dưới đây là 7 minh chứng cho năng lực thực thi của chúng tôi:'
+      },
+      {
+        type: 'feature-grid',
+        featureGridData: {
+          title: '1. Quỳnh BOKI Learn — LMS kế toán Nhật Bản',
+          subtitle: 'Nền tảng bán khoá học video + thi online cho chứng chỉ Nissho Boki',
+          groups: [
+            {
+              title: 'Học viên',
+              items: ['Xem video bài giảng', 'Làm bài thi online', 'Thanh toán QR code']
+            },
+            {
+              title: 'Admin (giáo viên)',
+              items: ['Quản lý khoá học', 'Tạo đề thi (5 dạng)', 'Xem đơn hàng']
+            },
+            {
+              title: 'Nội dung',
+              items: ['8+ khoá: Boki, thuế', 'Ebook, Zoom live', 'Blog, cộng đồng']
+            },
+            {
+              title: 'Hệ thống thi tự chấm',
+              items: ['Bút toán, sổ cái', 'Trắc nghiệm, tự luận']
+            },
+            {
+              title: 'Thanh toán & đăng ký',
+              items: ['QR Vietcombank', 'Xác nhận tự động']
+            },
+            {
+              title: 'Tính năng đặc biệt',
+              highlight: true,
+              items: ['5 loại câu hỏi kế toán chuyên biệt: Journal entry, Posting, P&L, Balance Sheet, Trắc nghiệm, Tự luận']
+            }
+          ]
+        }
+      },
+      {
+        type: 'feature-grid',
+        featureGridData: {
+          title: '2. JLTC Manager — quản lý trung tâm tiếng Nhật',
+          subtitle: '3 role: Admin, Giáo viên, Học viên | CRM lead + thi JLPT mô phỏng',
+          groups: [
+            {
+              title: 'Admin',
+              items: ['Dashboard tổng quan', 'CRM quản lý lead', 'Điểm danh tổng hợp', 'Lịch học + Gantt task']
+            },
+            {
+              title: 'Giáo viên',
+              items: ['Quản lý lớp học', 'Tạo đề JLPT', 'Đánh giá học viên', 'Task board cá nhân']
+            },
+            {
+              title: 'Học viên',
+              items: ['Thi JLPT mô phỏng', 'Xem kết quả chi tiết', 'Lịch sử làm bài', 'Đặt mục tiêu học']
+            },
+            {
+              title: 'CRM tuyển sinh',
+              items: ['Pipeline: Mới -> Tư vấn -> Đặt cọc -> Nhập học']
+            },
+            {
+              title: 'Thi JLPT mô phỏng',
+              items: ['Từ vựng, ngữ pháp, đọc hiểu, nghe']
+            },
+            {
+              title: 'Báo cáo & thống kê',
+              items: ['Phỏng vấn, tuyển sinh, tỷ lệ pass']
+            },
+            {
+              title: 'Đặc biệt',
+              highlight: true,
+              items: ['6 loại lead: Du học, thực tập, kỹ sư, tokutei, tiếng Nhật, XKLĐ']
+            }
+          ]
+        }
+      },
+      {
+        type: 'feature-grid',
+        featureGridData: {
+          title: '3. Kiều Liên (Menglish) — trung tâm tiếng Anh trẻ em',
+          subtitle: 'Hệ sinh thái đầy đủ nhất: CRM + tài chính + kho + phát âm + phụ huynh',
+          groups: [
+            {
+              title: 'CRM',
+              items: ['Lead pipeline', 'Tư vấn tuyển sinh']
+            },
+            {
+              title: 'Lớp học',
+              items: ['Lịch, giáo viên', 'Điểm danh']
+            },
+            {
+              title: 'Tài chính',
+              items: ['Thu chi, học phí', 'Nợ, quá hạn']
+            },
+            {
+              title: 'Kho & sách',
+              items: ['Nhập/xuất kho', 'Cảnh báo hết']
+            },
+            {
+              title: 'Quản lý phát âm',
+              items: ['Ra đề -> Nộp audio -> chấm điểm']
+            },
+            {
+              title: 'Portal phụ huynh',
+              items: ['Tiến độ, học phí, nhắn tin']
+            },
+            {
+              title: 'Ticket & task',
+              items: ['Xử lý yêu cầu']
+            },
+            {
+              title: 'Đặc biệt',
+              highlight: true,
+              items: ['Phân quyền chi tiết theo từng chức năng (5 role: Admin, GV, kế toán, PH, HV)']
+            }
+          ]
+        }
+      },
+      {
+        type: 'feature-grid',
+        featureGridData: {
+          title: '4. Nihongo Chiyou Lab — nền tảng tự học tiếng Nhật',
+          subtitle: 'Học liệu khổng lồ: 50 bài Minna + Kanji + JLPT N5-N4 + ngữ pháp tổng hợp',
+          groups: [
+            {
+              title: 'Minna no Nihongo',
+              items: ['50 bài, 12 bài test', 'Từ vựng + ngữ pháp']
+            },
+            {
+              title: 'Kanji + bộ thủ',
+              items: ['398K+ data Kanji', '168K radical data']
+            },
+            {
+              title: 'Thi JLPT N5-N4',
+              items: ['Đề thật mô phỏng', 'Chấm tự động']
+            },
+            {
+              title: 'Ngữ pháp',
+              items: ['Trợ từ, Thể động từ, Phó từ, Số đếm + thời gian']
+            },
+            {
+              title: 'Tính năng',
+              items: ['Furigana tự động', 'KanjiHover tooltip', 'Xuất PDF bài học']
+            },
+            {
+              title: 'Đặc biệt',
+              highlight: true,
+              items: ['Học liệu khổng lồ được tối ưu hóa tải nhanh, không phụ thuộc máy chủ']
+            }
+          ]
+        }
+      },
+      {
+        type: 'feature-grid',
+        featureGridData: {
+          title: '5. Tấn Thành — trung tâm luyện thi Văn-Toán',
+          subtitle: '3 portal riêng biệt: Admin, Giáo viên, Phụ huynh | Đánh giá 6 tiêu chí',
+          groups: [
+            {
+              title: 'Admin portal',
+              items: ['GV chính + trợ giảng', '12 lớp, 5 loại lớp', 'Thu học phí + log', 'Thư viện tài liệu']
+            },
+            {
+              title: 'Giáo viên portal',
+              items: ['Quản lý buổi học', 'Đánh giá 6 tiêu chí', 'Điểm danh + lịch', 'Cộng đồng chia sẻ']
+            },
+            {
+              title: 'Phụ huynh portal',
+              items: ['Radar chart năng lực', 'Xin nghỉ phép online', 'Thanh toán QR code', 'Nhắn tin trung tâm']
+            },
+            {
+              title: 'Đánh giá 6 tiêu chí',
+              items: ['Tiếp thu, tập trung, thi, tự học, chăm chỉ, tương tác']
+            },
+            {
+              title: '5 loại lớp',
+              items: ['Chuyên, đại trà, luyện thi, kèm, online']
+            },
+            {
+              title: 'Đặc biệt',
+              highlight: true,
+              items: ['Landing page công khai + hệ thống đánh giá Radar chart (Phụ huynh xem trực quan năng lực con)']
+            }
+          ]
+        }
+      },
+      {
+        type: 'feature-grid',
+        featureGridData: {
+          title: '6. Thảo Lê Japan — bán khoá học tiếng Nhật online',
+          subtitle: 'Hệ thống học tập và bán hàng tích hợp | Bank simulator xác nhận thanh toán',
+          groups: [
+            {
+              title: 'Trang công khai',
+              items: ['Landing page SEO', 'Blog, cộng đồng', 'Shop ebook/khoá học']
+            },
+            {
+              title: 'Admin dashboard',
+              items: ['Quản lý khoá học', 'Quản lý bài tập/quiz', 'Blog + ebook + đơn hàng']
+            },
+            {
+              title: 'Học viên',
+              items: ['Xem video bài giảng', 'Làm bài tập/quiz', 'Cộng đồng trao đổi']
+            },
+            {
+              title: 'Bank simulator',
+              items: ['Mô phỏng xác nhận chuyển khoản tự động']
+            },
+            {
+              title: 'Đặc biệt',
+              highlight: true,
+              items: ['Theo dõi tiến độ đăng ký, quản lý đơn hàng, nộp bài tập - tất cả đều theo thời gian thực']
+            }
+          ]
+        }
+      },
+      {
+        type: 'feature-grid',
+        featureGridData: {
+          title: '7. Echo English Lab — AI English platform',
+          subtitle: 'Trí tuệ nhân tạo chấm phát âm tự động + Anti-cheat chống gian lận',
+          groups: [
+            {
+              title: 'Học viên',
+              items: ['Ghi âm phát âm', 'Nhận feedback AI', 'Xem lịch sử + điểm']
+            },
+            {
+              title: 'AI Agent engine',
+              items: ['Nhận diện giọng nói', 'Phân tích âm tiết', 'Chấm điểm chuẩn xác']
+            },
+            {
+              title: 'Anti-cheat',
+              items: ['Phát hiện gian lận', 'Xác minh giọng nói', 'Đảm bảo công bằng']
+            },
+            {
+              title: 'Phân tích chi tiết',
+              items: ['Từng âm tiết: đúng/sai/gần đúng + gợi ý sửa']
+            },
+            {
+              title: 'Dashboard giáo viên',
+              items: ['Thống kê lỗi phổ biến + tiến bộ học viên']
+            },
+            {
+              title: 'Đặc biệt',
+              highlight: true,
+              items: ['AI thay thế giáo viên trong khâu chấm phát âm (Phản hồi tức thì, chi tiết từng âm tiết)']
+            }
+          ]
+        }
+      },
+      {
+        type: 'chart',
+        chartData: {
+          title: 'Hiệu quả vận hành sau khi triển khai LMS (Tăng trưởng %)',
+          data: [
+            { name: 'Năng suất quản lý', value: 85 },
+            { name: 'Độ chính xác tài chính', value: 98 },
+            { name: 'Sự hài lòng của PH', value: 92 },
+            { name: 'Tiết kiệm thời gian', value: 70 },
+            { name: 'Tương tác học viên', value: 65 }
+          ]
+        }
+      },
+      {
+        type: 'heading',
+        content: 'Sự Lột Xác: Thủ Công vs. Hệ Thống Toàn Diện'
+      },
+      {
+        type: 'table',
+        tableData: {
+          headers: ['Tính năng', 'Quản lý bằng Excel/Zalo', 'Hệ thống Web App/LMS Tanoshi'],
+          rows: [
+            ['Dữ liệu học viên', 'Phân tán, dễ sai sót', 'Tập trung, đồng bộ 100%'],
+            ['Chấm điểm & Đánh giá', 'Thủ công, mất nhiều giờ', 'AI Agent chấm tự động theo giây'],
+            ['Thông báo phụ huynh', 'Nhắn tin Zalo thủ công', 'Portal riêng & Email tự động'],
+            ['Kiểm tra gian lận', 'Dựa vào cảm tính giáo viên', 'Hệ thống Anti-cheat thông minh'],
+            ['Báo cáo tài chính', 'Mất cả ngày đối soát', 'Xuất báo cáo trong 1 click']
+          ]
+        }
+      },
+      {
+        type: 'heading',
+        content: 'Tanoshi Vietnam - May Đo Giải Pháp Theo Yêu Cầu'
+      },
+      {
+        type: 'paragraph',
+        content: 'Chúng tôi hiểu rằng mỗi trung tâm là một bản thể duy nhất với quy trình riêng biệt. Tanoshi Vietnam không bán "template" có sẵn. Chúng tôi tư vấn và xây dựng hệ thống đúng theo cách bạn vận hành, giúp bạn giải phóng sức lao động để tập trung vào giá trị cốt lõi: GIẢNG DẠY.'
+      },
+      {
+        type: 'quote',
+        content: 'Đừng để bộ máy quản lý trì trệ kìm hãm sự tăng trưởng của bạn. Hãy để công nghệ trở thành đòn bẩy mạnh mẽ nhất.'
+      },
+      {
+        type: 'paragraph',
+        content: 'Liên hệ tư vấn miễn phí ngay hôm nay để nhận blueprint giải pháp cho trung tâm của bạn!'
+      }
+    ]
+  },
   {
     id: '6',
     title: 'Wearable Safety Tech: Protecting Workers While Delivering Real ROI',

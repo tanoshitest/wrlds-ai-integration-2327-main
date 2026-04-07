@@ -1,9 +1,10 @@
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { ContentSection } from '@/data/blogPosts';
-import { DollarSign, Users, TrendingUp, Shield, Zap, Settings, Database } from 'lucide-react';
+import { DollarSign, Users, TrendingUp, Shield, Zap, Settings, Database, ChevronDown, ChevronUp, AlertCircle, FileText } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
+import { motion, AnimatePresence } from 'framer-motion';
 
 interface EnhancedBlogContentProps {
   content: ContentSection[];
@@ -20,6 +21,28 @@ const iconMap = {
 };
 
 const EnhancedBlogContent: React.FC<EnhancedBlogContentProps> = ({ content }) => {
+  const [expandedIndices, setExpandedIndices] = useState<Set<number>>(new Set());
+
+  // Auto-expand the first feature-grid on mount as requested
+  useEffect(() => {
+    const firstFeatureGridIndex = content.findIndex(section => section.type === 'feature-grid');
+    if (firstFeatureGridIndex !== -1) {
+      setExpandedIndices(new Set([firstFeatureGridIndex]));
+    }
+  }, [content]);
+
+  const toggleExpand = (index: number) => {
+    setExpandedIndices(prev => {
+      const next = new Set(prev);
+      if (next.has(index)) {
+        next.delete(index);
+      } else {
+        next.add(index);
+      }
+      return next;
+    });
+  };
+
   const renderContent = (section: ContentSection, index: number) => {
     switch (section.type) {
       case 'heading':
@@ -84,6 +107,60 @@ const EnhancedBlogContent: React.FC<EnhancedBlogContentProps> = ({ content }) =>
                 </li>
               ))}
             </ol>
+          </div>
+        );
+
+      case 'split-image-list':
+        if (!section.items) return null;
+        const middleIndex = Math.ceil(section.items.length / 2);
+        const leftItems = section.items.slice(0, middleIndex);
+        const rightItems = section.items.slice(middleIndex);
+        const splitIcons = [Shield, Zap, DollarSign, Users, Database, TrendingUp];
+
+        return (
+          <div key={index} className="my-12">
+            <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-8">
+              {/* Left Column */}
+              <div className="flex-1 w-full space-y-4">
+                {leftItems.map((item, i) => {
+                  const Icon = splitIcons[i % splitIcons.length];
+                  return (
+                    <Card key={`left-${i}`} className="border-2 border-black h-full shadow-sm hover:translate-x-1 transition-transform group">
+                      <CardContent className="p-4 md:p-5 flex items-center space-x-4 h-full">
+                        <div className="bg-black p-3 md:p-4 rounded-xl shrink-0 text-white group-hover:scale-110 transition-transform">
+                          <Icon className="h-6 w-6" />
+                        </div>
+                        <p className="text-gray-800 font-medium text-sm md:text-base leading-relaxed">{item}</p>
+                      </CardContent>
+                    </Card>
+                  );
+                })}
+              </div>
+
+              {/* Middle Image */}
+              {section.image && (
+                <div className="shrink-0 w-48 h-48 md:w-64 md:h-64 flex items-center justify-center p-4">
+                  <img src={section.image} alt="Nỗi đau trung tâm" className="max-w-full max-h-full object-contain" />
+                </div>
+              )}
+
+              {/* Right Column */}
+              <div className="flex-1 w-full space-y-4">
+                {rightItems.map((item, i) => {
+                  const Icon = splitIcons[(i + middleIndex) % splitIcons.length];
+                  return (
+                    <Card key={`right-${i}`} className="border-2 border-black h-full shadow-sm hover:-translate-x-1 transition-transform group">
+                      <CardContent className="p-4 md:p-5 flex items-center space-x-4 h-full">
+                        <div className="bg-black p-3 md:p-4 rounded-xl shrink-0 text-white group-hover:scale-110 transition-transform">
+                          <Icon className="h-6 w-6" />
+                        </div>
+                        <p className="text-gray-800 font-medium text-sm md:text-base leading-relaxed">{item}</p>
+                      </CardContent>
+                    </Card>
+                  );
+                })}
+              </div>
+            </div>
           </div>
         );
       
@@ -190,6 +267,65 @@ const EnhancedBlogContent: React.FC<EnhancedBlogContentProps> = ({ content }) =>
               </blockquote>
             </CardContent>
           </Card>
+        );
+      
+      case 'feature-grid':
+        if (!section.featureGridData) return null;
+        const isExpanded = expandedIndices.has(index);
+        return (
+          <div key={index} className="mb-8">
+            <button 
+              onClick={() => toggleExpand(index)}
+              className={`w-full text-left flex items-center justify-between group p-6 border-2 border-black transition-all hover:bg-gray-50 rounded-xl ${isExpanded ? 'bg-gray-50 mb-0' : 'mb-4'}`}
+            >
+              <div className="flex flex-col">
+                <h3 className="text-xl md:text-2xl font-bold text-black group-hover:translate-x-1 transition-transform">{section.featureGridData.title}</h3>
+                {section.featureGridData.subtitle && (
+                  <p className="text-gray-600 font-medium text-sm md:text-base mt-1">{section.featureGridData.subtitle}</p>
+                )}
+              </div>
+              <div className={`p-2 rounded-full transition-all duration-300 ${isExpanded ? 'bg-black text-white' : 'bg-gray-100 text-black group-hover:bg-black group-hover:text-white'}`}>
+                {isExpanded ? <ChevronUp className="h-5 w-5" /> : <ChevronDown className="h-5 w-5" />}
+              </div>
+            </button>
+
+            <AnimatePresence>
+              {isExpanded && (
+                <motion.div
+                  initial={{ height: 0, opacity: 0 }}
+                  animate={{ height: "auto", opacity: 1 }}
+                  exit={{ height: 0, opacity: 0 }}
+                  transition={{ duration: 0.5, ease: [0.04, 0.62, 0.23, 0.98] }}
+                  className="overflow-hidden"
+                >
+                  <div className="p-6 md:p-8 border-2 border-t-0 border-black rounded-b-xl bg-white mb-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+                    {section.featureGridData.groups.map((group, groupIndex) => (
+                      <Card 
+                        key={groupIndex} 
+                        className={`border-2 ${group.highlight ? 'border-black bg-gray-50' : 'border-gray-100'} h-full transition-all hover:border-black shadow-sm group/card`}
+                      >
+                        <CardContent className="p-5 h-full flex flex-col">
+                          <div className="mb-4">
+                            <h4 className={`text-lg font-bold ${group.highlight ? 'text-black' : 'text-gray-700'}`}>
+                              {group.title}
+                            </h4>
+                          </div>
+                          <ul className="space-y-3 flex-grow">
+                            {group.items.map((item, itemIndex) => (
+                              <li key={itemIndex} className="flex items-start text-sm md:text-base">
+                                <span className="mr-3 text-black mt-1 font-bold">→</span>
+                                <span className="text-gray-600 leading-snug group-hover/card:text-black transition-colors">{item}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </CardContent>
+                      </Card>
+                    ))}
+                  </div>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </div>
         );
       
       default:
