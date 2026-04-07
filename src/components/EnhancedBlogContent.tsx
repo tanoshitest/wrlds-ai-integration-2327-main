@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { ContentSection } from '@/data/blogPosts';
-import { DollarSign, Users, TrendingUp, Shield, Zap, Settings, Database, ChevronDown, ChevronUp, AlertCircle, FileText } from 'lucide-react';
+import { DollarSign, Users, TrendingUp, Shield, Zap, Settings, Database, ChevronDown, ChevronUp, AlertCircle, FileText, Check, HeartCrack } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -140,7 +140,7 @@ const EnhancedBlogContent: React.FC<EnhancedBlogContentProps> = ({ content }) =>
               {/* Middle Image */}
               {section.image && (
                 <div className="shrink-0 w-48 h-48 md:w-64 md:h-64 flex items-center justify-center p-4">
-                  <img src={section.image} alt="Nỗi đau trung tâm" className="max-w-full max-h-full object-contain" />
+                  <img src={section.image} alt="Nỗi đau trung tâm" className="max-w-full max-h-full object-contain mix-blend-multiply" />
                 </div>
               )}
 
@@ -325,6 +325,44 @@ const EnhancedBlogContent: React.FC<EnhancedBlogContentProps> = ({ content }) =>
                 </motion.div>
               )}
             </AnimatePresence>
+          </div>
+        );
+      case 'process-steps':
+        if (!section.processData) return null;
+        return (
+          <div key={index} className="relative mt-12 mb-16 px-2">
+            <div className="hidden md:block absolute top-0 left-1/2 w-0.5 h-full bg-gray-200 -translate-x-1/2" />
+            <div className="space-y-10 relative">
+              {section.processData.steps.map((process, pIndex) => (
+                <div key={process.id} className={`relative flex flex-col md:flex-row md:items-center gap-6 ${pIndex % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse text-right'}`}>
+                  <div className="md:w-1/2">
+                    <div className="md:absolute top-0 left-1/2 md:-translate-x-1/2 w-12 h-12 rounded-full flex items-center justify-center z-10 bg-black text-white shadow-md border-2 border-transparent hover:scale-110 transition-transform">
+                      <span className="font-bold">{process.id}</span>
+                    </div>
+                    <h3 className="text-xl font-bold mb-2 mt-3 md:mt-0 text-black">{process.title}</h3>
+                    {process.description && <p className="text-gray-600 mb-3 text-sm">{process.description}</p>}
+                  </div>
+                  
+                  <div className="md:w-1/2 bg-white rounded-xl p-5 shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
+                    {process.activities && process.activities.length > 0 && (
+                      <>
+                        <h4 className="font-semibold mb-3 text-gray-700 text-left">Chi tiết:</h4>
+                        <ul className="space-y-2">
+                          {process.activities.map((act, actIndex) => (
+                            <li key={actIndex} className="flex items-start">
+                              <span className="flex-shrink-0 w-5 h-5 rounded-full bg-gray-100 flex items-center justify-center mt-0.5 mr-2">
+                                <Check className="w-3 h-3 text-black" />
+                              </span>
+                              <span className="text-gray-700 text-sm text-left">{act}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         );
       

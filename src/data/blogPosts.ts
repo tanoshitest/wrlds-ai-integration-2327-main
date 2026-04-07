@@ -13,7 +13,7 @@ export interface BlogPost {
 }
 
 export interface ContentSection {
-  type: 'paragraph' | 'heading' | 'subheading' | 'list' | 'quote' | 'table' | 'stats' | 'chart' | 'icon-list' | 'bibliography' | 'feature-grid' | 'split-image-list';
+  type: 'paragraph' | 'heading' | 'subheading' | 'list' | 'quote' | 'table' | 'stats' | 'chart' | 'icon-list' | 'bibliography' | 'feature-grid' | 'split-image-list' | 'process-steps';
   content?: string;
   image?: string;
   items?: string[];
@@ -37,6 +37,14 @@ export interface ContentSection {
       title: string;
       items: string[];
       highlight?: boolean;
+    }[];
+  };
+  processData?: {
+    steps: {
+      id: number;
+      title: string;
+      description?: string;
+      activities?: string[];
     }[];
   };
 }
@@ -404,6 +412,67 @@ export const blogPosts: BlogPost[] = [
       {
         type: 'paragraph',
         content: 'Liên hệ tư vấn miễn phí ngay hôm nay để nhận blueprint giải pháp cho trung tâm của bạn!'
+      },
+      {
+        type: 'heading',
+        content: 'Quy trình làm việc của Tanoshi'
+      },
+      {
+        type: 'process-steps',
+        processData: {
+          steps: [
+            {
+              id: 1,
+              title: 'Trao đổi nắm scope',
+              description: 'Chúng tôi sẽ lắng nghe và tìm hiểu sâu về vấn đề của bạn để xác định phạm vi dự án.',
+              activities: [
+                'Gặp gỡ, trao đổi và khảo sát',
+                'Đánh giá hiện trạng bộ máy vận hành',
+                'Thống nhất yêu cầu và phạm vi công việc'
+              ]
+            },
+            {
+              id: 2,
+              title: 'Xây dựng prototype hoàn chỉnh',
+              description: 'Sau khi hiểu rõ yêu cầu, các chuyên gia thiết kế sẽ tạo nguyên mẫu trực quan để khách hàng dễ hình dung.',
+              activities: [
+                'Thiết kế giao diện UI/UX',
+                'Xây dựng luồng người dùng (User Flow)',
+                'Review và chốt nguyên mẫu (Prototype)'
+              ]
+            },
+            {
+              id: 3,
+              title: 'Phát triển backend',
+              description: 'Đội ngũ kỹ sư tiến hành lập trình và xây dựng các tính năng nền tảng vững chắc.',
+              activities: [
+                'Thiết kế kiến trúc cơ sở dữ liệu',
+                'Phát triển API và logic cốt lõi',
+                'Tích hợp công nghệ AI Agent tự động'
+              ]
+            },
+            {
+              id: 4,
+              title: 'Testing',
+              description: 'Kiểm thử toàn diện để đảm bảo hệ thống hoạt động ổn định, mượt mà và không có lỗi.',
+              activities: [
+                'Kiểm thử chức năng nội bộ',
+                'Đánh giá hiệu suất và độ bảo mật',
+                'Kiểm thử nghiệm thu (UAT) với khách hàng'
+              ]
+            },
+            {
+              id: 5,
+              title: 'Release',
+              description: 'Bàn giao sản phẩm hoàn thiện, đưa vào hoạt động thực tế và đồng hành cùng khách hàng.',
+              activities: [
+                'Triển khai hệ thống lên server (Go-live)',
+                'Đào tạo và hướng dẫn nhân sự sử dụng',
+                'Bảo hành, bảo trì và hỗ trợ vận hành'
+              ]
+            }
+          ]
+        }
       }
     ]
   },
