@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { ContentSection } from '@/data/blogPosts';
-import { DollarSign, Users, TrendingUp, Shield, Zap, Settings, Database, ChevronDown, ChevronUp, AlertCircle, FileText, Check, HeartCrack, ArrowRight } from 'lucide-react';
+import { DollarSign, Users, TrendingUp, Shield, Zap, Settings, Database, ChevronDown, ChevronUp, AlertCircle, FileText, Check, HeartCrack, ArrowRight, ClipboardCheck, Bell, ShieldAlert, BarChart3 } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -17,7 +17,11 @@ const iconMap = {
   Shield,
   Zap,
   Settings,
-  Database
+  Database,
+  ClipboardCheck,
+  Bell,
+  ShieldAlert,
+  BarChart3
 };
 
 const EnhancedBlogContent: React.FC<EnhancedBlogContentProps> = ({ content }) => {
@@ -242,18 +246,29 @@ const EnhancedBlogContent: React.FC<EnhancedBlogContentProps> = ({ content }) =>
                 <tbody>
                   {section.tableData.rows.map((row, rowIndex) => (
                     <tr key={rowIndex} className={rowIndex % 2 === 0 ? 'bg-gray-50' : 'bg-white'}>
-                      {row.map((cell, cellIndex) => (
-                        <td key={cellIndex} className="p-4 border-b border-gray-200">
-                          <div className="flex items-center gap-3">
-                            {cellIndex === 2 && row.length === 3 && (
-                              <ArrowRight className="h-4 w-4 text-black shrink-0" />
-                            )}
-                            <span className={cellIndex === 2 ? "font-bold text-black" : "text-gray-700"}>
-                              {cell}
-                            </span>
-                          </div>
-                        </td>
-                      ))}
+                      {row.map((cell, cellIndex) => {
+                        const Icon = cellIndex === 0 && section.tableData?.icons?.[rowIndex] 
+                          ? iconMap[section.tableData.icons[rowIndex] as keyof typeof iconMap] 
+                          : null;
+                        
+                        return (
+                          <td key={cellIndex} className="p-4 border-b border-gray-200">
+                            <div className="flex items-center gap-3">
+                              {cellIndex === 0 && Icon && (
+                                <div className="bg-gray-100 p-2 rounded-lg shrink-0">
+                                  <Icon className="h-4 w-4 text-black" />
+                                </div>
+                              )}
+                              {cellIndex === 2 && row.length === 3 && (
+                                <ArrowRight className="h-4 w-4 text-black shrink-0" />
+                              )}
+                              <span className={cellIndex === 2 ? "font-bold text-black" : "text-gray-700"}>
+                                {cell}
+                              </span>
+                            </div>
+                          </td>
+                        );
+                      })}
                     </tr>
                   ))}
                 </tbody>
@@ -345,7 +360,7 @@ const EnhancedBlogContent: React.FC<EnhancedBlogContentProps> = ({ content }) =>
                         href={section.featureGridData.prototypeLink || "#"} 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-white text-black font-bold rounded-full border-2 border-black hover:bg-black hover:text-white hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all duration-300 group/btn"
+                        className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-white text-black font-bold rounded-xl border-2 border-black hover:bg-black hover:text-white hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all duration-300 group/btn"
                       >
                         View prototype
                         <span className="group-hover/btn:rotate-45 group-hover/btn:translate-x-1 transition-all duration-300">↗</span>

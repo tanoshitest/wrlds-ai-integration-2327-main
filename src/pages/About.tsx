@@ -192,7 +192,7 @@ const About = () => {
 
                     {/* Row 5: 1 brand */}
                     <div className="flex flex-wrap justify-start gap-x-4">
-                      {["TUYETTHINH"].map((name, i) => (
+                      {["TUYETTHINH", "NZEDU"].map((name, i) => (
                         <motion.span
                           key={i}
                           initial={{ opacity: 0, scale: 0.9 }}

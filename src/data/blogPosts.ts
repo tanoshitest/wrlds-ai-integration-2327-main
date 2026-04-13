@@ -20,6 +20,7 @@ export interface ContentSection {
   tableData?: {
     headers: string[];
     rows: string[][];
+    icons?: string[];
   };
   statsData?: {
     value: string;
@@ -40,6 +41,7 @@ export interface ContentSection {
       items: string[];
       highlight?: boolean;
     }[];
+    layout?: 'grid' | 'mindmap';
   };
   processData?: {
     steps: {
@@ -71,7 +73,8 @@ export const blogPosts: BlogPost[] = [
       'AI Agent Education',
       'Quỳnh BOKI Learn',
       'JLTC Manager',
-      'Echo English Lab'
+      'Echo English Lab',
+      'NZEDU'
     ],
     metaDescription: 'Tư vấn giải pháp EdTech toàn diện cho chủ trung tâm giáo dục. Chuyển đổi từ quản lý thủ công sang hệ thống Web App/LMS hiện đại với AI chấm điểm tự động.',
     content: [
@@ -103,7 +106,7 @@ export const blogPosts: BlogPost[] = [
         type: 'stats',
         statsData: [
           {
-            value: '7+',
+            value: '8+',
             label: 'Dự án LMS thực chiến đã hoàn thành',
             icon: 'Layout'
           },
@@ -121,11 +124,11 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'heading',
-        content: 'Portfolio: 7 Case Study "Xương Máu" Từ Tanoshi Vietnam'
+        content: 'Portfolio: 8 Case Study "Xương Máu" Từ Tanoshi Vietnam'
       },
       {
         type: 'paragraph',
-        content: 'Chúng tôi không chỉ viết code, chúng tôi xây dựng giải pháp dựa trên quy trình thực tế của từng khách hàng. Dưới đây là 7 minh chứng cho năng lực thực thi của chúng tôi:'
+        content: 'Chúng tôi không chỉ viết code, chúng tôi xây dựng giải pháp dựa trên quy trình thực tế của từng khách hàng. Dưới đây là 8 minh chứng cho năng lực thực thi của chúng tôi:'
       },
       {
         type: 'feature-grid',
@@ -284,7 +287,7 @@ export const blogPosts: BlogPost[] = [
         featureGridData: {
           title: '5. Tấn Thành — trung tâm luyện thi Văn-Toán',
           subtitle: '3 portal riêng biệt: Admin, Giáo viên, Phụ huynh | Đánh giá 6 tiêu chí',
-          status: 'Development',
+          status: 'Prototype',
           groups: [
             {
               title: 'Admin portal',
@@ -381,6 +384,49 @@ export const blogPosts: BlogPost[] = [
         }
       },
       {
+        type: 'feature-grid',
+        featureGridData: {
+          title: '8. NZEDU — hệ thống quản lý giáo dục thông minh',
+          subtitle: 'Hệ sinh thái đầy đủ nhất: CRM + tài chính + kho + phát âm + phụ huynh',
+          status: 'Prototype',
+          groups: [
+            {
+              title: 'CRM',
+              items: ['Lead pipeline', 'Tư vấn tuyển sinh']
+            },
+            {
+              title: 'Lớp học',
+              items: ['Lịch, giáo viên', 'Điểm danh']
+            },
+            {
+              title: 'Tài chính',
+              items: ['Thu chi, học phí', 'Nợ, quá hạn']
+            },
+            {
+              title: 'Kho & sách',
+              items: ['Nhập/xuất kho', 'Cảnh báo hết']
+            },
+            {
+              title: 'Quản lý phát âm',
+              items: ['Ra đề -> Nộp audio -> chấm điểm']
+            },
+            {
+              title: 'Portal phụ huynh',
+              items: ['Tiến độ, học phí, nhắn tin']
+            },
+            {
+              title: 'Ticket & task',
+              items: ['Xử lý yêu cầu']
+            },
+            {
+              title: 'Đặc biệt',
+              highlight: true,
+              items: ['Phân quyền chi tiết theo từng chức năng (5 role: Admin, GV, kế toán, PH, HV)']
+            }
+          ]
+        }
+      },
+      {
         type: 'chart',
         chartData: {
           title: 'Hiệu quả vận hành sau khi triển khai LMS (Tăng trưởng %)',
@@ -401,6 +447,7 @@ export const blogPosts: BlogPost[] = [
         type: 'table',
         tableData: {
           headers: ['Tính năng', 'Quản lý bằng Excel/Zalo', 'Hệ thống Web App/LMS Tanoshi'],
+          icons: ['Users', 'ClipboardCheck', 'Bell', 'ShieldAlert', 'BarChart3'],
           rows: [
             ['Dữ liệu học viên', 'Phân tán, dễ sai sót', 'Tập trung, đồng bộ 100%'],
             ['Chấm điểm & Đánh giá', 'Thủ công, mất nhiều giờ', 'AI Agent chấm tự động theo giây'],
