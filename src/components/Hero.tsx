@@ -2,6 +2,7 @@ import { ArrowRight, Code, Cpu, Layers, MessageSquare } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import LogoStrip from "./LogoStrip";
 
 const Hero = () => {
   const isMobile = useIsMobile();
@@ -103,6 +104,8 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      
+      <LogoStrip />
       
       <div className="relative z-10 w-full px-4 sm:px-6 lg:px-8 mx-auto">
         <motion.div className="mt-6 md:mt-8 grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4" variants={containerVariants} initial="hidden" animate="visible" transition={{
