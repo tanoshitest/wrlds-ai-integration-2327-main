@@ -4,6 +4,7 @@ import { blogPosts } from '@/data/blogPosts';
 import PageLayout from '@/components/PageLayout';
 import SEO from '@/components/SEO';
 import EnhancedBlogContent from '@/components/EnhancedBlogContent';
+import LogoStrip from '@/components/LogoStrip';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, Calendar, User } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -101,6 +102,8 @@ const BlogPostDetail = () => {
             </div>
           </div>
         </div>
+
+        <LogoStrip />
 
         {/* Article Content */}
         <div className="container mx-auto px-4 py-8 sm:py-12 md:py-16">
