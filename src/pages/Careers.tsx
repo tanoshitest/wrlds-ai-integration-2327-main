@@ -158,7 +158,7 @@ const Careers = () => {
                             href="/#contact"
                             className="inline-flex items-center justify-center px-6 py-3 bg-gray-900 text-white rounded-lg font-semibold hover:bg-gray-800 transition-colors whitespace-nowrap"
                           >
-                            Ứng tuyển
+                            Apply Now
                           </a>
                         </div>
                       </motion.div>

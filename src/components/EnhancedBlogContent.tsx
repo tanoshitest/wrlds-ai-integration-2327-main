@@ -141,7 +141,7 @@ const EnhancedBlogContent: React.FC<EnhancedBlogContentProps> = ({ content }) =>
               {/* Middle Image */}
               {section.image && (
                 <div className="shrink-0 w-48 h-48 md:w-64 md:h-64 flex items-center justify-center p-4">
-                  <img src={section.image} alt="Nỗi đau trung tâm" className="max-w-full max-h-full object-contain mix-blend-multiply" />
+                  <img src={section.image} alt="Central pain point" className="max-w-full max-h-full object-contain mix-blend-multiply" />
                 </div>
               )}
 
@@ -391,7 +391,7 @@ const EnhancedBlogContent: React.FC<EnhancedBlogContentProps> = ({ content }) =>
                   <div className="md:w-1/2 bg-white rounded-xl p-5 shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
                     {process.activities && process.activities.length > 0 && (
                       <>
-                        <h4 className="font-semibold mb-3 text-gray-700 text-left">Chi tiết:</h4>
+                        <h4 className="font-semibold mb-3 text-gray-700 text-left">Details:</h4>
                         <ul className="space-y-2">
                           {process.activities.map((act, actIndex) => (
                             <li key={actIndex} className="flex items-start">

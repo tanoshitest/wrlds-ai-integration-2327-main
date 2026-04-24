@@ -25,7 +25,7 @@ const HostingPricing = () => {
         '5 Websites',
         '5 Email Accounts',
         'SLA 99.9%',
-        'Hằng ngày',
+        'Daily Backup',
       ],
     },
     {
@@ -42,7 +42,7 @@ const HostingPricing = () => {
         '10 Websites',
         '10 Email Accounts',
         'SLA 99.9%',
-        'Hằng ngày',
+        'Daily Backup',
       ],
       popular: true,
     },
@@ -60,7 +60,7 @@ const HostingPricing = () => {
         '200 Websites',
         '100 Email Accounts',
         'SLA 99.9%',
-        'Hằng ngày',
+        'Daily Backup',
       ],
     },
   ];
@@ -79,19 +79,19 @@ const HostingPricing = () => {
   const getBillingLabel = () => {
     switch (billingPeriod) {
       case 'monthly':
-        return '/ tháng';
+        return '/ month';
       case 'quarterly':
-        return '/ 3 tháng';
+        return '/ 3 months';
       case 'yearly':
-        return '/ năm';
+        return '/ year';
     }
   };
 
   return (
     <PageLayout>
       <SEO
-        title="Bảng Giá Hosting - Wordpress Max Speed"
-        description="Chọn gói hosting phù hợp với nhu cầu của bạn. Từ 5GB đến 50GB storage với băng thông unlimited."
+        title="Hosting Pricing - Wordpress Max Speed"
+        description="Choose the right hosting plan for your needs. From 5GB to 50GB storage with unlimited bandwidth."
       />
       
       <div className="min-h-screen bg-background py-16 px-4 sm:px-6 lg:px-8">
@@ -102,7 +102,7 @@ const HostingPricing = () => {
               Wordpress Max Speed
             </h1>
             <p className="text-lg text-muted-foreground">
-              Chọn gói hosting phù hợp với nhu cầu của bạn
+              Choose the right hosting plan for your needs
             </p>
           </div>
 
@@ -114,10 +114,10 @@ const HostingPricing = () => {
               className="w-full max-w-md"
             >
               <TabsList className="grid w-full grid-cols-3">
-                <TabsTrigger value="monthly">Tháng</TabsTrigger>
-                <TabsTrigger value="quarterly">3 tháng</TabsTrigger>
+                <TabsTrigger value="monthly">Monthly</TabsTrigger>
+                <TabsTrigger value="quarterly">Quarterly</TabsTrigger>
                 <TabsTrigger value="yearly">
-                  Năm
+                  Yearly
                   <span className="ml-1 text-xs text-primary">(-20%)</span>
                 </TabsTrigger>
               </TabsList>
@@ -138,7 +138,7 @@ const HostingPricing = () => {
                 {plan.popular && (
                   <div className="absolute -top-4 left-1/2 -translate-x-1/2">
                     <span className="bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-medium">
-                      Phổ biến nhất
+                      Most Popular
                     </span>
                   </div>
                 )}
@@ -172,7 +172,7 @@ const HostingPricing = () => {
                   size="lg"
                   onClick={() => handleSelectPlan(plan.id)}
                 >
-                  Chọn gói
+                  Select Plan
                 </Button>
               </div>
             ))}

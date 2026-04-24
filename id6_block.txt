@@ -1,0 +1,120 @@
+﻿    id: '6',
+    title: 'JLTC Manager: Số Hóa Quy Trình Quản Lý Trung Tâm Tiếng Nhật IKIGAI',
+    slug: 'ikigai-jltc-manager-digital-transformation',
+    excerpt: 'Khám phá cách IKIGAI tối ưu vận hành từ khâu tuyển sinh Lead đến quản lý thi JLPT mô phỏng và hồ sơ du học thông qua hệ thống quản trị chuyên sâu JLTC Manager.',
+    date: 'April 22, 2026',
+    author: 'Tanoshi Vietnam EdTech Team',
+    category: 'EdTech Solutions',
+    imageUrl: '/lovable-uploads/edtech_lms_growth_blog.png',
+    keywords: [
+      'IKIGAI Japanese Center',
+      'JLTC Manager',
+      'Japanese Education Management',
+      'JLPT Exam System',
+      'CRM Japanese School',
+      'Tanoshi Vietnam'
+    ],
+    metaDescription: 'Case study về chuyển đổi số toàn diện cho trung tâm tiếng Nhật IKIGAI. Tối ưu quản lý Lead, thi JLPT và hồ sơ du học Nhật Bản.',
+    content: [
+      {
+        type: 'paragraph',
+        content: 'IKIGAI là một trong những trung tâm tiếng Nhật hàng đầu trong việc đào tạo du học sinh và kỹ sư đi Nhật. Để duy trì vị thế và nâng cao chất lượng đào tạo, IKIGAI đã phối hợp cùng Tanoshi Vietnam phát triển hệ thống JLTC Manager — một giải pháp quản trị chuyên sâu giải quyết triệt để các bài toán vận hành đặc thù của ngành giáo dục tiếng Nhật.'
+      },
+      {
+        type: 'heading',
+        content: 'Nỗi Đau Trong Vận Hành Trung Tâm Tiếng Nhật'
+      },
+      {
+        type: 'split-image-list',
+        image: '/lovable-uploads/pain_icon.png',
+        items: [
+          'Quản lý Lead tuyển sinh đa kênh (Du học, Kỹ sư, Tokutei) bị phân mảnh và khó theo dõi tiến độ tư vấn.',
+          'Việc tổ chức thi thử JLPT định kỳ (ra đề, chấm điểm, xếp hạng) diễn ra hoàn toàn thủ công và chậm chạp.',
+          'Dữ liệu điểm danh và chuyên cần học viên giữa các cơ sở không được đồng bộ hóa theo thời gian thực.',
+          'Sắp xếp lịch dạy và quản lý phòng học thường xuyên xảy ra tình trạng chồng chéo hoặc trống lớp lãng phí.',
+          'Xử lý khối lượng lớn hồ sơ phỏng vấn và báo cáo thống kê cho các nghiệp đoàn Nhật Bản phức tạp, dễ sai sót.',
+          'Việc giao việc và theo dõi tiến độ (Task) giữa bộ phận Admin và Giáo viên thiếu công cụ tập trung.'
+        ]
+      },
+      {
+        type: 'heading',
+        content: 'Giải Pháp Đột Phá: Hệ Thống JLTC Manager'
+      },
+      {
+        type: 'stats',
+        statsData: [
+          {
+            value: '500+',
+            label: 'Học viên được quản lý tập trung',
+            icon: 'Users'
+          },
+          {
+            value: '1000+',
+            label: 'Đề thi JLPT được khởi tạo tự động',
+            icon: 'ClipboardCheck'
+          },
+          {
+            value: '60%',
+            label: 'Tăng tốc quy trình xử lý hồ sơ du học',
+            icon: 'Zap'
+          }
+        ]
+      },
+      {
+        type: 'heading',
+        content: 'Các Phân Hệ Cốt Lõi'
+      },
+      {
+        type: 'feature-grid',
+        featureGridData: {
+          title: 'JLTC Manager — Trung Tâm Điều Hành Số',
+          subtitle: 'Giải pháp quản trị 360 độ cho IKIGAI',
+          status: 'Go-live',
+          groups: [
+            {
+              title: 'CRM Lead Management',
+              items: ['Phân loại: Du học, Kỹ sư, Tokutei', 'Theo dõi Pipeline tư vấn', 'Nhắc lịch phỏng vấn']
+            },
+            {
+              title: 'Hệ thống thi JLPT',
+              items: ['Ngân hàng câu hỏi thông minh', 'Chấm điểm & xếp hạng tự động', 'Phân tích điểm mạnh/yếu']
+            },
+            {
+              title: 'Lịch học & Điểm danh',
+              items: ['Gantt Chart lịch dạy', 'Điểm danh QR code', 'Thông báo nghỉ học tự động']
+            },
+            {
+              title: 'Báo cáo & Hồ sơ',
+              items: ['Xuất hồ sơ phỏng vấn chuẩn', 'Thống kê tỷ lệ đỗ visa', 'Báo cáo doanh thu chi tiết']
+            },
+            {
+              title: 'Task Management',
+              items: ['Giao việc theo bộ phận', 'Theo dõi deadline giáo viên', 'Hệ thống Ticket nội bộ']
+            },
+            {
+              title: 'Cổng thông tin',
+              items: ['Portal riêng cho GV/HV/PH', 'Tra cứu kết quả học tập', 'Kho học liệu nội bộ']
+            }
+          ]
+        }
+      },
+      {
+        type: 'heading',
+        content: 'Hiệu Quả Chuyển Đổi Số'
+      },
+      {
+        type: 'table',
+        tableData: {
+          headers: ['Nghiệp vụ', 'Quy trình cũ (Excel/Giấy)', 'Với JLTC Manager'],
+          icons: ['ClipboardCheck', 'Users', 'Calendar', 'BarChart3'],
+          rows: [
+            ['Tổ chức thi JLPT', 'Mất 3-5 ngày chuẩn bị & chấm bài', 'Tự động hóa 100% trong 1 click'],
+            ['Quản lý Lead', 'Rơi rạc, tỷ lệ chuyển đổi thấp', 'Tập trung, tăng 30% tỷ lệ nhập học'],
+            ['Sắp xếp lịch học', 'Dễ nhầm lẫn, mất thời gian', 'Tối ưu hóa 99% công suất phòng'],
+            ['Hồ sơ du học', 'Thủ công, áp lực mùa cao điểm', 'Chuẩn hóa quy trình, giảm 60% áp lực']
+          ]
+        }
+      }
+    ]
+  },
+  {

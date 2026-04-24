@@ -1,0 +1,142 @@
+﻿    id: '8',
+    title: 'Số Hóa Ngành Vận Chuyển Việt - Nhật: Hành Trình Chuyển Đổi Số Thành Công Của IKIGAI Ship Track',
+    slug: 'ikigai-ship-track-digital-transformation',
+    excerpt: 'Khám phá cách Tanoshi Vietnam cùng IKIGAI giải quyết bài toán vận hành logistics phức tạp. Từ quản lý thủ công rời rạc đến hệ thống Ship Track hiện đại tích hợp API các nhà vận chuyển lớn.',
+    date: 'April 24, 2026',
+    author: 'Tanoshi Vietnam Logistics Team',
+    category: 'Logistics Solutions',
+    imageUrl: '/lovable-uploads/ikigai_ship_track_showcase.png',
+    keywords: [
+      'Logistics Digital Transformation',
+      'Shipping Management System',
+      'Vietnam Japan Shipping',
+      'IKIGAI Ship Track',
+      'Tanoshi Vietnam',
+      'API Integration Logistics',
+      'Sagawa API',
+      'EMS Integration',
+      'DHL Logistics'
+    ],
+    metaDescription: 'Case study về việc xây dựng hệ thống quản lý vận chuyển chuyên sâu cho IKIGAI. Tự động hóa tính phí, tích hợp API nhà vận chuyển và tối ưu quy trình vận hành.',
+    content: [
+      {
+        type: 'paragraph',
+        content: 'Trong bối cảnh thương mại điện tử Việt - Nhật bùng nổ, việc quản lý hàng ngàn kiện hàng mỗi ngày bằng các phương thức thủ công đang trở thành rào cản lớn nhất cho sự tăng trưởng. IKIGAI - một đơn vị vận chuyển uy tín - đã cùng Tanoshi Vietnam bắt tay xây dựng hệ thống "Ikigai Ship Track" nhằm số hóa toàn diện quy trình vận hành, mang lại sự minh bạch và tốc độ vượt trội.'
+      },
+      {
+        type: 'heading',
+        content: 'Nỗi Đau "Cố Hữu" Của Ngành Vận Chuyển Quốc Tế'
+      },
+      {
+        type: 'split-image-list',
+        image: '/lovable-uploads/pain_icon.png',
+        items: [
+          'Thông tin khách hàng (Lead) phân mảnh từ nhiều kênh: Facebook, Zalo, TikTok, gây khó khăn cho việc chăm sóc và chốt đơn.',
+          'Sai sót trong tính phí vận chuyển do tính toán thủ công giữa cân nặng thực tế và cân nặng quy đổi (L*W*H/6000).',
+          'Mất dấu hàng hóa: Không có cái nhìn tổng quan về trạng thái kiện hàng khi hàng rời kho hoặc đang trên máy bay.',
+          'Quá tải nhập liệu: Nhân viên phải copy-paste dữ liệu lên các trang web của hãng vận chuyển (EMS, DHL, Sagawa) một cách thủ công.',
+          'Khách hàng liên tục hỏi về trạng thái đơn hàng do thiếu cổng tra cứu tự động.',
+          'Khó khăn đối soát công nợ: Các khoản phí ship, phụ phí và COD phân tán khiến việc tổng hợp lợi nhuận thực tế trở nên chậm chạp và dễ nhầm lẫn.'
+        ]
+      },
+      {
+        type: 'heading',
+        content: 'Hiệu Quả Sau Chuyển Đổi Số'
+      },
+      {
+        type: 'stats',
+        statsData: [
+          {
+            value: '100%',
+            label: 'Đơn hàng được tính phí tự động, chính xác tuyệt đối',
+            icon: 'Calculator'
+          },
+          {
+            value: '70%',
+            label: 'Giảm thời gian xử lý thủ công nhờ tích hợp API',
+            icon: 'Zap'
+          },
+          {
+            value: '24/7',
+            label: 'Khách hàng tự tra cứu trạng thái đơn hàng',
+            icon: 'Search'
+          }
+        ]
+      },
+      {
+        type: 'heading',
+        content: 'Giải Pháp Đột Phá: Hệ Thống Ikigai Ship Track'
+      },
+      {
+        type: 'paragraph',
+        content: 'Tanoshi Vietnam không chỉ xây dựng một phần mềm, chúng tôi kiến tạo một bộ máy vận hành thông minh dựa trên nhu cầu thực tế của IKIGAI.'
+      },
+      {
+        type: 'feature-grid',
+        featureGridData: {
+          title: 'Ikigai Ship Track — Giải pháp Logistics Toàn Diện',
+          subtitle: 'Quy trình khép kín từ Lead đến Delivery',
+          status: 'Go-live',
+          groups: [
+            {
+              title: 'Quản lý Lead (Round 1)',
+              items: ['Tập trung Lead từ FB/Zalo/TikTok', 'Theo dõi trạng thái tư vấn', 'Ghi chú nhu cầu khách hàng']
+            },
+            {
+              title: 'Vận hành Kho (Round 2)',
+              items: ['Quản lý kiện hàng theo chuyến bay', 'Cập nhật trạng thái nội bộ', 'Xử lý sự cố vận chuyển']
+            },
+            {
+              title: 'Engine Tính Phí Tự Động',
+              items: ['Quy đổi trọng lượng thể tích', 'Áp giá theo bảng giá bậc thang', 'Tự động cộng phụ phí/phí đóng thùng']
+            },
+            {
+              title: 'Kết nối API Carrier',
+              items: ['Đẩy đơn lên EMS, DHL, Sagawa', 'Lấy mã tracking tự động', 'Đồng bộ trạng thái từ hãng']
+            },
+            {
+              title: 'Portal Tra Cứu Khách Hàng',
+              items: ['Tra cứu theo mã vận đơn', 'Xem lịch sử hành trình chi tiết', 'Dữ liệu chuẩn xác 100% từ API']
+            },
+            {
+              title: 'Tính năng đặc biệt',
+              highlight: true,
+              items: ['Hệ thống Kanban 2 vòng chuyên sâu giúp tách biệt rõ ràng khâu Kinh doanh và khâu Vận hành, tối ưu hóa sự phối hợp giữa các phòng ban.']
+            }
+          ]
+        }
+      },
+      {
+        type: 'chart',
+        chartData: {
+          title: 'Cải Thiện Năng Suất Vận Hành (So với trước khi có hệ thống)',
+          data: [
+            { name: 'Tốc độ xử lý đơn', value: 90 },
+            { name: 'Độ chính xác tài chính', value: 99 },
+            { name: 'Khả năng tra cứu hàng', value: 100 },
+            { name: 'Tiết kiệm nhân sự', value: 60 },
+            { name: 'Mức độ hài lòng khách', value: 95 }
+          ]
+        }
+      },
+      {
+        type: 'heading',
+        content: 'Bảng So Sánh Hiệu Quả: Trước vs Sau'
+      },
+      {
+        type: 'table',
+        tableData: {
+          headers: ['Hạng mục', 'Vận hành thủ công (Zalo/Excel)', 'Hệ thống Ikigai Ship Track'],
+          icons: ['Users', 'Calculator', 'Share2', 'Globe', 'Clock'],
+          rows: [
+            ['Quản lý Lead', 'Rời rạc, dễ bỏ sót khách hàng', 'Tập trung trên Kanban Board chuyên nghiệp'],
+            ['Tính phí vận chuyển', 'Dễ sai sót, mất nhiều thời gian', 'Tự động 100% theo Engine chuẩn xác'],
+            ['Kết nối nhà vận chuyển', 'Nhập liệu thủ công từng đơn', 'Đồng bộ API tự động trong tích tắc'],
+            ['Tra cứu đơn hàng', 'Khách phải nhắn tin hỏi liên tục', 'Khách tự tra cứu 24/7 trên Website'],
+            ['Dữ liệu & Báo cáo', 'Khó tổng hợp, không theo thời gian thực', 'Báo cáo Dashboard cập nhật tức thì']
+          ]
+        }
+      }
+    ]
+  },
+  {

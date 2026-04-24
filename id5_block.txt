@@ -1,0 +1,118 @@
+﻿    id: '5',
+    title: 'Số Hóa Trung Tâm Tiếng Anh Trẻ Em: Hành Trình Chuyển Đổi Số Của MEnglish (Kiều Liên)',
+    slug: 'menglish-digital-transformation-case-study',
+    excerpt: 'Khám phá cách MEnglish tối ưu vận hành toàn diện từ CRM, tài chính đến hệ thống chấm điểm phát âm AI, giúp kết nối phụ huynh và nhà trường hiệu quả.',
+    date: 'April 20, 2026',
+    author: 'Tanoshi Vietnam EdTech Team',
+    category: 'EdTech Solutions',
+    imageUrl: '/lovable-uploads/edtech_lms_growth_blog.png',
+    keywords: [
+      'MEnglish Case Study',
+      'English Center Management',
+      'AI Pronunciation Scoring',
+      'Parent Portal EdTech',
+      'Digital Transformation Education',
+      'Tanoshi Vietnam'
+    ],
+    metaDescription: 'Case study về việc xây dựng hệ sinh thái quản lý toàn diện cho trung tâm tiếng Anh MEnglish. Tối ưu quy trình tuyển sinh, tài chính và đào tạo tích hợp AI.',
+    content: [
+      {
+        type: 'paragraph',
+        content: 'Với quy mô ngày càng mở rộng của các trung tâm tiếng Anh trẻ em, việc quản lý thủ công qua Zalo và Excel không còn đáp ứng được nhu cầu tăng trưởng. MEnglish đã cùng Tanoshi Vietnam xây dựng một hệ thống quản trị chuyên sâu, giúp tự động hóa từ khâu tìm kiếm khách hàng đến việc theo dõi tiến độ học tập của từng học viên.'
+      },
+      {
+        type: 'heading',
+        content: 'Thách Thức Trong Quản Lý Trung Tâm Tiếng Anh Trẻ Em'
+      },
+      {
+        type: 'split-image-list',
+        image: '/lovable-uploads/pain_icon.png',
+        items: [
+          'Quản lý Lead tuyển sinh rời rạc, không theo dõi được tỷ lệ chuyển đổi từ tư vấn đến nhập học.',
+          'Sai sót trong quản lý học phí và các khoản thu chi do tính toán thủ công.',
+          'Khó khăn trong việc kiểm soát kho sách và giáo trình cho hàng trăm học viên.',
+          'Chấm điểm phát âm thủ công mất nhiều thời gian và không đưa ra được phản hồi tức thì.',
+          'Phụ huynh thiếu kênh thông tin chính thống để theo dõi lịch học và nhận xét của giáo viên.',
+          'Dữ liệu học viên không được bảo mật và phân quyền rõ ràng giữa các bộ phận.'
+        ]
+      },
+      {
+        type: 'heading',
+        content: 'Kết Quả Đột Phá Sau Triển Khai'
+      },
+      {
+        type: 'stats',
+        statsData: [
+          {
+            value: '95%',
+            label: 'Phụ huynh hài lòng với Portal theo dõi tiến độ',
+            icon: 'Users'
+          },
+          {
+            value: '80%',
+            label: 'Giảm thời gian quản lý tài chính và đối soát',
+            icon: 'Zap'
+          },
+          {
+            value: '24/7',
+            label: 'AI chấm điểm phát âm phản hồi tức thì',
+            icon: 'Zap'
+          }
+        ]
+      },
+      {
+        type: 'heading',
+        content: 'Hệ Sinh Thái Quản Trị MEnglish'
+      },
+      {
+        type: 'feature-grid',
+        featureGridData: {
+          title: 'Hệ thống MEnglish — Quản lý 360 Độ',
+          subtitle: 'Giải pháp toàn diện cho trung tâm ngoại ngữ hiện đại',
+          status: 'Go-live',
+          groups: [
+            {
+              title: 'CRM & Tuyển sinh',
+              items: ['Pipeline quản lý Lead chuyên sâu', 'Theo dõi nguồn khách hàng', 'Nhắc lịch tư vấn tự động']
+            },
+            {
+              title: 'Quản lý Đào tạo',
+              items: ['Xếp lịch học & phòng học', 'Điểm danh điện tử', 'Hệ thống bài tập online']
+            },
+            {
+              title: 'Tài chính & Kho',
+              items: ['Quản lý học phí & nợ', 'Báo cáo thu chi tự động', 'Kiểm kê kho giáo trình']
+            },
+            {
+              title: 'AI English Lab',
+              items: ['Chấm phát âm chuẩn quốc tế', 'Gợi ý sửa lỗi âm tiết', 'Thống kê lỗi phổ biến']
+            },
+            {
+              title: 'Portal Phụ huynh',
+              items: ['Xem nhận xét sau buổi học', 'Theo dõi chuyên cần', 'Thanh toán học phí online']
+            },
+            {
+              title: 'Tính năng đặc biệt',
+              highlight: true,
+              items: ['Phân quyền chi tiết 5 role (Admin, GV, Kế toán, PH, HV) giúp quy trình vận hành minh bạch và bảo mật dữ liệu tuyệt đối.']
+            }
+          ]
+        }
+      },
+      {
+        type: 'table',
+        tableData: {
+          headers: ['Quy trình', 'Trước khi số hóa', 'Với hệ thống MEnglish'],
+          icons: ['ClipboardCheck', 'DollarSign', 'Bell', 'Database'],
+          rows: [
+            ['Quản lý tuyển sinh', 'Ghi chép sổ tay, dễ mất thông tin', 'Lead pipeline tự động, không bỏ sót'],
+            ['Tài chính học phí', 'Đối soát thủ công, dễ sai sót', 'Tự động báo nợ và gạch nợ QR'],
+            ['Tương tác phụ huynh', 'Nhắn tin Zalo thủ công', 'Portal cập nhật thông tin Real-time'],
+            ['Lưu trữ dữ liệu', 'Phân tán trên nhiều file Excel', 'Cơ sở dữ liệu tập trung, bảo mật']
+          ]
+        }
+      }
+    ]
+  },
+  {
+    id: '4',
