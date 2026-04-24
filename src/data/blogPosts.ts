@@ -55,6 +55,123 @@ export interface ContentSection {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: '3',
+    title: 'Your Idea, Our Process — From Concept to Launch with Tanoshi Vietnam',
+    slug: 'from-idea-to-launch-development-process',
+    excerpt: 'Take a behind-the-scenes look at how Tanoshi Vietnam transforms ideas into market-ready smart products through our proven 5-step development process.',
+    date: 'May 15, 2025',
+    author: 'Tanoshi Vietnam Technologies',
+    category: 'Process',
+    imageUrl: '/lovable-uploads/5262afdb-dd24-4d5e-be66-7c6717adbca9.png',
+    keywords: [
+      'product development',
+      'smart product design',
+      'development process',
+      'prototyping',
+      'manufacturing',
+      'product launch',
+      'innovation process',
+      'textile development',
+      'smart textiles'
+    ],
+    metaDescription: 'Learn about Tanoshi Vietnam proven 5-step process for developing smart products from initial concept to market launch. Discover how we turn ideas into reality.',
+    content: [
+      {
+        type: 'paragraph',
+        content: 'At Tanoshi Vietnam, we simplify the journey from a business idea to a fully working digital product. Whether you\'re starting from scratch or already have a concept ready to build, we\'re here to support you exactly where you need us.'
+      },
+      {
+        type: 'paragraph',
+        content: 'Let\'s walk through our process with an example: Imagine you come to us with the idea of an online platform where businesses can manage their orders, track deliveries in real time, and automatically send invoices to customers — all in one place.'
+      },
+      {
+        type: 'heading',
+        content: 'Step 1: Design & UI/UX'
+      },
+      {
+        type: 'paragraph',
+        content: 'It all starts with a clear conversation. When you bring us your idea, we meet to fully understand your vision, your users, and your business goals. We\'ll discuss key questions: What problem does this solve? Who will use it daily? What does success look like in 6 months?'
+      },
+      {
+        type: 'paragraph',
+        content: 'From there, we translate everything into wireframes and interactive prototypes — so you can see and feel the product before a single line of code is written. Every screen is reviewed and signed off together with you, ensuring the design fits your brand and your users before we move forward.'
+      },
+      {
+        type: 'paragraph',
+        content: 'If you already have a design or brand guidelines, we\'ll build on top of what you have and make it better.'
+      },
+      {
+        type: 'heading',
+        content: 'Step 2: Development & Code'
+      },
+      {
+        type: 'paragraph',
+        content: 'Once the design is approved, our engineering team moves quickly to bring it to life. For your order management platform, we design the system architecture, build the frontend interface your team will use every day, and develop the backend that handles all the logic — orders, statuses, notifications, user roles.'
+      },
+      {
+        type: 'paragraph',
+        content: 'Every feature goes through code review and testing before it reaches you. We write clean, well-structured code so that when your business grows and needs new features, adding them is straightforward — not a headache.'
+      },
+      {
+        type: 'heading',
+        content: 'Step 3: Server & Infrastructure'
+      },
+      {
+        type: 'paragraph',
+        content: 'A great product needs a reliable home. We set up and configure cloud infrastructure that keeps your platform fast, secure, and always online. For your platform, this means automated deployments so updates go live without downtime, regular backups so your data is never at risk, and real-time monitoring so we catch issues before your users do.'
+      },
+      {
+        type: 'paragraph',
+        content: 'We aim for 99.9% uptime — because your business doesn\'t stop on weekends, and neither do we.'
+      },
+      {
+        type: 'heading',
+        content: 'Step 4: Automation & Workflow'
+      },
+      {
+        type: 'paragraph',
+        content: 'This is where we save your team real hours every week. We look at the repetitive tasks inside your business and automate them. For your platform, that means automatic invoice generation when an order is completed, alert emails when a delivery is delayed, and a dashboard that updates in real time without anyone having to pull reports manually.'
+      },
+      {
+        type: 'paragraph',
+        content: 'We also connect your new platform to the tools you already use — CRM systems, accounting software, communication tools — so everything works together seamlessly.'
+      },
+      {
+        type: 'heading',
+        content: 'Step 5: SEO & Growth'
+      },
+      {
+        type: 'paragraph',
+        content: 'Launching is just the beginning. After your platform goes live, we optimize it so it loads fast, ranks well on search engines, and converts visitors into users. We set up analytics tracking so you always know where your traffic comes from, which features your users engage with most, and where people drop off.'
+      },
+      {
+        type: 'paragraph',
+        content: 'From there, we work with you continuously — improving, refining, and adding features as your business evolves. You\'re not left on your own after launch. We grow with you.'
+      },
+      {
+        type: 'heading',
+        content: 'Why Choose Tanoshi Vietnam?'
+      },
+      {
+        type: 'paragraph',
+        content: 'Developing smart products can be complex, but we make it simple. Clients choose us because:'
+      },
+      {
+        type: 'list',
+        items: [
+          'Clear Process: Simple steps, clear timelines, and reduced risks.',
+          'Speed & Flexibility: Rapid prototyping and agile iterations get your product to market faster.',
+          'Comprehensive Expertise: Hardware, software, and design experts under one roof.',
+          'Practical Results: Real-world testing ensures your final product meets user needs.'
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: 'Have an idea or ready to scale an existing product? We\'d love to hear from you and help bring your vision to life. Reach out and let\'s get started!'
+      }
+    ]
+  },
+  {
     id: '7',
     title: 'Boost Your Education Center\'s Growth with Us: From Manual Management to AI-Powered LMS',
     slug: 'boost-your-education-center-growth',
@@ -1158,123 +1275,6 @@ export const blogPosts: BlogPost[] = [
       {
         type: 'paragraph',
         content: 'Dù bạn là một Startup vừa mới gọi vốn thành công, hay một doanh nghiệp SME đang loay hoay tìm cách chuyển đổi số, Tanoshi Vietnam đều có giải pháp may đo phù hợp nhất. Đừng để rào cản công nghệ và nhân sự kìm hãm sự phát triển của bạn.'
-      }
-    ]
-  },
-  {
-    id: '3',
-    title: 'Your Idea, Our Process — From Concept to Launch with Tanoshi Vietnam',
-    slug: 'from-idea-to-launch-development-process',
-    excerpt: 'Take a behind-the-scenes look at how Tanoshi Vietnam transforms ideas into market-ready smart products through our proven 5-step development process.',
-    date: 'May 15, 2025',
-    author: 'Tanoshi Vietnam Technologies',
-    category: 'Process',
-    imageUrl: '/lovable-uploads/5262afdb-dd24-4d5e-be66-7c6717adbca9.png',
-    keywords: [
-      'product development',
-      'smart product design',
-      'development process',
-      'prototyping',
-      'manufacturing',
-      'product launch',
-      'innovation process',
-      'textile development',
-      'smart textiles'
-    ],
-    metaDescription: 'Learn about Tanoshi Vietnam proven 5-step process for developing smart products from initial concept to market launch. Discover how we turn ideas into reality.',
-    content: [
-      {
-        type: 'paragraph',
-        content: 'At Tanoshi Vietnam, we simplify the journey from a business idea to a fully working digital product. Whether you\'re starting from scratch or already have a concept ready to build, we\'re here to support you exactly where you need us.'
-      },
-      {
-        type: 'paragraph',
-        content: 'Let\'s walk through our process with an example: Imagine you come to us with the idea of an online platform where businesses can manage their orders, track deliveries in real time, and automatically send invoices to customers — all in one place.'
-      },
-      {
-        type: 'heading',
-        content: 'Step 1: Design & UI/UX'
-      },
-      {
-        type: 'paragraph',
-        content: 'It all starts with a clear conversation. When you bring us your idea, we meet to fully understand your vision, your users, and your business goals. We\'ll discuss key questions: What problem does this solve? Who will use it daily? What does success look like in 6 months?'
-      },
-      {
-        type: 'paragraph',
-        content: 'From there, we translate everything into wireframes and interactive prototypes — so you can see and feel the product before a single line of code is written. Every screen is reviewed and signed off together with you, ensuring the design fits your brand and your users before we move forward.'
-      },
-      {
-        type: 'paragraph',
-        content: 'If you already have a design or brand guidelines, we\'ll build on top of what you have and make it better.'
-      },
-      {
-        type: 'heading',
-        content: 'Step 2: Development & Code'
-      },
-      {
-        type: 'paragraph',
-        content: 'Once the design is approved, our engineering team moves quickly to bring it to life. For your order management platform, we design the system architecture, build the frontend interface your team will use every day, and develop the backend that handles all the logic — orders, statuses, notifications, user roles.'
-      },
-      {
-        type: 'paragraph',
-        content: 'Every feature goes through code review and testing before it reaches you. We write clean, well-structured code so that when your business grows and needs new features, adding them is straightforward — not a headache.'
-      },
-      {
-        type: 'heading',
-        content: 'Step 3: Server & Infrastructure'
-      },
-      {
-        type: 'paragraph',
-        content: 'A great product needs a reliable home. We set up and configure cloud infrastructure that keeps your platform fast, secure, and always online. For your platform, this means automated deployments so updates go live without downtime, regular backups so your data is never at risk, and real-time monitoring so we catch issues before your users do.'
-      },
-      {
-        type: 'paragraph',
-        content: 'We aim for 99.9% uptime — because your business doesn\'t stop on weekends, and neither do we.'
-      },
-      {
-        type: 'heading',
-        content: 'Step 4: Automation & Workflow'
-      },
-      {
-        type: 'paragraph',
-        content: 'This is where we save your team real hours every week. We look at the repetitive tasks inside your business and automate them. For your platform, that means automatic invoice generation when an order is completed, alert emails when a delivery is delayed, and a dashboard that updates in real time without anyone having to pull reports manually.'
-      },
-      {
-        type: 'paragraph',
-        content: 'We also connect your new platform to the tools you already use — CRM systems, accounting software, communication tools — so everything works together seamlessly.'
-      },
-      {
-        type: 'heading',
-        content: 'Step 5: SEO & Growth'
-      },
-      {
-        type: 'paragraph',
-        content: 'Launching is just the beginning. After your platform goes live, we optimize it so it loads fast, ranks well on search engines, and converts visitors into users. We set up analytics tracking so you always know where your traffic comes from, which features your users engage with most, and where people drop off.'
-      },
-      {
-        type: 'paragraph',
-        content: 'From there, we work with you continuously — improving, refining, and adding features as your business evolves. You\'re not left on your own after launch. We grow with you.'
-      },
-      {
-        type: 'heading',
-        content: 'Why Choose Tanoshi Vietnam?'
-      },
-      {
-        type: 'paragraph',
-        content: 'Developing smart products can be complex, but we make it simple. Clients choose us because:'
-      },
-      {
-        type: 'list',
-        items: [
-          'Clear Process: Simple steps, clear timelines, and reduced risks.',
-          'Speed & Flexibility: Rapid prototyping and agile iterations get your product to market faster.',
-          'Comprehensive Expertise: Hardware, software, and design experts under one roof.',
-          'Practical Results: Real-world testing ensures your final product meets user needs.'
-        ]
-      },
-      {
-        type: 'paragraph',
-        content: 'Have an idea or ready to scale an existing product? We\'d love to hear from you and help bring your vision to life. Reach out and let\'s get started!'
       }
     ]
   }

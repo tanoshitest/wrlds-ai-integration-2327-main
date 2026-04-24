@@ -11,6 +11,8 @@ interface BlogPostCardProps {
   date: string;
   slug: string;
   category: string;
+  className?: string;
+  featured?: boolean;
 }
 
 const BlogPostCard = ({
@@ -19,14 +21,16 @@ const BlogPostCard = ({
   imageUrl,
   date,
   slug,
-  category
+  category,
+  className,
+  featured = false
 }: BlogPostCardProps) => {
   return (
-    <Link to={`/blog/${slug}`}>
+    <Link to={`/blog/${slug}`} className={className}>
       <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300 h-full">
-        <div className="grid grid-rows-[200px,1fr]">
+        <div className={`grid ${featured ? 'grid-cols-1 md:grid-cols-2 h-full' : 'grid-rows-[200px,1fr] h-full'}`}>
           <div
-            className="bg-cover bg-center"
+            className={`bg-cover bg-center ${featured ? 'min-h-[300px] md:min-h-full' : ''}`}
             style={{ backgroundImage: `url('${imageUrl}')` }}
           >
             <div className="w-full h-full bg-black/20 flex items-center justify-center">
