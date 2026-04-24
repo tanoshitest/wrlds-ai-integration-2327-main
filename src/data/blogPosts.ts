@@ -58,7 +58,7 @@ export const blogPosts: BlogPost[] = [
     id: '7',
     title: 'Boost Your Education Center\'s Growth with Us: From Manual Management to AI-Powered LMS',
     slug: 'boost-your-education-center-growth',
-    excerpt: 'Khám phá hành trình số hóa và tối ưu vận hành cho 7 trung tâm giáo dục tiêu biểu. Từ quản lý Excel rời rạc đến hệ thống LMS/Web App chuyên nghiệp tích hợp AI Agent.',
+    excerpt: 'Khám phá hành trình số hóa và tối ưu vận hành cho 7 trung tâm giáo dục tiêu biểu. Từ quản lý thủ công rời rạc đến hệ thống LMS/Web App chuyên nghiệp tích hợp AI Agent.',
     date: 'April 7, 2026',
     author: 'Tanoshi Vietnam EdTech Team',
     category: 'EdTech Solutions',
@@ -388,7 +388,7 @@ export const blogPosts: BlogPost[] = [
         featureGridData: {
           title: '8. NZEDU — hệ thống quản lý giáo dục thông minh',
           subtitle: 'Hệ sinh thái đầy đủ nhất: CRM + tài chính + kho + phát âm + phụ huynh',
-          status: 'Prototype',
+          status: 'Development',
           groups: [
             {
               title: 'CRM',
@@ -529,6 +529,207 @@ export const blogPosts: BlogPost[] = [
                 'Triển khai hệ thống lên server (Go-live)',
                 'Đào tạo và hướng dẫn nhân sự sử dụng',
                 'Bảo hành, bảo trì và hỗ trợ vận hành'
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    id: '8',
+    title: 'Số Hóa Ngành Vận Chuyển Việt - Nhật: Hành Trình Chuyển Đổi Số Thành Công Của IKIGAI Ship Track',
+    slug: 'ikigai-ship-track-digital-transformation',
+    excerpt: 'Khám phá cách Tanoshi Vietnam cùng IKIGAI giải quyết bài toán vận hành logistics phức tạp. Từ quản lý thủ công rời rạc đến hệ thống Ship Track hiện đại tích hợp API các nhà vận chuyển lớn.',
+    date: 'April 24, 2026',
+    author: 'Tanoshi Vietnam Logistics Team',
+    category: 'Logistics Solutions',
+    imageUrl: '/lovable-uploads/ikigai_ship_track_showcase.png',
+    keywords: [
+      'Logistics Digital Transformation',
+      'Shipping Management System',
+      'Vietnam Japan Shipping',
+      'IKIGAI Ship Track',
+      'Tanoshi Vietnam',
+      'API Integration Logistics',
+      'Sagawa API',
+      'EMS Integration',
+      'DHL Logistics'
+    ],
+    metaDescription: 'Case study về việc xây dựng hệ thống quản lý vận chuyển chuyên sâu cho IKIGAI. Tự động hóa tính phí, tích hợp API nhà vận chuyển và tối ưu quy trình vận hành.',
+    content: [
+      {
+        type: 'paragraph',
+        content: 'Trong bối cảnh thương mại điện tử Việt - Nhật bùng nổ, việc quản lý hàng ngàn kiện hàng mỗi ngày bằng các phương thức thủ công đang trở thành rào cản lớn nhất cho sự tăng trưởng. IKIGAI - một đơn vị vận chuyển uy tín - đã cùng Tanoshi Vietnam bắt tay xây dựng hệ thống "Ikigai Ship Track" nhằm số hóa toàn diện quy trình vận hành, mang lại sự minh bạch và tốc độ vượt trội.'
+      },
+      {
+        type: 'heading',
+        content: 'Nỗi Đau "Cố Hữu" Của Ngành Vận Chuyển Quốc Tế'
+      },
+      {
+        type: 'split-image-list',
+        image: '/lovable-uploads/pain_icon.png',
+        items: [
+          'Thông tin khách hàng (Lead) phân mảnh từ nhiều kênh: Facebook, Zalo, TikTok, gây khó khăn cho việc chăm sóc và chốt đơn.',
+          'Sai sót trong tính phí vận chuyển do tính toán thủ công giữa cân nặng thực tế và cân nặng quy đổi (L*W*H/6000).',
+          'Mất dấu hàng hóa: Không có cái nhìn tổng quan về trạng thái kiện hàng khi hàng rời kho hoặc đang trên máy bay.',
+          'Quá tải nhập liệu: Nhân viên phải copy-paste dữ liệu lên các trang web của hãng vận chuyển (EMS, DHL, Sagawa) một cách thủ công.',
+          'Khách hàng liên tục hỏi về trạng thái đơn hàng do thiếu cổng tra cứu tự động.',
+          'Khó khăn đối soát công nợ: Các khoản phí ship, phụ phí và COD phân tán khiến việc tổng hợp lợi nhuận thực tế trở nên chậm chạp và dễ nhầm lẫn.'
+        ]
+      },
+      {
+        type: 'heading',
+        content: 'Hiệu Quả Sau Chuyển Đổi Số'
+      },
+      {
+        type: 'stats',
+        statsData: [
+          {
+            value: '100%',
+            label: 'Đơn hàng được tính phí tự động, chính xác tuyệt đối',
+            icon: 'Calculator'
+          },
+          {
+            value: '70%',
+            label: 'Giảm thời gian xử lý thủ công nhờ tích hợp API',
+            icon: 'Zap'
+          },
+          {
+            value: '24/7',
+            label: 'Khách hàng tự tra cứu trạng thái đơn hàng',
+            icon: 'Search'
+          }
+        ]
+      },
+      {
+        type: 'heading',
+        content: 'Giải Pháp Đột Phá: Hệ Thống Ikigai Ship Track'
+      },
+      {
+        type: 'paragraph',
+        content: 'Tanoshi Vietnam không chỉ xây dựng một phần mềm, chúng tôi kiến tạo một bộ máy vận hành thông minh dựa trên nhu cầu thực tế của IKIGAI.'
+      },
+      {
+        type: 'feature-grid',
+        featureGridData: {
+          title: 'Ikigai Ship Track — Giải pháp Logistics Toàn Diện',
+          subtitle: 'Quy trình khép kín từ Lead đến Delivery',
+          status: 'Go-live',
+          groups: [
+            {
+              title: 'Quản lý Lead (Round 1)',
+              items: ['Tập trung Lead từ FB/Zalo/TikTok', 'Theo dõi trạng thái tư vấn', 'Ghi chú nhu cầu khách hàng']
+            },
+            {
+              title: 'Vận hành Kho (Round 2)',
+              items: ['Quản lý kiện hàng theo chuyến bay', 'Cập nhật trạng thái nội bộ', 'Xử lý sự cố vận chuyển']
+            },
+            {
+              title: 'Engine Tính Phí Tự Động',
+              items: ['Quy đổi trọng lượng thể tích', 'Áp giá theo bảng giá bậc thang', 'Tự động cộng phụ phí/phí đóng thùng']
+            },
+            {
+              title: 'Kết nối API Carrier',
+              items: ['Đẩy đơn lên EMS, DHL, Sagawa', 'Lấy mã tracking tự động', 'Đồng bộ trạng thái từ hãng']
+            },
+            {
+              title: 'Portal Tra Cứu Khách Hàng',
+              items: ['Tra cứu theo mã vận đơn', 'Xem lịch sử hành trình chi tiết', 'Dữ liệu chuẩn xác 100% từ API']
+            },
+            {
+              title: 'Tính năng đặc biệt',
+              highlight: true,
+              items: ['Hệ thống Kanban 2 vòng chuyên sâu giúp tách biệt rõ ràng khâu Kinh doanh và khâu Vận hành, tối ưu hóa sự phối hợp giữa các phòng ban.']
+            }
+          ]
+        }
+      },
+      {
+        type: 'chart',
+        chartData: {
+          title: 'Cải Thiện Năng Suất Vận Hành (So với trước khi có hệ thống)',
+          data: [
+            { name: 'Tốc độ xử lý đơn', value: 90 },
+            { name: 'Độ chính xác tài chính', value: 99 },
+            { name: 'Khả năng tra cứu hàng', value: 100 },
+            { name: 'Tiết kiệm nhân sự', value: 60 },
+            { name: 'Mức độ hài lòng khách', value: 95 }
+          ]
+        }
+      },
+      {
+        type: 'heading',
+        content: 'Bảng So Sánh Hiệu Quả: Trước vs Sau'
+      },
+      {
+        type: 'table',
+        tableData: {
+          headers: ['Hạng mục', 'Vận hành thủ công (Zalo/Excel)', 'Hệ thống Ikigai Ship Track'],
+          icons: ['Users', 'Calculator', 'Share2', 'Globe', 'Clock'],
+          rows: [
+            ['Quản lý Lead', 'Rời rạc, dễ bỏ sót khách hàng', 'Tập trung trên Kanban Board chuyên nghiệp'],
+            ['Tính phí vận chuyển', 'Dễ sai sót, mất nhiều thời gian', 'Tự động 100% theo Engine chuẩn xác'],
+            ['Kết nối nhà vận chuyển', 'Nhập liệu thủ công từng đơn', 'Đồng bộ API tự động trong tích tắc'],
+            ['Tra cứu đơn hàng', 'Khách phải nhắn tin hỏi liên tục', 'Khách tự tra cứu 24/7 trên Website'],
+            ['Dữ liệu & Báo cáo', 'Khó tổng hợp, không theo thời gian thực', 'Báo cáo Dashboard cập nhật tức thì']
+          ]
+        }
+      },
+      {
+        type: 'quote',
+        content: '"Sự khác biệt giữa một đơn vị vận chuyển truyền thống và một đơn vị logistics hiện đại chính là sức mạnh của dữ liệu và sự tự động hóa."'
+      },
+      {
+        type: 'heading',
+        content: 'Tanoshi Vietnam - Đồng Hành Cùng Doanh Nghiệp Logistics'
+      },
+      {
+        type: 'paragraph',
+        content: 'Chúng tôi hiểu rằng Logistics là ngành của những con số và sự chính xác. Với kinh nghiệm triển khai đa dạng các hệ thống quản lý, Tanoshi Vietnam cam kết mang đến những giải pháp "may đo" sát nhất với quy trình thực tế của bạn, giúp doanh nghiệp bứt phá trong kỷ nguyên số.'
+      },
+      {
+        type: 'process-steps',
+        processData: {
+          steps: [
+            {
+              id: 1,
+              title: 'Khảo sát quy trình Logistics',
+              description: 'Tìm hiểu chi tiết cách thức hàng đi từ khách hàng đến kho và từ kho sang Nhật.',
+              activities: [
+                'Phân tích luồng hàng và luồng tiền',
+                'Xác định các điểm nghẽn vận hành',
+                'Thống nhất bảng giá và công thức quy đổi'
+              ]
+            },
+            {
+              id: 2,
+              title: 'Thiết kế Hệ thống Kanban',
+              description: 'Xây dựng giao diện Kanban 2 vòng phù hợp với đặc thù vận chuyển quốc tế.',
+              activities: [
+                'Thiết kế luồng trạng thái đơn hàng',
+                'Xây dựng giao diện nhập liệu nhanh',
+                'Tối ưu UX cho nhân viên kho'
+              ]
+            },
+            {
+              id: 3,
+              title: 'Tích hợp API & Engine',
+              description: 'Kết nối hệ thống với các bên thứ ba và xây dựng lõi tính toán.',
+              activities: [
+                'Tích hợp API EMS, Sagawa, DHL',
+                'Cài đặt Engine tính phí tự động',
+                'Xây dựng hệ thống tra cứu đơn hàng'
+              ]
+            },
+            {
+              id: 4,
+              title: 'Kiểm thử & Go-live',
+              description: 'Đảm bảo mọi kiện hàng đều được track đúng và phí tính chuẩn trước khi vận hành thực tế.',
+              activities: [
+                'Test đối soát phí với hãng',
+                'Hướng dẫn nhân viên sử dụng hệ thống',
+                'Triển khai chính thức'
               ]
             }
           ]
@@ -999,133 +1200,6 @@ export const blogPosts: BlogPost[] = [
       {
         type: 'paragraph',
         content: 'Have an idea or ready to scale an existing product? We\'d love to hear from you and help bring your vision to life. Reach out and let\'s get started!'
-      }
-    ]
-  },
-  {
-    id: '2',
-    title: 'AI-Powered Uniforms: The Future of Emergency Response and Worker Safety',
-    slug: 'ai-powered-uniforms-emergency-alerts',
-    excerpt: 'Explore how AI-integrated uniforms are revolutionizing emergency response by providing real-time health monitoring and automated alert systems for first responders and industrial workers.',
-    date: 'May 8, 2025',
-    author: 'Tanoshi Vietnam Technologies',
-    category: 'Innovation',
-    imageUrl: '/lovable-uploads/4187f423-ba69-4043-be76-c43098488348.png',
-    keywords: [
-      'AI uniforms',
-      'emergency response',
-      'worker safety',
-      'smart uniforms',
-      'health monitoring',
-      'first responders',
-      'safety technology',
-      'wearable AI'
-    ],
-    metaDescription: 'Discover how AI-powered uniforms are transforming emergency response and worker safety with real-time monitoring and automated alerts.',
-    content: [
-      {
-        type: 'paragraph',
-        content: 'The integration of artificial intelligence (AI) into everyday workwear is no longer a futuristic concept but a rapidly evolving reality. AI-powered uniforms are poised to revolutionize emergency response and worker safety by providing real-time health monitoring and automated alert systems for first responders and industrial workers.'
-      },
-      {
-        type: 'heading',
-        content: 'The Convergence of AI and Wearable Technology'
-      },
-      {
-        type: 'paragraph',
-        content: 'The convergence of AI and wearable technology has paved the way for the development of smart uniforms capable of collecting and analyzing vast amounts of data. These uniforms are equipped with an array of sensors that monitor vital signs, environmental conditions, and potential hazards.'
-      },
-      {
-        type: 'subheading',
-        content: 'Key Features of AI-Powered Uniforms'
-      },
-      {
-        type: 'list',
-        items: [
-          'Real-time Health Monitoring: AI-powered uniforms continuously monitor vital signs such as heart rate, body temperature, and blood pressure, providing early warnings of potential health issues.',
-          'Automated Alert Systems: In the event of a medical emergency or hazardous situation, AI-powered uniforms can automatically alert emergency responders, providing critical information about the worker\'s location and condition.',
-          'Environmental Monitoring: AI-powered uniforms can detect exposure to hazardous substances, such as toxic gases or radiation, and provide real-time alerts to workers and supervisors.',
-          'Performance Optimization: AI-powered uniforms can track worker movements and provide feedback on posture and ergonomics, helping to prevent injuries and improve performance.'
-        ]
-      },
-      {
-        type: 'heading',
-        content: 'Transforming Emergency Response'
-      },
-      {
-        type: 'paragraph',
-        content: 'AI-powered uniforms are particularly valuable in emergency response scenarios, where time is of the essence. By providing real-time health monitoring and automated alert systems, these uniforms can help first responders quickly identify and address medical emergencies, potentially saving lives.'
-      },
-      {
-        type: 'heading',
-        content: 'Enhancing Worker Safety'
-      },
-      {
-        type: 'paragraph',
-        content: 'AI-powered uniforms can also play a crucial role in enhancing worker safety in industrial settings. By monitoring environmental conditions and worker movements, these uniforms can help prevent accidents and injuries, creating a safer and more productive work environment.'
-      },
-      {
-        type: 'quote',
-        content: 'AI-powered uniforms are not just about protecting workers; they\'re about empowering them with the knowledge and tools they need to stay safe and healthy.'
-      }
-    ]
-  },
-  {
-    id: '1',
-    title: 'The Rise of Sensor-Integrated Textiles: A New Era in Smart Manufacturing',
-    slug: 'sensor-integrated-textiles-trend',
-    excerpt: 'Discover how sensor-integrated textiles are transforming industries from healthcare to sports, creating new possibilities for smart, responsive products.',
-    date: 'May 2, 2025',
-    author: 'Tanoshi Vietnam Technologies',
-    category: 'Technology',
-    imageUrl: '/lovable-uploads/48ecf6e2-5a98-4a9d-af6f-ae2265cd4098.png',
-    keywords: [
-      'smart textiles',
-      'sensor integration',
-      'smart manufacturing',
-      'wearable technology',
-      'textile innovation',
-      'smart fabrics',
-      'textile sensors'
-    ],
-    metaDescription: 'Learn about the revolutionary trend of sensor-integrated textiles and how they are creating new possibilities in smart manufacturing.',
-    content: [
-      {
-        type: 'paragraph',
-        content: 'Sensor-integrated textiles are rapidly emerging as a transformative technology, poised to revolutionize industries ranging from healthcare to sports. By seamlessly embedding sensors into fabrics, these innovative textiles are creating new possibilities for smart, responsive products that can monitor vital signs, track performance, and enhance safety.'
-      },
-      {
-        type: 'heading',
-        content: 'The Convergence of Textiles and Technology'
-      },
-      {
-        type: 'paragraph',
-        content: 'The convergence of textiles and technology has led to the development of sensor-integrated textiles, which combine the comfort and flexibility of fabrics with the intelligence and connectivity of sensors. These textiles are created by weaving or knitting sensors directly into the fabric structure, allowing them to conform to the body and provide continuous, real-time data.'
-      },
-      {
-        type: 'subheading',
-        content: 'Key Applications of Sensor-Integrated Textiles'
-      },
-      {
-        type: 'list',
-        items: [
-          'Healthcare: Sensor-integrated textiles can monitor vital signs such as heart rate, body temperature, and blood pressure, providing early warnings of potential health issues.',
-          'Sports: Sensor-integrated textiles can track athletic performance, measuring metrics such as speed, distance, and acceleration, helping athletes optimize their training and prevent injuries.',
-          'Safety: Sensor-integrated textiles can detect exposure to hazardous substances, such as toxic gases or radiation, providing real-time alerts to workers and supervisors.',
-          'Fashion: Sensor-integrated textiles can create interactive and responsive garments that change color, shape, or function based on the wearer\'s movements or environment.'
-        ]
-      },
-      {
-        type: 'heading',
-        content: 'Transforming Industries'
-      },
-      {
-        type: 'paragraph',
-        content: 'Sensor-integrated textiles are poised to transform a wide range of industries, creating new possibilities for smart, responsive products that enhance health, safety, and performance. As the technology continues to evolve, we can expect to see even more innovative applications emerge, further blurring the lines between textiles and technology.'
-      },
-      {
-        type: 'quote',
-        content: 'Sensor-integrated textiles are not just about creating smart fabrics; they\'re about creating a new era of smart manufacturing, where textiles are seamlessly integrated with technology to enhance our lives.'
       }
     ]
   }
