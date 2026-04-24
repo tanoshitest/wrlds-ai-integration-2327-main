@@ -13,6 +13,11 @@ const LogoStrip = () => {
   return (
     <div className="w-full bg-white border-y border-gray-100 py-8 md:py-12">
       <div className="container mx-auto px-4">
+        <div className="text-center mb-8 md:mb-12">
+          <p className="text-sm md:text-base text-gray-500 font-medium tracking-wide uppercase">
+            Đồng hành cùng Tanoshi Vietnam trong hành trình chuyển đổi số và bứt phá giá trị
+          </p>
+        </div>
         <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 lg:gap-24">
           {brands.map((brand, index) => (
             <motion.div
