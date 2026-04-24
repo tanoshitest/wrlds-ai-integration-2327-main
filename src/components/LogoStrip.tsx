@@ -4,8 +4,8 @@ import { motion } from 'framer-motion';
 const brands = [
   { name: "IKIGAI LMS", id: "ikigai", image: "/lovable-uploads/ikigai-logo-bw.png" },
   { name: "TRIPLE J HOMES", id: "triplej", image: "/lovable-uploads/triple-j-homes-text-only.png" },
-  { name: "AMASS RESEARCH", id: "amass" },
   { name: "CHARINGO", id: "charingo" },
+  { name: "AMASS RESEARCH", id: "amass" },
   { name: "MINHPHUC MOBILE", id: "minhphuc" }
 ];
 
