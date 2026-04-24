@@ -1042,118 +1042,122 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: '3',
-    title: 'Your Idea, Our Process — From Concept to Launch with Tanoshi Vietnam',
-    slug: 'from-idea-to-launch-development-process',
-    excerpt: 'Take a behind-the-scenes look at how Tanoshi Vietnam transforms ideas into market-ready smart products through our proven 5-step development process.',
-    date: 'May 15, 2025',
-    author: 'Tanoshi Vietnam Technologies',
-    category: 'Process',
-    imageUrl: '/lovable-uploads/5262afdb-dd24-4d5e-be66-7c6717adbca9.png',
+    title: 'Tanoshi Vietnam: Bệ Phóng Công Nghệ & Marketing Toàn Diện Cho SME & Startup',
+    slug: 'tanoshi-sme-startup-all-in-one-solution',
+    excerpt: 'Giải pháp "All-in-One" từ Thiết kế Web, Graphic 2D, Marketing đến Hệ thống nội bộ, giúp SME và Startup giải quyết bài toán thiếu vốn và khan hiếm nguồn lực.',
+    date: 'April 24, 2026',
+    author: 'Tanoshi Vietnam Team',
+    category: 'Business Solutions',
+    imageUrl: '/lovable-uploads/edtech_lms_growth_blog.png',
     keywords: [
-      'product development',
-      'smart product design',
-      'development process',
-      'prototyping',
-      'manufacturing',
-      'product launch',
-      'innovation process',
-      'textile development',
-      'smart textiles'
+      'Startup Support Vietnam',
+      'SME Solutions',
+      'Web Design Startup',
+      'Graphic Design 2D',
+      'Digital Marketing SEO',
+      'Internal Management Systems',
+      'Tanoshi Vietnam'
     ],
-    metaDescription: 'Learn about Tanoshi Vietnam proven 5-step process for developing smart products from initial concept to market launch. Discover how we turn ideas into reality.',
+    metaDescription: 'Tanoshi Vietnam đồng hành cùng doanh nghiệp SME & Startup giải quyết các bài toán về công nghệ và truyền thông. Cung cấp dịch vụ Thiết kế, Marketing và CRM trọn gói.',
     content: [
       {
         type: 'paragraph',
-        content: 'At Tanoshi Vietnam, we simplify the journey from a business idea to a fully working digital product. Whether you\'re starting from scratch or already have a concept ready to build, we\'re here to support you exactly where you need us.'
-      },
-      {
-        type: 'paragraph',
-        content: 'Let\'s walk through our process with an example: Imagine you come to us with the idea of an online platform where businesses can manage their orders, track deliveries in real time, and automatically send invoices to customers — all in one place.'
+        content: 'Khởi nghiệp hay điều hành một doanh nghiệp vừa và nhỏ (SME) luôn là một bài toán khó về tối ưu nguồn lực. Việc phải gánh vác cùng lúc nhiều mảng từ hình ảnh thương hiệu, nền tảng công nghệ, đến chiến lược marketing khiến các nhà sáng lập thường xuyên rơi vào tình trạng quá tải. Tanoshi Vietnam ra đời với sứ mệnh trở thành "phòng ban công nghệ & marketing thuê ngoài" toàn diện, sát cánh cùng các Startup trên chặng đường bứt phá.'
       },
       {
         type: 'heading',
-        content: 'Step 1: Design & UI/UX'
+        content: 'Nỗi Đau "Cốt Lõi" Của Doanh Nghiệp SME & Startup'
       },
       {
-        type: 'paragraph',
-        content: 'It all starts with a clear conversation. When you bring us your idea, we meet to fully understand your vision, your users, and your business goals. We\'ll discuss key questions: What problem does this solve? Who will use it daily? What does success look like in 6 months?'
-      },
-      {
-        type: 'paragraph',
-        content: 'From there, we translate everything into wireframes and interactive prototypes — so you can see and feel the product before a single line of code is written. Every screen is reviewed and signed off together with you, ensuring the design fits your brand and your users before we move forward.'
-      },
-      {
-        type: 'paragraph',
-        content: 'If you already have a design or brand guidelines, we\'ll build on top of what you have and make it better.'
-      },
-      {
-        type: 'heading',
-        content: 'Step 2: Development & Code'
-      },
-      {
-        type: 'paragraph',
-        content: 'Once the design is approved, our engineering team moves quickly to bring it to life. For your order management platform, we design the system architecture, build the frontend interface your team will use every day, and develop the backend that handles all the logic — orders, statuses, notifications, user roles.'
-      },
-      {
-        type: 'paragraph',
-        content: 'Every feature goes through code review and testing before it reaches you. We write clean, well-structured code so that when your business grows and needs new features, adding them is straightforward — not a headache.'
-      },
-      {
-        type: 'heading',
-        content: 'Step 3: Server & Infrastructure'
-      },
-      {
-        type: 'paragraph',
-        content: 'A great product needs a reliable home. We set up and configure cloud infrastructure that keeps your platform fast, secure, and always online. For your platform, this means automated deployments so updates go live without downtime, regular backups so your data is never at risk, and real-time monitoring so we catch issues before your users do.'
-      },
-      {
-        type: 'paragraph',
-        content: 'We aim for 99.9% uptime — because your business doesn\'t stop on weekends, and neither do we.'
-      },
-      {
-        type: 'heading',
-        content: 'Step 4: Automation & Workflow'
-      },
-      {
-        type: 'paragraph',
-        content: 'This is where we save your team real hours every week. We look at the repetitive tasks inside your business and automate them. For your platform, that means automatic invoice generation when an order is completed, alert emails when a delivery is delayed, and a dashboard that updates in real time without anyone having to pull reports manually.'
-      },
-      {
-        type: 'paragraph',
-        content: 'We also connect your new platform to the tools you already use — CRM systems, accounting software, communication tools — so everything works together seamlessly.'
-      },
-      {
-        type: 'heading',
-        content: 'Step 5: SEO & Growth'
-      },
-      {
-        type: 'paragraph',
-        content: 'Launching is just the beginning. After your platform goes live, we optimize it so it loads fast, ranks well on search engines, and converts visitors into users. We set up analytics tracking so you always know where your traffic comes from, which features your users engage with most, and where people drop off.'
-      },
-      {
-        type: 'paragraph',
-        content: 'From there, we work with you continuously — improving, refining, and adding features as your business evolves. You\'re not left on your own after launch. We grow with you.'
-      },
-      {
-        type: 'heading',
-        content: 'Why Choose Tanoshi Vietnam?'
-      },
-      {
-        type: 'paragraph',
-        content: 'Developing smart products can be complex, but we make it simple. Clients choose us because:'
-      },
-      {
-        type: 'list',
+        type: 'split-image-list',
+        image: '/lovable-uploads/pain_icon.png',
         items: [
-          'Clear Process: Simple steps, clear timelines, and reduced risks.',
-          'Speed & Flexibility: Rapid prototyping and agile iterations get your product to market faster.',
-          'Comprehensive Expertise: Hardware, software, and design experts under one roof.',
-          'Practical Results: Real-world testing ensures your final product meets user needs.'
+          'ÍT VỐN: Ngân sách eo hẹp, không đủ chi phí để duy trì một đội ngũ In-house toàn diện bao gồm Dev, Designer, Marketer.',
+          'NGUỒN LỰC HẠN CHẾ: Nhân sự phải kiêm nhiệm quá nhiều việc dẫn đến chất lượng giảm sút, dễ bị "burnout" (kiệt sức).',
+          'DÀN TRẢI: Thuê nhiều Freelancer hoặc Agency nhỏ lẻ làm đứt gãy mạch thông tin, thương hiệu thiếu tính nhất quán.',
+          'CHẬM SỐ HÓA: Mù công nghệ, vẫn phải quản lý dữ liệu, khách hàng và nhân sự qua Excel hoặc Zalo vô cùng rủi ro.',
+          'MARKETING LÃNG PHÍ: Chạy Ads không có chiến lược, SEO mãi không lên Top, "đốt tiền" mà không mang lại tỷ lệ chuyển đổi (ROI) thực tế.',
+          'HÌNH ẢNH YẾU KÉM: Website lỗi thời, ấn phẩm thiết kế (2D) thiếu chuyên nghiệp, làm giảm sức cạnh tranh trước đối thủ.'
         ]
       },
       {
+        type: 'heading',
+        content: 'Hệ Sinh Thái Dịch Vụ All-in-One Tại Tanoshi'
+      },
+      {
         type: 'paragraph',
-        content: 'Have an idea or ready to scale an existing product? We\'d love to hear from you and help bring your vision to life. Reach out and let\'s get started!'
+        content: 'Không cần làm việc với 4 đối tác khác nhau. Tanoshi Vietnam cung cấp hệ sinh thái khép kín để doanh nghiệp của bạn có thể "plug and play" ngay lập tức.'
+      },
+      {
+        type: 'feature-grid',
+        featureGridData: {
+          title: 'Tanoshi Ecosystem',
+          subtitle: 'Giải pháp 4 Trụ Cột cho sự phát triển bền vững',
+          status: 'Available',
+          groups: [
+            {
+              title: 'Thiết Kế Website',
+              items: ['Thiết kế UI/UX chuẩn mực', 'Tốc độ load trang siêu tốc', 'Tương thích mọi thiết bị (Responsive)']
+            },
+            {
+              title: 'Graphic Design 2D',
+              items: ['Bộ nhận diện thương hiệu', 'Ấn phẩm truyền thông MKT', 'Thiết kế Bao bì, Profile công ty']
+            },
+            {
+              title: 'Marketing & SEO',
+              items: ['Chiến lược chạy Ads chuyển đổi', 'SEO tổng thể Website', 'Content Marketing & Quản trị Fanpage']
+            },
+            {
+              title: 'Hệ Thống Quản Lý',
+              items: ['Phát triển CRM tùy chỉnh', 'Hệ thống LMS cho giáo dục', 'Phần mềm ERP, HRM nội bộ']
+            }
+          ]
+        }
+      },
+      {
+        type: 'heading',
+        content: 'Sự Chuyển Đổi Khi Đồng Hành Cùng Tanoshi'
+      },
+      {
+        type: 'stats',
+        statsData: [
+          {
+            value: '50%',
+            label: 'Tiết kiệm chi phí vận hành so với nuôi team In-house',
+            icon: 'DollarSign'
+          },
+          {
+            value: '1',
+            label: 'Đầu mối liên lạc duy nhất cho toàn bộ dự án',
+            icon: 'Users'
+          },
+          {
+            value: '3x',
+            label: 'Tăng tốc độ triển khai và Go-to-market',
+            icon: 'Zap'
+          }
+        ]
+      },
+      {
+        type: 'table',
+        tableData: {
+          headers: ['Hạng Mục', 'Doanh Nghiệp Tự Làm / Thuê Lẻ', 'Giải Pháp Từ Tanoshi Vietnam'],
+          icons: ['ClipboardCheck', 'Share2', 'Globe', 'Zap'],
+          rows: [
+            ['Quản lý chi phí', 'Tốn kém, phí phát sinh khó kiểm soát', 'Trọn gói, tối ưu ngân sách theo giai đoạn'],
+            ['Tính đồng bộ', 'Giao diện web một kiểu, Fanpage một kiểu', 'Nhất quán thương hiệu từ A-Z'],
+            ['Chất lượng nhân sự', 'Khó tuyển, dễ nghỉ việc, rủi ro cao', 'Đội ngũ chuyên gia (Expert) sẵn sàng phục vụ'],
+            ['Bảo trì & Hỗ trợ', 'Freelancer làm xong là mất tích', 'Đồng hành dài hạn, bảo trì hệ thống trọn đời']
+          ]
+        }
+      },
+      {
+        type: 'heading',
+        content: 'Bắt Đầu Chặng Đường Bứt Phá Ngay Hôm Nay'
+      },
+      {
+        type: 'paragraph',
+        content: 'Dù bạn là một Startup vừa mới gọi vốn thành công, hay một doanh nghiệp SME đang loay hoay tìm cách chuyển đổi số, Tanoshi Vietnam đều có giải pháp may đo phù hợp nhất. Đừng để rào cản công nghệ và nhân sự kìm hãm sự phát triển của bạn.'
       }
     ]
   }
