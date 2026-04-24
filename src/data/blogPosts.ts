@@ -668,7 +668,17 @@ export const blogPosts: BlogPost[] = [
           headers: ['Hạng mục', 'Vận hành thủ công (Zalo/Excel)', 'Hệ thống Ikigai Ship Track'],
           icons: ['Users', 'Calculator', 'Share2', 'Globe', 'Clock'],
           rows: [
-            ['Quản lý Lead', 'Rời  {
+            ['Quản lý Lead', 'Rời rạc, dễ bỏ sót khách hàng', 'Tập trung trên Kanban Board chuyên nghiệp'],
+            ['Tính phí vận chuyển', 'Dễ sai sót, mất nhiều thời gian', 'Tự động 100% theo Engine chuẩn xác'],
+            ['Kết nối nhà vận chuyển', 'Nhập liệu thủ công từng đơn', 'Đồng bộ API tự động trong tích tắc'],
+            ['Tra cứu đơn hàng', 'Khách phải nhắn tin hỏi liên tục', 'Khách tự tra cứu 24/7 trên Website'],
+            ['Dữ liệu & Báo cáo', 'Khó tổng hợp, không theo thời gian thực', 'Báo cáo Dashboard cập nhật tức thì']
+          ]
+        }
+      }
+    ]
+  },
+  {
     id: '6',
     title: 'JLTC Manager: Số Hóa Quy Trình Quản Lý Trung Tâm Tiếng Nhật IKIGAI',
     slug: 'ikigai-jltc-manager-digital-transformation',
@@ -785,62 +795,6 @@ export const blogPosts: BlogPost[] = [
             ['Hồ sơ du học', 'Thủ công, áp lực mùa cao điểm', 'Chuẩn hóa quy trình, giảm 60% áp lực']
           ]
         }
-      }
-    ]
-  },illion in 2027, and $4.2 billion by 2028. This expansion reflects increasing organizational commitment to worker safety and the proven value of wearable safety solutions.'
-      },
-      {
-        type: 'heading',
-        content: 'How Tanoshi Vietnam Supports Your Safety Mission'
-      },
-      {
-        type: 'paragraph',
-        content: 'We understand that every organization\'s safety challenges are unique. That\'s why we\'ve built a flexible platform that can adapt to your specific needs while maintaining our core focus on worker protection.'
-      },
-      {
-        type: 'subheading',
-        content: 'Our Collaborative Approach'
-      },
-      {
-        type: 'icon-list',
-        items: [
-          'Flexible integration that works with your existing safety programs and doesn\'t disrupt worker routines',
-          'White-label solutions that let you maintain your brand identity while providing cutting-edge safety technology',
-          'Proven supply chain partnerships that ensure reliable, high-quality components for long-term deployment',
-          'Data insights that help you understand and improve your safety culture, not just track compliance metrics'
-        ]
-      },
-      {
-        type: 'heading',
-        content: 'Start the Conversation'
-      },
-      {
-        type: 'paragraph',
-        content: 'We\'d love to learn about your safety goals and specific challenges. Whether you\'re looking to reduce particular types of injuries, improve safety culture, or explore how technology can support your existing programs, we\'re here to listen and collaborate.'
-      },
-      {
-        type: 'paragraph',
-        content: 'Bring your organization\'s injury and loss data, and we\'ll work together to calculate potential benefits using your actual numbers. We can help you explore how wearable technology might fit into your comprehensive safety strategy. No hard sell, no one-size-fits-all solutions: just an honest conversation about protecting the people who make your organization successful.'
-      },
-      {
-        type: 'quote',
-        content: 'Great safety partnerships start with shared values: putting workers first, building trust through transparency, and believing that everyone deserves to work in an environment where they can thrive safely.'
-      },
-      {
-        type: 'heading',
-        content: 'Sources and References'
-      },
-      {
-        type: 'bibliography',
-        items: [
-          'National Safety Council, Work Injury Costs, Injury Facts, 2024 edition. Available at: injuryfacts.nsc.org',
-          'US Bureau of Labor Statistics, Employer-Reported Workplace Injuries and Illnesses, 2023, Table 1. Available at: bls.gov',
-          'Occupational Safety and Health Administration, Safety Pays Individual Injury Estimator. Available at: osha.gov',
-          'Digi International, "Kinetic Creates an Innovative Wearable That Reduces Workplace Injuries," customer story, 2024. Available at: digi.com',
-          '"Want Wearable Tech With That Workers\' Comp Policy?" Insurance Journal, 2021. Available at: insurancejournal.com',
-          '"Nationwide, Kinetic Team on Wearable Workplace Safety Technology," Carrier Management, 2021. Available at: carriermanagement.com',
-          'Markets and Markets, "Wearable Sensors Market Size, Share, Industry Report," 2024 update. Available at: marketsandmarkets.com'
-        ]
       }
     ]
   },
