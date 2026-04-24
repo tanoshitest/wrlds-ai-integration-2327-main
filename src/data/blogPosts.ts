@@ -668,184 +668,126 @@ export const blogPosts: BlogPost[] = [
           headers: ['Hạng mục', 'Vận hành thủ công (Zalo/Excel)', 'Hệ thống Ikigai Ship Track'],
           icons: ['Users', 'Calculator', 'Share2', 'Globe', 'Clock'],
           rows: [
-            ['Quản lý Lead', 'Rời rạc, dễ bỏ sót khách hàng', 'Tập trung trên Kanban Board chuyên nghiệp'],
-            ['Tính phí vận chuyển', 'Dễ sai sót, mất nhiều thời gian', 'Tự động 100% theo Engine chuẩn xác'],
-            ['Kết nối nhà vận chuyển', 'Nhập liệu thủ công từng đơn', 'Đồng bộ API tự động trong tích tắc'],
-            ['Tra cứu đơn hàng', 'Khách phải nhắn tin hỏi liên tục', 'Khách tự tra cứu 24/7 trên Website'],
-            ['Dữ liệu & Báo cáo', 'Khó tổng hợp, không theo thời gian thực', 'Báo cáo Dashboard cập nhật tức thì']
-          ]
-        }
-      },
-      {
-        type: 'quote',
-        content: '"Sự khác biệt giữa một đơn vị vận chuyển truyền thống và một đơn vị logistics hiện đại chính là sức mạnh của dữ liệu và sự tự động hóa."'
-      },
-      {
-        type: 'heading',
-        content: 'Tanoshi Vietnam - Đồng Hành Cùng Doanh Nghiệp Logistics'
-      },
-      {
-        type: 'paragraph',
-        content: 'Chúng tôi hiểu rằng Logistics là ngành của những con số và sự chính xác. Với kinh nghiệm triển khai đa dạng các hệ thống quản lý, Tanoshi Vietnam cam kết mang đến những giải pháp "may đo" sát nhất với quy trình thực tế của bạn, giúp doanh nghiệp bứt phá trong kỷ nguyên số.'
-      },
-      {
-        type: 'process-steps',
-        processData: {
-          steps: [
-            {
-              id: 1,
-              title: 'Khảo sát quy trình Logistics',
-              description: 'Tìm hiểu chi tiết cách thức hàng đi từ khách hàng đến kho và từ kho sang Nhật.',
-              activities: [
-                'Phân tích luồng hàng và luồng tiền',
-                'Xác định các điểm nghẽn vận hành',
-                'Thống nhất bảng giá và công thức quy đổi'
-              ]
-            },
-            {
-              id: 2,
-              title: 'Thiết kế Hệ thống Kanban',
-              description: 'Xây dựng giao diện Kanban 2 vòng phù hợp với đặc thù vận chuyển quốc tế.',
-              activities: [
-                'Thiết kế luồng trạng thái đơn hàng',
-                'Xây dựng giao diện nhập liệu nhanh',
-                'Tối ưu UX cho nhân viên kho'
-              ]
-            },
-            {
-              id: 3,
-              title: 'Tích hợp API & Engine',
-              description: 'Kết nối hệ thống với các bên thứ ba và xây dựng lõi tính toán.',
-              activities: [
-                'Tích hợp API EMS, Sagawa, DHL',
-                'Cài đặt Engine tính phí tự động',
-                'Xây dựng hệ thống tra cứu đơn hàng'
-              ]
-            },
-            {
-              id: 4,
-              title: 'Kiểm thử & Go-live',
-              description: 'Đảm bảo mọi kiện hàng đều được track đúng và phí tính chuẩn trước khi vận hành thực tế.',
-              activities: [
-                'Test đối soát phí với hãng',
-                'Hướng dẫn nhân viên sử dụng hệ thống',
-                'Triển khai chính thức'
-              ]
-            }
-          ]
-        }
-      }
-    ]
-  },
-  {
+            ['Quản lý Lead', 'Rời  {
     id: '6',
-    title: 'Wearable Safety Tech: Protecting Workers While Delivering Real ROI',
-    slug: 'wearable-safety-tech-protecting-workers-roi',
-    excerpt: 'Discover how wearable safety technology puts worker wellbeing first while delivering measurable business benefits through injury prevention and enhanced workplace safety.',
-    date: 'June 12, 2025',
-    author: 'Tanoshi Vietnam Technologies',
-    category: 'Business',
-    imageUrl: '/lovable-uploads/078a129e-0f98-4d91-af61-873687db1a04.png',
+    title: 'JLTC Manager: Số Hóa Quy Trình Quản Lý Trung Tâm Tiếng Nhật IKIGAI',
+    slug: 'ikigai-jltc-manager-digital-transformation',
+    excerpt: 'Khám phá cách IKIGAI tối ưu vận hành từ khâu tuyển sinh Lead đến quản lý thi JLPT mô phỏng và hồ sơ du học thông qua hệ thống quản trị chuyên sâu JLTC Manager.',
+    date: 'April 22, 2026',
+    author: 'Tanoshi Vietnam EdTech Team',
+    category: 'EdTech Solutions',
+    imageUrl: '/lovable-uploads/edtech_lms_growth_blog.png',
     keywords: [
-      'wearable safety technology',
-      'workplace injury prevention',
-      'worker safety',
-      'safety ROI',
-      'ergonomic sensors',
-      'workplace safety investment',
-      'industrial wearables',
-      'occupational safety',
-      'safety technology partnerships',
-      'worker protection',
-      'safety innovation',
-      'workplace wellbeing'
+      'IKIGAI Japanese Center',
+      'JLTC Manager',
+      'Japanese Education Management',
+      'JLPT Exam System',
+      'CRM Japanese School',
+      'Tanoshi Vietnam'
     ],
-    metaDescription: 'Learn how wearable safety technology prioritizes worker protection while delivering proven business benefits. Real data shows significant injury reduction and improved workplace safety.',
+    metaDescription: 'Case study về chuyển đổi số toàn diện cho trung tâm tiếng Nhật IKIGAI. Tối ưu quản lý Lead, thi JLPT và hồ sơ du học Nhật Bản.',
     content: [
       {
         type: 'paragraph',
-        content: 'Every worker deserves to go home safe at the end of their shift. That fundamental principle drives the evolution of workplace safety technology, where protecting people has always been the primary goal. What\'s remarkable about today\'s wearable safety technology is how it achieves this mission while also delivering tangible business benefits.'
+        content: 'IKIGAI là một trong những trung tâm tiếng Nhật hàng đầu trong việc đào tạo du học sinh và kỹ sư đi Nhật. Để duy trì vị thế và nâng cao chất lượng đào tạo, IKIGAI đã phối hợp cùng Tanoshi Vietnam phát triển hệ thống JLTC Manager — một giải pháp quản trị chuyên sâu giải quyết triệt để các bài toán vận hành đặc thù của ngành giáo dục tiếng Nhật.'
+      },
+      {
+        type: 'heading',
+        content: 'Nỗi Đau Trong Vận Hành Trung Tâm Tiếng Nhật'
+      },
+      {
+        type: 'split-image-list',
+        image: '/lovable-uploads/pain_icon.png',
+        items: [
+          'Quản lý Lead tuyển sinh đa kênh (Du học, Kỹ sư, Tokutei) bị phân mảnh và khó theo dõi tiến độ tư vấn.',
+          'Việc tổ chức thi thử JLPT định kỳ (ra đề, chấm điểm, xếp hạng) diễn ra hoàn toàn thủ công và chậm chạp.',
+          'Dữ liệu điểm danh và chuyên cần học viên giữa các cơ sở không được đồng bộ hóa theo thời gian thực.',
+          'Sắp xếp lịch dạy và quản lý phòng học thường xuyên xảy ra tình trạng chồng chéo hoặc trống lớp lãng phí.',
+          'Xử lý khối lượng lớn hồ sơ phỏng vấn và báo cáo thống kê cho các nghiệp đoàn Nhật Bản phức tạp, dễ sai sót.',
+          'Việc giao việc và theo dõi tiến độ (Task) giữa bộ phận Admin và Giáo viên thiếu công cụ tập trung.'
+        ]
+      },
+      {
+        type: 'heading',
+        content: 'Giải Pháp Đột Phá: Hệ Thống JLTC Manager'
       },
       {
         type: 'stats',
         statsData: [
           {
-            value: '2.2',
-            label: 'Workplace injuries per 100 workers annually',
+            value: '500+',
+            label: 'Học viên được quản lý tập trung',
             icon: 'Users'
           },
           {
-            value: '$43K',
-            label: 'Average cost per medically consulted injury',
-            icon: 'DollarSign'
+            value: '1000+',
+            label: 'Đề thi JLPT được khởi tạo tự động',
+            icon: 'ClipboardCheck'
           },
           {
-            value: '58%',
-            label: 'Injury reduction reported by early adopters',
-            icon: 'TrendingUp'
+            value: '60%',
+            label: 'Tăng tốc quy trình xử lý hồ sơ du học',
+            icon: 'Zap'
           }
         ]
       },
       {
         type: 'heading',
-        content: 'The Human Cost Behind the Numbers'
+        content: 'Các Phân Hệ Cốt Lõi'
       },
       {
-        type: 'paragraph',
-        content: 'Behind every workplace injury statistic is a person: someone\'s parent, partner, or child. The data tells a sobering story about workplace safety in America. When we can prevent injuries before they happen, we\'re not just protecting company assets. We\'re preserving families and communities.'
-      },
-      {
-        type: 'heading',
-        content: 'Real Results from Wearable Safety Technology'
-      },
-      {
-        type: 'paragraph',
-        content: 'The effectiveness of wearable safety technology becomes clear when we examine documented case studies and vendor-reported results. These implementations show real workers in demanding environments using technology that helps them stay safe while doing their jobs effectively.'
-      },
-      {
-        type: 'subheading',
-        content: 'Documented Industry Results'
-      },
-      {
-        type: 'icon-list',
-        items: [
-          'Companies report significant reductions in workplace injuries with consistent wearable device usage',
-          'Workers feel more confident and supported knowing technology is monitoring their safety',
-          'Safety managers gain real-time insights into workplace hazards and risk patterns',
-          'Insurance providers recognize the value with bundled policies for high-adoption organizations'
-        ]
-      },
-      {
-        type: 'heading',
-        content: 'When Safety and Business Align'
-      },
-      {
-        type: 'paragraph',
-        content: 'Effective safety technology creates a virtuous cycle where prioritizing people leads to positive business outcomes. When injuries decrease, so do workers\' compensation claims, replacement worker costs, and operational disruptions.'
-      },
-      {
-        type: 'table',
-        tableData: {
-          headers: ['Safety Outcome', 'Human Impact', 'Business Benefit'],
-          rows: [
-            ['Fewer back injuries', 'Workers maintain mobility and quality of life', 'Reduced comp claims and medical costs'],
-            ['Better ergonomic awareness', 'Less fatigue and chronic pain', 'Higher productivity and retention'],
-            ['Early hazard detection', 'Prevention of serious accidents', 'Avoided downtime and investigations'],
-            ['Real-time feedback', 'Workers feel supported and valued', 'Improved safety culture and morale']
+        type: 'feature-grid',
+        featureGridData: {
+          title: 'JLTC Manager — Trung Tâm Điều Hành Số',
+          subtitle: 'Giải pháp quản trị 360 độ cho IKIGAI',
+          status: 'Go-live',
+          groups: [
+            {
+              title: 'CRM Lead Management',
+              items: ['Phân loại: Du học, Kỹ sư, Tokutei', 'Theo dõi Pipeline tư vấn', 'Nhắc lịch phỏng vấn']
+            },
+            {
+              title: 'Hệ thống thi JLPT',
+              items: ['Ngân hàng câu hỏi thông minh', 'Chấm điểm & xếp hạng tự động', 'Phân tích điểm mạnh/yếu']
+            },
+            {
+              title: 'Lịch học & Điểm danh',
+              items: ['Gantt Chart lịch dạy', 'Điểm danh QR code', 'Thông báo nghỉ học tự động']
+            },
+            {
+              title: 'Báo cáo & Hồ sơ',
+              items: ['Xuất hồ sơ phỏng vấn chuẩn', 'Thống kê tỷ lệ đỗ visa', 'Báo cáo doanh thu chi tiết']
+            },
+            {
+              title: 'Task Management',
+              items: ['Giao việc theo bộ phận', 'Theo dõi deadline giáo viên', 'Hệ thống Ticket nội bộ']
+            },
+            {
+              title: 'Cổng thông tin',
+              items: ['Portal riêng cho GV/HV/PH', 'Tra cứu kết quả học tập', 'Kho học liệu nội bộ']
+            }
           ]
         }
       },
       {
         type: 'heading',
-        content: 'Growing Market for Worker-Centered Safety'
+        content: 'Hiệu Quả Chuyển Đổi Số'
       },
       {
-        type: 'paragraph',
-        content: 'The market for wearable safety technology is expanding rapidly, reflecting a cultural shift toward prioritizing worker safety and wellbeing. Technology serves as an enabler rather than a replacement for human judgment and care.'
-      },
-      {
-        type: 'paragraph',
-        content: 'Industry analysts project substantial growth in the wearable safety market over the coming years. Starting from a market value of $1.6 billion in 2023, the sector is expected to grow steadily to $2.1 billion in 2024, reaching $2.7 billion by 2025. This growth trajectory continues with projections of $3.3 billion in 2026, $3.8 billion in 2027, and $4.2 billion by 2028. This expansion reflects increasing organizational commitment to worker safety and the proven value of wearable safety solutions.'
+        type: 'table',
+        tableData: {
+          headers: ['Nghiệp vụ', 'Quy trình cũ (Excel/Giấy)', 'Với JLTC Manager'],
+          icons: ['ClipboardCheck', 'Users', 'Calendar', 'BarChart3'],
+          rows: [
+            ['Tổ chức thi JLPT', 'Mất 3-5 ngày chuẩn bị & chấm bài', 'Tự động hóa 100% trong 1 click'],
+            ['Quản lý Lead', 'Rơi rạc, tỷ lệ chuyển đổi thấp', 'Tập trung, tăng 30% tỷ lệ nhập học'],
+            ['Sắp xếp lịch học', 'Dễ nhầm lẫn, mất thời gian', 'Tối ưu hóa 99% công suất phòng'],
+            ['Hồ sơ du học', 'Thủ công, áp lực mùa cao điểm', 'Chuẩn hóa quy trình, giảm 60% áp lực']
+          ]
+        }
+      }
+    ]
+  },illion in 2027, and $4.2 billion by 2028. This expansion reflects increasing organizational commitment to worker safety and the proven value of wearable safety solutions.'
       },
       {
         type: 'heading',
