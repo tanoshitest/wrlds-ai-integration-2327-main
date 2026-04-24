@@ -191,14 +191,14 @@ const About = () => {
                     </div>
 
                     {/* Row 5: 8 brands */}
-                    <div className="flex flex-wrap justify-start gap-x-2 sm:gap-x-3">
+                    <div className="flex flex-wrap justify-between gap-x-2">
                       {["TUYETTHINH", "NZEDU", "DOUCES", "MINHPHUC MOBILE", "QLVA", "FLEUR DE LIS", "CHARINGO", "AMASS RESEARCH CENTER"].map((name, i) => (
                         <motion.span
                           key={i}
                           initial={{ opacity: 0, scale: 0.9 }}
                           animate={{ opacity: 1, scale: 1 }}
                           transition={{ duration: 0.4, delay: 1.4 + (i * 0.05) }}
-                          style={{ fontSize: "1.1rem", fontWeight: 700, letterSpacing: "0.01em", color: "#111", whiteSpace: "nowrap" }}
+                          style={{ fontSize: "1.2rem", fontWeight: 700, letterSpacing: "0.015em", color: "#111", whiteSpace: "nowrap" }}
                         >
                           {name}
                         </motion.span>
