@@ -904,186 +904,244 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: '5',
-    title: 'Smart PPE Revolution: How Safety Technology is Transforming Worker Protection',
-    slug: 'smart-ppe-revolution-safety-technology',
-    excerpt: 'Discover how smart textiles and sensor technology are revolutionizing personal protective equipment, creating safer workplaces and preventing accidents before they happen.',
-    date: 'June 5, 2025',
-    author: 'Tanoshi Vietnam Technologies',
-    category: 'Innovation',
-    imageUrl: '/lovable-uploads/927dae7e-6aaf-4b76-add2-1287a1dd9dc0.png',
+    title: 'Số Hóa Trung Tâm Tiếng Anh Trẻ Em: Hành Trình Chuyển Đổi Số Của MEnglish (Kiều Liên)',
+    slug: 'menglish-digital-transformation-case-study',
+    excerpt: 'Khám phá cách MEnglish tối ưu vận hành toàn diện từ CRM, tài chính đến hệ thống chấm điểm phát âm AI, giúp kết nối phụ huynh và nhà trường hiệu quả.',
+    date: 'April 20, 2026',
+    author: 'Tanoshi Vietnam EdTech Team',
+    category: 'EdTech Solutions',
+    imageUrl: '/lovable-uploads/edtech_lms_growth_blog.png',
     keywords: [
-      'smart PPE',
-      'safety technology',
-      'personal protective equipment',
-      'smart textiles',
-      'workplace safety',
-      'wearable sensors',
-      'construction safety',
-      'industrial IoT',
-      'worker protection',
-      'safety monitoring',
-      'smart helmets',
-      'connected safety gear',
-      'occupational safety',
-      'safety innovation',
-      'protective equipment technology'
+      'MEnglish Case Study',
+      'English Center Management',
+      'AI Pronunciation Scoring',
+      'Parent Portal EdTech',
+      'Digital Transformation Education',
+      'Tanoshi Vietnam'
     ],
-    metaDescription: 'Learn how smart PPE with integrated sensors is revolutionizing workplace safety. Discover the latest innovations in intelligent personal protective equipment that prevent accidents and save lives.',
+    metaDescription: 'Case study về việc xây dựng hệ sinh thái quản lý toàn diện cho trung tâm tiếng Anh MEnglish. Tối ưu quy trình tuyển sinh, tài chính và đào tạo tích hợp AI.',
     content: [
       {
         type: 'paragraph',
-        content: 'The realm of personal protective equipment (PPE) is undergoing a significant transformation, driven by advancements in smart textiles and sensor technology. Traditional PPE, designed as a passive barrier against workplace hazards, is evolving into intelligent, interconnected systems that actively monitor conditions and provide real-time alerts. This shift is creating safer work environments and preventing accidents before they occur.'
+        content: 'Với quy mô ngày càng mở rộng của các trung tâm tiếng Anh trẻ em, việc quản lý thủ công qua Zalo và Excel không còn đáp ứng được nhu cầu tăng trưởng. MEnglish đã cùng Tanoshi Vietnam xây dựng một hệ thống quản trị chuyên sâu, giúp tự động hóa từ khâu tìm kiếm khách hàng đến việc theo dõi tiến độ học tập của từng học viên.'
       },
       {
         type: 'heading',
-        content: 'The Evolution of PPE: From Passive to Proactive'
+        content: 'Thách Thức Trong Quản Lý Trung Tâm Tiếng Anh Trẻ Em'
       },
       {
-        type: 'paragraph',
-        content: 'For decades, PPE has primarily served as a last line of defense, offering limited protection and often failing to address the underlying causes of accidents. However, the integration of smart technology is enabling a proactive approach to safety, where PPE not only protects but also anticipates and mitigates risks.'
-      },
-      {
-        type: 'subheading',
-        content: 'Key Components of Smart PPE'
-      },
-      {
-        type: 'list',
+        type: 'split-image-list',
+        image: '/lovable-uploads/pain_icon.png',
         items: [
-          'Embedded Sensors: Detecting environmental conditions, physiological parameters, and potential hazards.',
-          'Connectivity: Enabling real-time data transmission and communication between workers, supervisors, and emergency responders.',
-          'Data Analytics: Providing insights into worker performance, risk factors, and safety trends.',
-          'Alert Systems: Triggering automated warnings and notifications to prevent accidents and ensure timely intervention.'
+          'Quản lý Lead tuyển sinh rời rạc, không theo dõi được tỷ lệ chuyển đổi từ tư vấn đến nhập học.',
+          'Sai sót trong quản lý học phí và các khoản thu chi do tính toán thủ công.',
+          'Khó khăn trong việc kiểm soát kho sách và giáo trình cho hàng trăm học viên.',
+          'Chấm điểm phát âm thủ công mất nhiều thời gian và không đưa ra được phản hồi tức thì.',
+          'Phụ huynh thiếu kênh thông tin chính thống để theo dõi lịch học và nhận xét của giáo viên.',
+          'Dữ liệu học viên không được bảo mật và phân quyền rõ ràng giữa các bộ phận.'
         ]
       },
       {
         type: 'heading',
-        content: 'Real-World Applications of Smart PPE'
+        content: 'Kết Quả Đột Phá Sau Triển Khai'
       },
       {
-        type: 'subheading',
-        content: 'Construction Industry'
-      },
-      {
-        type: 'paragraph',
-        content: 'In construction, smart helmets equipped with sensors can detect falls, monitor head impacts, and alert emergency services. Smart vests can track worker location, monitor vital signs, and detect exposure to hazardous substances.'
-      },
-      {
-        type: 'subheading',
-        content: 'Manufacturing Sector'
-      },
-      {
-        type: 'paragraph',
-        content: 'In manufacturing, smart gloves can provide real-time feedback on worker movements, preventing repetitive strain injuries. Smart eyewear can offer augmented reality overlays, guiding workers through complex tasks and reducing errors.'
-      },
-      {
-        type: 'subheading',
-        content: 'Healthcare Environment'
-      },
-      {
-        type: 'paragraph',
-        content: 'In healthcare, smart gowns can monitor patient vital signs, detect infections, and alert medical staff. Smart masks can track air quality, filter out harmful particles, and provide real-time feedback on respiratory function.'
+        type: 'stats',
+        statsData: [
+          {
+            value: '95%',
+            label: 'Phụ huynh hài lòng với Portal theo dõi tiến độ',
+            icon: 'Users'
+          },
+          {
+            value: '80%',
+            label: 'Giảm thời gian quản lý tài chính và đối soát',
+            icon: 'Zap'
+          },
+          {
+            value: '24/7',
+            label: 'AI chấm điểm phát âm phản hồi tức thì',
+            icon: 'Zap'
+          }
+        ]
       },
       {
         type: 'heading',
-        content: 'The Future of Worker Protection'
+        content: 'Hệ Sinh Thái Quản Trị MEnglish'
       },
       {
-        type: 'paragraph',
-        content: 'As technology continues to advance, smart PPE is poised to become an indispensable tool for ensuring worker safety and well-being. By providing real-time data, automated alerts, and proactive risk mitigation, smart PPE is transforming the way we approach safety in the workplace.'
+        type: 'feature-grid',
+        featureGridData: {
+          title: 'Hệ thống MEnglish — Quản lý 360 Độ',
+          subtitle: 'Giải pháp toàn diện cho trung tâm ngoại ngữ hiện đại',
+          status: 'Go-live',
+          groups: [
+            {
+              title: 'CRM & Tuyển sinh',
+              items: ['Pipeline quản lý Lead chuyên sâu', 'Theo dõi nguồn khách hàng', 'Nhắc lịch tư vấn tự động']
+            },
+            {
+              title: 'Quản lý Đào tạo',
+              items: ['Xếp lịch học & phòng học', 'Điểm danh điện tử', 'Hệ thống bài tập online']
+            },
+            {
+              title: 'Tài chính & Kho',
+              items: ['Quản lý học phí & nợ', 'Báo cáo thu chi tự động', 'Kiểm kê kho giáo trình']
+            },
+            {
+              title: 'AI English Lab',
+              items: ['Chấm phát âm chuẩn quốc tế', 'Gợi ý sửa lỗi âm tiết', 'Thống kê lỗi phổ biến']
+            },
+            {
+              title: 'Portal Phụ huynh',
+              items: ['Xem nhận xét sau buổi học', 'Theo dõi chuyên cần', 'Thanh toán học phí online']
+            },
+            {
+              title: 'Tính năng đặc biệt',
+              highlight: true,
+              items: ['Phân quyền chi tiết 5 role (Admin, GV, Kế toán, PH, HV) giúp quy trình vận hành minh bạch và bảo mật dữ liệu tuyệt đối.']
+            }
+          ]
+        }
       },
       {
-        type: 'quote',
-        content: 'Smart PPE is not just about protecting workers; it\'s about empowering them with the knowledge and tools they need to stay safe and productive.'
+        type: 'table',
+        tableData: {
+          headers: ['Quy trình', 'Trước khi số hóa', 'Với hệ thống MEnglish'],
+          icons: ['ClipboardCheck', 'DollarSign', 'Bell', 'Database'],
+          rows: [
+            ['Quản lý tuyển sinh', 'Ghi chép sổ tay, dễ mất thông tin', 'Lead pipeline tự động, không bỏ sót'],
+            ['Tài chính học phí', 'Đối soát thủ công, dễ sai sót', 'Tự động báo nợ và gạch nợ QR'],
+            ['Tương tác phụ huynh', 'Nhắn tin Zalo thủ công', 'Portal cập nhật thông tin Real-time'],
+            ['Lưu trữ dữ liệu', 'Phân tán trên nhiều file Excel', 'Cơ sở dữ liệu tập trung, bảo mật']
+          ]
+        }
       }
     ]
   },
   {
     id: '4',
-    title: 'Leveraging Sensor Technology in Product Development: A Strategic Approach',
-    slug: 'leveraging-sensor-technology-product-development',
-    excerpt: 'Explore how sensor technology is revolutionizing product development across industries, from smart textiles to IoT devices, and learn strategic approaches for implementation.',
-    date: 'May 8, 2025',
-    author: 'Tanoshi Vietnam Technologies',
-    category: 'Technology',
-    imageUrl: '/lovable-uploads/6b0637e9-4a7b-40d0-b219-c8b7f879f93e.png',
+    title: 'NZEDU: Hệ Sinh Thái Giáo Dục Thông Minh — Cách Mạng Hóa Quản Lý Trung Tâm Ngoại Ngữ',
+    slug: 'nzedu-smart-education-ecosystem',
+    excerpt: 'NZEDU đã cùng Tanoshi Vietnam xây dựng hệ sinh thái quản lý giáo dục hiện đại, tích hợp từ tuyển sinh đến đào tạo và tương tác phụ huynh trên một nền tảng duy nhất.',
+    date: 'April 15, 2026',
+    author: 'Tanoshi Vietnam EdTech Team',
+    category: 'EdTech Solutions',
+    imageUrl: '/lovable-uploads/edtech_lms_growth_blog.png',
     keywords: [
-      'sensor technology',
-      'product development',
-      'smart textiles',
-      'IoT sensors',
-      'wearable technology',
-      'textile sensors',
-      'manufacturing innovation',
-      'embedded sensors',
-      'smart fabrics',
-      'sensor integration'
+      'NZEDU Case Study',
+      'Education Management Ecosystem',
+      'LMS Vietnam',
+      'Smart Education',
+      'Tanoshi Vietnam Solutions'
     ],
-    metaDescription: 'Discover how sensor technology is transforming product development. Learn strategic approaches for integrating sensors into textiles and manufacturing processes.',
+    metaDescription: 'Khám phá cách NZEDU tối ưu bộ máy vận hành thông qua hệ sinh thái giáo dục thông minh. Giải pháp EdTech tùy biến cho quy mô lớn.',
     content: [
       {
         type: 'paragraph',
-        content: 'Sensor technology is rapidly transforming product development across various industries. From smart textiles that monitor vital signs to IoT devices that automate home functions, sensors are enabling a new era of intelligent and responsive products. This article explores how businesses can strategically leverage sensor technology to enhance their product development processes.'
+        content: 'Đối với những đơn vị có quy mô đào tạo lớn và đa dạng như NZEDU, việc sở hữu một "trung tâm điều hành số" là yếu tố sống còn. Dự án NZEDU tập trung vào việc tạo ra một hệ sinh thái khép kín, nơi mọi dữ liệu từ tuyển sinh, học thuật đến tài chính đều được kết nối chặt chẽ.'
       },
       {
         type: 'heading',
-        content: 'The Shift from Manual Testing to Sensor-Driven Insights'
+        content: 'Bài Toán Vận Hành Tại NZEDU'
       },
       {
-        type: 'paragraph',
-        content: 'Traditional product development often relies on manual testing and subjective feedback, which can be time-consuming and prone to errors. Sensor technology offers a more objective and data-driven approach, providing real-time insights into product performance and user behavior. By embedding sensors into prototypes and early-stage products, developers can gather valuable data on usage patterns, environmental conditions, and potential failure points.'
-      },
-      {
-        type: 'subheading',
-        content: 'Key Benefits of Sensor Integration'
-      },
-      {
-        type: 'list',
+        type: 'split-image-list',
+        image: '/lovable-uploads/pain_icon.png',
         items: [
-          'Real-time Performance Measurement: Sensors provide continuous data on product performance, allowing developers to identify and address issues quickly.',
-          'Automated Testing: Sensors can automate testing processes, reducing the need for manual intervention and accelerating development cycles.',
-          'Data-Driven Insights: Sensor data provides valuable insights into user behavior, enabling developers to optimize product design and functionality.',
-          'Predictive Maintenance: Sensors can detect early signs of wear and tear, allowing for proactive maintenance and preventing costly downtime.'
+          'Hệ thống cũ không đáp ứng được việc quản lý đa chi nhánh và đa chương trình đào tạo.',
+          'Dòng tiền học phí không được cập nhật Real-time dẫn đến khó khăn trong báo cáo tài chính.',
+          'Quy trình nộp bài và chấm bài của giáo viên chưa được hệ thống hóa chuyên nghiệp.',
+          'Thiếu tính năng bảo mật nội dung bài giảng, dễ bị sao chép trái phép.',
+          'Việc truyền đạt thông báo từ trung tâm đến phụ huynh thường xuyên bị trễ và thất lạc.',
+          'Không có dashboard thống kê hiệu quả kinh doanh của từng cơ sở.'
         ]
       },
       {
         type: 'heading',
-        content: 'Real-time Performance Measurement Made Easy'
+        content: 'Giải Pháp Hệ Sinh Thái Thông Minh'
       },
       {
-        type: 'paragraph',
-        content: 'One of the most significant advantages of sensor technology is its ability to provide real-time performance measurement. By embedding sensors into products, developers can continuously monitor key metrics such as temperature, pressure, vibration, and strain. This data can be used to identify potential issues, optimize product performance, and ensure that products meet design specifications.'
+        type: 'feature-grid',
+        featureGridData: {
+          title: 'Ecosystem NZEDU — Kết Nối Vô Hạn',
+          subtitle: 'Nền tảng quản trị tập trung cho hệ thống giáo dục',
+          status: 'Development',
+          groups: [
+            {
+              title: 'Multi-Branch CRM',
+              items: ['Quản lý Lead theo chi nhánh', 'Báo cáo doanh số tập trung', 'Tự động phân bổ Lead']
+            },
+            {
+              title: 'Academic Core',
+              items: ['Lộ trình học cá nhân hóa', 'Ngân hàng đề thi thông minh', 'Hệ thống LMS nội bộ']
+            },
+            {
+              title: 'Finance Engine',
+              items: ['Thu phí đa hình thức', 'Tự động hóa báo cáo thuế', 'Đối soát dòng tiền tự động']
+            },
+            {
+              title: 'Security & Rights',
+              items: ['Chống tải video trái phép', 'Phân quyền truy cập tài liệu', 'Log lịch sử truy cập']
+            },
+            {
+              title: 'Smart Communication',
+              items: ['Push notification tự động', 'Kênh chat nội bộ PH-GV', 'Thông báo nghỉ học online']
+            },
+            {
+              title: 'Business Intelligence',
+              items: ['Dashboard năng lực học viên', 'Biểu đồ tăng trưởng doanh thu', 'Thống kê hiệu quả GV']
+            }
+          ]
+        }
       },
       {
         type: 'heading',
-        content: 'Faster Iterations Through Automated Testing and AI'
+        content: 'Quy Trình Triển Khai Tại NZEDU'
       },
       {
-        type: 'paragraph',
-        content: 'Sensor technology can also be used to automate testing processes, reducing the need for manual intervention and accelerating development cycles. By integrating sensors with AI algorithms, developers can create intelligent testing systems that automatically identify and diagnose issues. These systems can also be used to predict product failures, allowing for proactive maintenance and preventing costly downtime.'
-      },
-      {
-        type: 'heading',
-        content: 'Key Business Benefits'
-      },
-      {
-        type: 'table',
-        tableData: {
-          headers: ['Industry', 'Challenge', 'Sensor Solution'],
-          rows: [
-            ['Construction', 'Monitoring worker safety on construction sites', 'Wearable sensors that detect falls, monitor vital signs, and alert emergency services.'],
-            ['Manufacturing', 'Preventing equipment failures in manufacturing plants', 'Embedded sensors that monitor equipment performance, detect early signs of wear and tear, and trigger maintenance alerts.'],
-            ['Healthcare', 'Monitoring patient health in hospitals and clinics', 'Wearable sensors that track vital signs, detect infections, and alert medical staff.'],
-          ],
-        },
-      },
-      {
-        type: 'heading',
-        content: 'Ready to Transform Your Product Development?'
-      },
-      {
-        type: 'paragraph',
-        content: 'Sensor technology is revolutionizing product development across industries, offering a more objective, data-driven, and efficient approach. By strategically leveraging sensor technology, businesses can enhance their product development processes, improve product performance, and gain a competitive edge.'
-      },
+        type: 'process-steps',
+        processData: {
+          steps: [
+            {
+              id: 1,
+              title: 'Phân tích đa chi nhánh',
+              description: 'Khảo sát đặc thù vận hành của từng cơ sở để xây dựng cấu trúc database phù hợp.',
+              activities: [
+                'Gặp gỡ ban quản trị NZEDU',
+                'Xác định luồng dữ liệu liên chi nhánh'
+              ]
+            },
+            {
+              id: 2,
+              title: 'Xây dựng Academic Core',
+              description: 'Số hóa toàn bộ học liệu và quy trình đào tạo đặc thù của trung tâm.',
+              activities: [
+                'Thiết kế LMS tùy biến',
+                'Tích hợp bảo mật nội dung'
+              ]
+            },
+            {
+              id: 3,
+              title: 'Tự động hóa Tài chính',
+              description: 'Triển khai Engine tính toán học phí và tích hợp cổng thanh toán.',
+              activities: [
+                'Kết nối API Ngân hàng',
+                'Thiết lập báo cáo tài chính Real-time'
+              ]
+            },
+            {
+              id: 4,
+              title: 'Kiểm thử & Bàn giao',
+              description: 'Chạy thử nghiệm trên quy mô 1 chi nhánh trước khi Roll-out toàn hệ thống.',
+              activities: [
+                'Đào tạo đội ngũ Admin & GV',
+                'Phát hành Portal Phụ huynh'
+              ]
+            }
+          ]
+        }
+      }
     ]
   },
   {
