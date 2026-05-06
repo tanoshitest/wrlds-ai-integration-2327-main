@@ -1252,6 +1252,99 @@ export const blogPosts: BlogPost[] = [
     ]
   },
   {
+    id: '12',
+    title: 'Tiếng Nhật Thuận Phát: Số hóa Đào tạo Tiếng Nhật cho học viên Xuất khẩu lao động',
+    slug: 'tieng-nhat-thuan-phat-lms-solution',
+    excerpt: 'Khám phá cách Tiếng Nhật Thuận Phát đồng bộ hóa giáo trình, đóng gói khóa học online và ứng dụng Game hóa vào giảng dạy để tối ưu hóa hiệu quả học tập.',
+    date: 'May 6, 2026',
+    author: 'Tanoshi Vietnam EdTech Team',
+    category: 'EdTech Solutions',
+    imageUrl: '/lovable-uploads/thuan_phat_japanese_online_lms_1778070033525.png',
+    keywords: [
+      'Tiếng Nhật Thuận Phát',
+      'LMS tiếng Nhật',
+      'Đào tạo XKLĐ',
+      'Quiz tiếng Nhật online',
+      'Gamification giáo dục'
+    ],
+    metaDescription: 'Giải pháp số hóa toàn diện cho Tiếng Nhật Thuận Phát: Đóng gói khóa học, đồng bộ slide bài giảng và tích hợp hệ thống Game & Quiz Online chuyên nghiệp.',
+    content: [
+      {
+        type: 'paragraph',
+        content: 'Đào tạo tiếng Nhật cho học viên xuất khẩu lao động (XKLĐ) đòi hỏi sự tập trung cao độ vào tính ứng dụng và khả năng ghi nhớ nhanh. Tuy nhiên, việc duy trì chất lượng giảng dạy đồng đều trên nền tảng online thường gặp nhiều trở ngại về công cụ và tài liệu. Tiếng Nhật Thuận Phát đã cùng Tanoshi giải quyết triệt để vấn đề này thông qua hệ thống LMS 4.0.'
+      },
+      {
+        type: 'heading',
+        content: 'Painpoints: Những thách thức trong đào tạo tiếng Nhật XKLĐ'
+      },
+      {
+        type: 'split-image-list',
+        image: '/lovable-uploads/pain_icon.png',
+        items: [
+          'Không đóng gói được khóa học: Tài liệu giảng dạy rời rạc, khó tái sử dụng và quản lý lộ trình học tập của từng học viên.',
+          'Slide bài giảng không đồng bộ: Mỗi giáo viên sử dụng một định dạng khác nhau, thiếu sự chuyên nghiệp và nhất quán của trung tâm.',
+          'Nội dung chưa tương thích: Kiến thức giảng dạy đôi khi quá nặng về học thuật, chưa sát với nhu cầu thực tế của tệp học viên XKLĐ.',
+          'Thiếu tương tác online: Việc học qua Zoom/Meet thuần túy dễ gây nhàm chán, học viên khó tiếp thu các bảng chữ cái và ngữ pháp phức tạp.'
+        ]
+      },
+      {
+        type: 'heading',
+        content: 'Giải pháp đột phá từ Tanoshi: LMS chuyên biệt'
+      },
+      {
+        type: 'paragraph',
+        content: 'Chúng tôi đã xây dựng cho Tiếng Nhật Thuận Phát một hệ thống học tập trực tuyến tích hợp đầy đủ các công cụ hỗ trợ giảng dạy hiện đại:'
+      },
+      {
+        type: 'feature-grid',
+        featureGridData: {
+          title: 'Hệ thống LMS Thuận Phát Online',
+          subtitle: 'Học tập tương tác - Đào tạo chuẩn hóa',
+          status: 'Go-live',
+          groups: [
+            {
+              title: 'Đóng gói Khóa học',
+              items: ['Quản lý lộ trình theo từng bài', 'Kho video bài giảng tập trung', 'Hệ thống tài liệu PDF/Audio']
+            },
+            {
+              title: 'Đồng bộ Slide',
+              items: ['Trình xem slide tích hợp', 'Chuẩn hóa định dạng trung tâm', 'Dễ dàng cập nhật nội dung']
+            },
+            {
+              title: 'Quiz & Game Online',
+              items: ['Trắc nghiệm Kanji hình ảnh', 'Game ghép từ vựng', 'Bảng xếp hạng thi đua']
+            },
+            {
+              title: 'Nội dung XKLĐ',
+              items: ['Học từ vựng theo ngành nghề', 'Hội thoại tình huống tại Nhật', 'Luyện thi chứng chỉ chuyên biệt']
+            }
+          ]
+        }
+      },
+      {
+        type: 'heading',
+        content: 'Phân tích GAP: Sự cải tiến sau khi Digital Transformation (DX)'
+      },
+      {
+        type: 'table',
+        tableData: {
+          headers: ['Hạng mục', 'Trước khi có hệ thống (GAP)', 'Sau khi số hóa cùng Tanoshi'],
+          icons: ['Package', 'Layout', 'Zap', 'Users'],
+          rows: [
+            ['Quản lý khóa học', 'Tài liệu gửi rời rạc qua Zalo/Drive', 'Đóng gói 100% trên LMS, học viên tự học mọi lúc'],
+            ['Tính đồng bộ', 'Slide mỗi người một kiểu, khó kiểm soát', 'Hệ thống slide chuẩn hóa, cập nhật đồng loạt'],
+            ['Tương tác học viên', 'Nghe giảng thụ động, dễ bỏ cuộc', 'Học qua Game & Quiz, tăng 70% hứng thú'],
+            ['Độ tương thích nội dung', 'Kiến thức chung chung, không sát thực tế', 'Giáo trình cá nhân hóa cho tệp XKLĐ']
+          ]
+        }
+      },
+      {
+        type: 'paragraph',
+        content: 'Với hệ thống mới, Tiếng Nhật Thuận Phát không chỉ nâng cao được hiệu quả đào tạo mà còn khẳng định được uy tín và sự chuyên nghiệp trong mắt học viên và các đối tác Nhật Bản. Công nghệ đã thực sự trở thành đòn bẩy để tri thức được truyền tải một cách sinh động và hiệu quả nhất.'
+      }
+    ]
+  },
+  {
     id: '9',
     title: 'Tanoshi Vietnam: The All-in-One Technology & Marketing Launchpad for SMEs & Startups',
     slug: 'tanoshi-sme-startup-all-in-one-solution',
