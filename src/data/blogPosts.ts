@@ -1277,5 +1277,143 @@ export const blogPosts: BlogPost[] = [
         content: 'Whether you are a newly funded Startup or an SME struggling with digital transformation, Tanoshi Vietnam has the best-fit tailored solution. Don\'t let technology and talent barriers hold back your growth.'
       }
     ]
+  },
+  {
+    id: '10',
+    title: 'Chuyển đổi số Trung tâm Bán sỉ Laptop: Từ Đấu giá thủ công đến Hệ thống Quản trị Tự động 4.0',
+    slug: 'chuyen-doi-so-ban-si-laptop-tanoshi',
+    excerpt: 'Khám phá hành trình số hóa toàn diện cho doanh nghiệp bán sỉ Laptop. Giải quyết triệt để "nỗi đau" đấu giá thủ công, sai sót tồn kho và đối soát tài chính phức tạp.',
+    date: 'May 6, 2026',
+    author: 'Tanoshi Vietnam Tech Team',
+    category: 'Business Solutions',
+    imageUrl: '/lovable-uploads/laptop_wholesale_dx_dashboard_1778067348103.png',
+    keywords: [
+      'Chuyển đổi số bán sỉ laptop',
+      'Phần mềm quản lý kho laptop',
+      'Tự động hóa đấu giá laptop',
+      'Quản lý bán sỉ laptop 4.0',
+      'Tanoshi Vietnam Solutions',
+      'Hệ thống ERP laptop'
+    ],
+    metaDescription: 'Giải pháp chuyển đổi số toàn diện cho trung tâm bán sỉ laptop. Tự động hóa nghiệp vụ đấu giá, quản lý kho, đối soát hóa đơn và báo cáo quản trị realtime.',
+    content: [
+      {
+        type: 'paragraph',
+        content: 'Trong thị trường bán sỉ laptop đầy biến động, tốc độ và độ chính xác là hai yếu tố sống còn. Tuy nhiên, nhiều doanh nghiệp vẫn đang loay hoay với các quy trình thủ công, đặc biệt là trong khâu đấu giá và tính toán lợi nhuận. "Sai một li, đi một dặm" - chỉ cần một sai sót nhỏ trong lúc bid giá hoặc tính toán tỷ giá cũng có thể khiến doanh nghiệp chịu lỗ hàng trăm triệu đồng.'
+      },
+      {
+        type: 'heading',
+        content: 'Nỗi đau lớn nhất: Đấu giá và Tính toán thủ công'
+      },
+      {
+        type: 'paragraph',
+        content: 'Nghiệp vụ chào giá và đấu giá (Bidding) là "trái tim" của các trung tâm bán sỉ laptop. Trước khi có sự can thiệp của công nghệ, các nhân viên phải:'
+      },
+      {
+        type: 'list',
+        items: [
+          'Theo dõi giá đấu trực tiếp trên nhiều màn hình, ghi chép bằng tay.',
+          'Tính toán giá bid dựa trên bảng giá Excel cũ, dễ dẫn đến sai lệch biên lợi nhuận.',
+          'Áp lực thời gian cực lớn: Phải quyết định giá bid trong vài giây trong khi vẫn phải tính toán chi phí vận chuyển, thuế và tỉ giá.',
+          'Không có lịch sử đấu giá tập trung để phân tích hành vi đối thủ và tối ưu hóa chiến lược.'
+        ]
+      },
+      {
+        type: 'quote',
+        content: '"Phải bid và tính toán bằng tay từng con số là nỗi đau lớn nhất, tốn quá nhiều sức người mà rủi ro sai sót lại quá cao."'
+      },
+      {
+        type: 'heading',
+        content: 'Hệ sinh thái quản trị Laptop chuyên biệt từ Tanoshi'
+      },
+      {
+        type: 'paragraph',
+        content: 'Tanoshi Vietnam đã xây dựng một hệ thống chuyên biệt, số hóa 100% các nghiệp vụ đặc thù của ngành bán sỉ laptop, dựa trên khối lượng công việc thực tế của doanh nghiệp:'
+      },
+      {
+        type: 'feature-grid',
+        featureGridData: {
+          title: 'Laptop Wholesale ERP — 7 Trụ cột quản trị',
+          subtitle: 'Giải pháp khép kín từ Đấu giá đến Báo cáo quản trị',
+          status: 'Go-live',
+          groups: [
+            {
+              title: '1. Nghiệp vụ Chào giá (Bidding)',
+              items: ['Tự động hóa công cụ Bid giá', 'Tính toán biên lợi nhuận thời gian thực', 'Lịch sử chào giá thông minh']
+            },
+            {
+              title: '2. Xuất kho Bán sỉ',
+              items: ['Hành trình sản phẩm chi tiết', 'Quản lý đơn vị vận chuyển', 'Logistics tracking']
+            },
+            {
+              title: '3. Xuất kho Bán lẻ',
+              items: ['Quy trình Test máy chuẩn hóa', 'Listing ASIN thương mại điện tử', 'Quản lý Key Office']
+            },
+            {
+              title: '4. Quản lý Kho',
+              items: ['Xuất - Nhập - Tồn realtime', 'Luân chuyển kho nội bộ', 'Cảnh báo hàng tồn lâu']
+            },
+            {
+              title: '5. Hóa đơn & Đối soát',
+              items: ['Tự động tính chênh lệch tỷ giá', 'Đối soát đơn vị vận chuyển', 'Thu/Chi tự động']
+            },
+            {
+              title: '6. Nhân sự & Lương',
+              items: ['Chấm công tự động', 'Bảng lương theo hiệu suất', 'Quản lý KPI']
+            },
+            {
+              title: '7. Dashboard Quản trị',
+              items: ['Biểu đồ tăng trưởng doanh thu', 'Phân tích tỉ lệ lợi nhuận/đơn hàng', 'Báo cáo tồn kho giá trị cao']
+            }
+          ]
+        }
+      },
+      {
+        type: 'heading',
+        content: 'Phân tích GAP: Sự khác biệt trước và sau khi Digital Transformation (DX)'
+      },
+      {
+        type: 'table',
+        tableData: {
+          headers: ['Nghiệp vụ', 'Khi chưa có phần mềm (GAP cũ)', 'Sau khi DX với Tanoshi'],
+          icons: ['Zap', 'Package', 'DollarSign', 'BarChart3'],
+          rows: [
+            ['Đấu giá & Chào giá', 'Tính tay, áp lực, sai số cao (>5%)', 'Engine tự động tính giá bid, chính xác 100%'],
+            ['Quản lý Kho', 'Kiểm kê thủ công, dễ thất thoát, không biết chính xác vị trí máy', 'Quản lý theo Serial/ASIN, cập nhật từng giây'],
+            ['Tài chính & Đối soát', 'Mất 2-3 ngày để đối soát tỷ giá và phí vận chuyển', 'Đối soát tự động trong 1 click, xử lý tỷ giá tức thời'],
+            ['Báo cáo & Ra quyết định', 'Dựa trên cảm tính và số liệu Excel cũ', 'Dashboard trực quan, dữ liệu thực tế giúp ra quyết định nhanh']
+          ]
+        }
+      },
+      {
+        type: 'heading',
+        content: 'Hiệu quả mang lại'
+      },
+      {
+        type: 'chart',
+        chartData: {
+          title: 'Cải tiến hiệu suất vận hành sau 6 tháng DX (%)',
+          data: [
+            { name: 'Tốc độ Đấu giá', value: 95 },
+            { name: 'Độ chính xác Kho', value: 99 },
+            { name: 'Tối ưu nhân lực', value: 40 },
+            { name: 'Tốc độ Đối soát', value: 85 },
+            { name: 'Tăng trưởng Doanh thu', value: 30 }
+          ]
+        }
+      },
+      {
+        type: 'paragraph',
+        content: 'Chuyển đổi số không chỉ là thay thế giấy bút bằng máy tính, mà là tái cấu trúc quy trình để doanh nghiệp vận hành thông minh hơn. Với hệ thống từ Tanoshi, các chủ trung tâm laptop có thể hoàn toàn yên tâm về sự minh bạch của dòng tiền, độ chính xác của kho bãi và quan trọng nhất là "giải phóng" bản thân khỏi những con số tính toán thủ công mệt mỏi.'
+      },
+      {
+        type: 'quote',
+        content: 'Hãy để công nghệ làm những việc lặp đi lặp lại, để con người tập trung vào việc phát triển thị trường và chăm sóc khách hàng.'
+      },
+      {
+        type: 'paragraph',
+        content: 'Bạn đã sẵn sàng để nâng tầm trung tâm laptop của mình? Liên hệ với Tanoshi ngay hôm nay để nhận blueprint giải pháp tối ưu nhất.'
+      }
+    ]
   }
 ];
