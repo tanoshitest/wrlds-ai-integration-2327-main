@@ -1158,6 +1158,100 @@ export const blogPosts: BlogPost[] = [
     ]
   },
   {
+    id: '11',
+    title: 'TanThanh Edu: Giải pháp Quản lý Lớp học kèm Thông minh cho Trung tâm Tư nhân',
+    slug: 'tanthanh-edu-digital-transformation',
+    excerpt: 'Giải quyết bài toán quản lý lớp học nhóm nhỏ, tối ưu lịch dạy và cá nhân hóa tiến độ học tập cho học sinh thông qua hệ thống Web App chuyên biệt.',
+    date: 'May 6, 2026',
+    author: 'Tanoshi Vietnam EdTech Team',
+    category: 'EdTech Solutions',
+    imageUrl: '/lovable-uploads/tanthanh_edu_tutoring_app_1778068807898.png',
+    keywords: [
+      'Quản lý dạy kèm',
+      'Phần mềm trung tâm tư nhân',
+      'Lịch dạy thông minh',
+      'TanThanh Edu',
+      'Tanoshi Vietnam'
+    ],
+    metaDescription: 'Khám phá cách TanThanh Edu số hóa quy trình quản lý lớp học kèm, từ sắp xếp lịch dạy đến theo dõi tiến độ học tập và đối soát học phí tự động.',
+    content: [
+      {
+        type: 'paragraph',
+        content: 'Khác với các trung tâm lớn, các lớp học kèm tư nhân thường đối mặt với bài toán quản trị "siêu linh hoạt": lịch học thay đổi liên tục, nhóm học nhỏ lẻ và yêu cầu cá nhân hóa cao cho từng học sinh. TanThanh Edu đã hợp tác cùng Tanoshi để xây dựng hệ thống quản lý chuyên biệt, giúp giải phóng sức lao động cho đội ngũ giáo viên và nâng cao trải nghiệm cho phụ huynh.'
+      },
+      {
+        type: 'heading',
+        content: 'Painpoints: Những "nỗi đau" khi quản lý thủ công'
+      },
+      {
+        type: 'split-image-list',
+        image: '/lovable-uploads/pain_icon.png',
+        items: [
+          'Lịch dạy chồng chéo: Rất khó sắp xếp phòng học và giáo viên khi có nhiều nhóm học nhỏ cùng lúc.',
+          'Thất thoát học phí: Việc tính toán học phí theo số buổi thực học của từng học sinh dễ gây sai sót và tranh cãi.',
+          'Thông tin phân mảnh: Dữ liệu học sinh, điểm số và nhận xét nằm rải rác trên Zalo, sổ tay và Excel.',
+          'Thiếu sự kết nối: Phụ huynh khó lòng nắm bắt được tiến độ học tập thực tế của con em mình hàng ngày.',
+          'Áp lực hành chính: Chủ trung tâm tốn quá nhiều thời gian cho việc chấm công, tính lương và thu tiền.'
+        ]
+      },
+      {
+        type: 'heading',
+        content: 'Chuyển đổi số cùng Tanoshi: Từ Thủ công đến Tự động hóa'
+      },
+      {
+        type: 'paragraph',
+        content: 'Hệ thống Web App dành cho TanThanh Edu không chỉ là nơi lưu trữ dữ liệu, mà là một cỗ máy vận hành thông minh với các tính năng then chốt:'
+      },
+      {
+        type: 'feature-grid',
+        featureGridData: {
+          title: 'Hệ sinh thái TanThanh Edu',
+          subtitle: 'Quản lý tập trung - Vận hành mượt mà',
+          status: 'Prototype',
+          groups: [
+            {
+              title: 'Quản lý Học vụ',
+              items: ['Xếp lịch dạy thông minh', 'Điểm danh bằng mã QR', 'Quản lý tài liệu theo lớp']
+            },
+            {
+              title: 'Cổng thông tin Phụ huynh',
+              items: ['Xem biểu đồ Radar năng lực', 'Nhận xét sau mỗi buổi học', 'Xin nghỉ học trực tuyến']
+            },
+            {
+              title: 'Tài chính tự động',
+              items: ['Tính học phí theo buổi học', 'Thanh toán qua mã QR động', 'Báo cáo doanh thu realtime']
+            },
+            {
+              title: 'Đánh giá 6 tiêu chí',
+              items: ['Thấu hiểu, Tập trung, Kiểm tra', 'Tự học, Chuyên cần, Tương tác']
+            }
+          ]
+        }
+      },
+      {
+        type: 'heading',
+        content: 'Phân tích GAP: Sự khác biệt vượt trội'
+      },
+      {
+        type: 'table',
+        tableData: {
+          headers: ['Nghiệp vụ', 'Khi chưa có phần mềm (GAP)', 'Sau khi triển khai Web App'],
+          icons: ['Calendar', 'DollarSign', 'Users', 'TrendingUp'],
+          rows: [
+            ['Sắp xếp lịch dạy', 'Mất 3-5 giờ/tuần, hay bị trùng lịch', 'Tự động hóa hoàn toàn, cảnh báo trùng 100%'],
+            ['Thu phí & Đối soát', 'Dễ nhầm lẫn, mất thời gian nhắc nợ', 'Học phí tự động cập nhật, nhắc nợ qua App'],
+            ['Tương tác Phụ huynh', 'Gửi tin nhắn rời rạc qua Zalo', 'Cổng thông tin chuyên nghiệp, cập nhật tức thời'],
+            ['Báo cáo tiến độ', 'Dựa trên trí nhớ giáo viên', 'Biểu đồ năng lực trực quan theo dữ liệu thực']
+          ]
+        }
+      },
+      {
+        type: 'paragraph',
+        content: 'Dự án TanThanh Edu là minh chứng cho việc chuyển đổi số không nhất thiết phải là những hệ thống khổng lồ. Đôi khi, chỉ cần những công cụ đúng và trúng mục đích sẽ tạo nên bước nhảy vọt về hiệu quả và sự chuyên nghiệp cho các trung tâm giáo dục tư nhân.'
+      }
+    ]
+  },
+  {
     id: '9',
     title: 'Tanoshi Vietnam: The All-in-One Technology & Marketing Launchpad for SMEs & Startups',
     slug: 'tanoshi-sme-startup-all-in-one-solution',
