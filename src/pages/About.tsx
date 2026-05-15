@@ -145,9 +145,9 @@ const About = () => {
                       ))}
                     </div>
 
-                    {/* Row 2: 7 brands */}
+                    {/* Row 2: 9 brands */}
                     <div className="flex flex-wrap justify-between gap-x-4">
-                      {["TANTHANHEDU", "IKIGAI LOGISTICS", "PHATDAT REAL ESTATE", "BETTING", "THD GROUP", "TIENGNHATVUIVE"].map((name, i) => (
+                      {["TANTHANHEDU", "IKIGAI LOGISTICS", "PHATDAT REAL ESTATE", "BETTING", "THD GROUP", "TIENGNHATVUIVE", "SESS", "ECT JAPAN", "STEPS"].map((name, i) => (
                         <motion.span
                           key={i}
                           initial={{ opacity: 0, scale: 0.9 }}
@@ -222,7 +222,7 @@ const About = () => {
                     and enhance their products.
                   </p>
                   <div className="flex flex-wrap justify-start gap-x-12 gap-y-4">
-                    {["ODOO", "VMST VIETNAM", "SESS", "ECT JAPAN", "STEPS"].map((name, i) => (
+                    {["ODOO", "VMST VIETNAM"].map((name, i) => (
                       <motion.span
                         key={i}
                         initial={{ opacity: 0, scale: 0.9 }}
