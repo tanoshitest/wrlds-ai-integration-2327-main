@@ -55,6 +55,116 @@ export interface ContentSection {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: '13',
+    title: 'STEPS English Center: Nâng tầm Quản lý Đào tạo bằng Công nghệ LMS Hiện đại',
+    slug: 'steps-english-center-digital-transformation',
+    excerpt: 'Hành trình số hóa toàn diện cho Trung tâm Anh ngữ STEPS, từ quản lý học viên, học phí đến hệ thống học tập trực tuyến thông minh.',
+    date: 'May 16, 2026',
+    author: 'Tanoshi Vietnam EdTech Team',
+    category: 'EdTech Solutions',
+    imageUrl: '/lovable-uploads/edtech_lms_growth_blog.png',
+    keywords: [
+      'STEPS English Center',
+      'LMS EdTech',
+      'Quản lý trung tâm ngoại ngữ',
+      'Tanoshi Vietnam'
+    ],
+    metaDescription: 'Chi tiết dự án triển khai hệ thống quản trị và học tập trực tuyến cho STEPS English Center. Giải pháp EdTech tối ưu cho sự tăng trưởng bền vững.',
+    content: [
+      {
+        type: 'paragraph',
+        content: 'Trung tâm Anh ngữ STEPS đã hợp tác cùng Tanoshi Vietnam để xây dựng hệ thống quản lý đào tạo (LMS) tùy biến, giúp tự động hóa 90% các tác vụ thủ công và tăng cường trải nghiệm học tập cho học viên.'
+      },
+      {
+        type: 'heading',
+        content: 'Các phân hệ then chốt'
+      },
+      {
+        type: 'feature-grid',
+        featureGridData: {
+          title: 'Hệ thống Quản trị STEPS LMS',
+          groups: [
+            {
+              title: 'Quản lý Học viên',
+              items: ['Hồ sơ điện tử', 'Theo dõi tiến độ', 'Điểm danh tự động']
+            },
+            {
+              title: 'Tài chính & Học phí',
+              items: ['Nhắc nợ tự động', 'Thanh toán QR', 'Báo cáo doanh thu']
+            },
+            {
+              title: 'Học tập Trực tuyến',
+              items: ['Video bài giảng', 'Làm bài tập online', 'Thi thử định kỳ']
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    id: '14',
+    title: 'SESS: Số hóa hệ thống Quản lý Kho hàng và Phân phối Toàn quốc',
+    slug: 'sess-warehouse-management-digital-transformation',
+    excerpt: 'Khám phá giải pháp quản trị kho thông minh dành riêng cho SESS, giúp kiểm soát hàng tồn kho thời gian thực và tối ưu hóa quy trình vận chuyển.',
+    date: 'May 16, 2026',
+    author: 'Tanoshi Vietnam Business Team',
+    category: 'Business Solutions',
+    imageUrl: '/lovable-uploads/laptop_wholesale_dx_dashboard_1778067348103.png',
+    keywords: [
+      'SESS Warehouse',
+      'Quản lý kho SESS',
+      'ERP Business Solutions',
+      'Tanoshi Vietnam'
+    ],
+    metaDescription: 'Case study về việc xây dựng hệ thống quản lý kho và phân phối cho thương hiệu SESS. Tăng 150% hiệu suất vận hành kho.',
+    content: [
+      {
+        type: 'paragraph',
+        content: 'SESS đã lựa chọn Tanoshi Vietnam làm đối tác chiến lược để xây dựng hệ thống quản trị kho hàng (WMS) tích hợp ERP, giúp doanh nghiệp nắm bắt chính xác dữ liệu hàng hóa trên toàn hệ thống.'
+      },
+      {
+        type: 'heading',
+        content: 'Hiệu quả đạt được'
+      },
+      {
+        type: 'stats',
+        statsData: [
+          {
+            value: '100%',
+            label: 'Chính xác tồn kho',
+            icon: 'CheckCircle'
+          },
+          {
+            value: '50%',
+            label: 'Giảm thời gian xuất kho',
+            icon: 'Clock'
+          },
+          {
+            value: '24/7',
+            label: 'Báo cáo realtime',
+            icon: 'BarChart3'
+          }
+        ]
+      },
+      {
+        type: 'feature-grid',
+        featureGridData: {
+          title: 'Hệ thống Quản lý Kho SESS',
+          groups: [
+            {
+              title: 'Nhập/Xuất kho',
+              items: ['Quét mã vạch', 'In tem nhãn', 'Đối soát tự động']
+            },
+            {
+              title: 'Phân phối',
+              items: ['Quản lý đội xe', 'Theo dõi vận đơn', 'Tối ưu lộ trình']
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
     id: '3',
     title: 'Your Idea, Our Process — From Concept to Launch with Tanoshi Vietnam',
     slug: 'from-idea-to-launch-development-process',

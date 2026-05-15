@@ -222,7 +222,7 @@ const About = () => {
                     and enhance their products.
                   </p>
                   <div className="flex flex-wrap justify-start gap-x-12 gap-y-4">
-                    {["ODOO", "VMST VIETNAM"].map((name, i) => (
+                    {["ODOO", "VMST VIETNAM", "SESS", "ECT JAPAN", "STEPS"].map((name, i) => (
                       <motion.span
                         key={i}
                         initial={{ opacity: 0, scale: 0.9 }}
