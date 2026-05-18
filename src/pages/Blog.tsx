@@ -107,7 +107,7 @@ const Blog = () => {
       
       <div className="container mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredPosts.map((post, index) => (
+          {filteredPosts.map((post) => (
             <BlogPostCard 
               key={post.id}
               title={post.title}
@@ -116,8 +116,6 @@ const Blog = () => {
               date={post.date}
               slug={post.slug}
               category={post.category}
-              className={index === 0 ? "md:col-span-2 lg:col-span-3" : ""}
-              featured={index === 0}
             />
           ))}
           
