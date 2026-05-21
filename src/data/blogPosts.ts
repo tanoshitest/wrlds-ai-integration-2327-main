@@ -1144,83 +1144,83 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: '4',
-    title: 'NZEDU: Smart Education Ecosystem — Revolutionizing Language Center Management',
+    title: 'NZEDU: Hệ sinh thái Giáo dục Thông minh — Cách mạng hóa Quản lý Hệ thống Trung tâm Đào tạo',
     slug: 'nzedu-smart-education-ecosystem',
-    excerpt: 'NZEDU partnered with Tanoshi Vietnam to build a modern education management ecosystem, integrating everything from enrollment to training and parent interaction on a single platform.',
+    excerpt: 'NZEDU đã hợp tác cùng Tanoshi Vietnam xây dựng hệ sinh thái quản lý giáo dục thông minh, kết nối khép kín mọi luồng dữ liệu từ Tuyển sinh, Học thuật đến Tài chính và tương tác Phụ huynh.',
     date: 'April 15, 2026',
     author: 'Tanoshi Vietnam EdTech Team',
     category: 'EdTech Solutions',
     imageUrl: '/lovable-uploads/edtech_lms_growth_blog.png',
     keywords: [
       'NZEDU Case Study',
-      'Education Management Ecosystem',
-      'LMS Vietnam',
-      'Smart Education',
-      'Tanoshi Vietnam Solutions'
+      'Hệ sinh thái giáo dục',
+      'LMS Việt Nam',
+      'Quản trị trung tâm đào tạo',
+      'Tanoshi Vietnam'
     ],
-    metaDescription: 'Discover how NZEDU optimizes its operations through a smart education ecosystem. Custom EdTech solutions for large-scale organizations.',
+    metaDescription: 'Khám phá cách NZEDU tối ưu vận hành thông qua hệ sinh thái giáo dục thông minh. Giải pháp EdTech tùy biến cho các tổ chức giáo dục quy mô lớn.',
     content: [
       {
         type: 'paragraph',
-        content: 'For large-scale, diversified training organizations like NZEDU, having a "digital command center" is a matter of survival. The NZEDU project focuses on creating a closed-loop ecosystem where all data — from enrollment, academics, to finance — is tightly connected.'
+        content: 'Với các hệ thống đào tạo quy mô lớn, đa chi nhánh và đa dạng chương trình học như NZEDU, việc sở hữu một "trung tâm chỉ huy số" thống nhất là bài toán sống còn để tối ưu hóa nguồn lực. Dự án NZEDU tập trung thiết lập một hệ sinh thái khép kín kết nối chặt chẽ dữ liệu của 3 phân hệ cốt lõi: CRM Tuyển sinh, LMS Học vụ và Finance Tài chính.'
       },
       {
         type: 'heading',
-        content: 'Operational Challenges at NZEDU'
+        content: 'Thách thức vận hành tại hệ thống lớn như NZEDU'
       },
       {
         type: 'split-image-list',
         image: '/lovable-uploads/pain_icon.png',
         items: [
-          'Legacy systems cannot handle multi-branch and multi-curriculum management.',
-          'Tuition cash flow is not updated in real-time, causing difficulties in financial reporting.',
-          'Assignment submission and grading processes for teachers are not professionally systematized.',
-          'Lack of lecture content security features, making unauthorized copying easy.',
-          'Communications from the center to parents are frequently delayed or lost.',
-          'No dashboard to track business performance metrics for each branch.'
+          'Quản lý phân mảnh: Các công cụ truyền thống không đáp ứng được nghiệp vụ đa chi nhánh và quản lý hàng chục khung chương trình học khác nhau.',
+          'Dòng tiền chậm trễ: Học phí thu qua nhiều cổng, chuyển khoản thủ công gây chậm trễ trong việc cập nhật dòng tiền và báo cáo doanh thu.',
+          'Học thuật chưa số hóa: Quy trình giao bài tập, chấm điểm và trả bài của giáo viên tốn nhiều thời gian và khó kiểm soát chất lượng.',
+          'Rò rỉ tài liệu học tập: Thiếu cơ chế bảo mật khiến các học liệu, video bài giảng độc quyền dễ bị tải xuống và chia sẻ trái phép.',
+          'Giao tiếp ngắt quãng: Kênh tương tác giữa nhà trường và phụ huynh chưa đồng bộ, thông báo tình hình học tập thường bị chậm trễ.',
+          'Thiếu dữ liệu quản trị: Ban lãnh đạo không có dashboard phân tích dữ liệu tổng quan thời gian thực để đưa ra các quyết định kinh doanh kịp thời.'
         ]
       },
       {
         type: 'heading',
-        content: 'Smart Ecosystem Solution'
+        content: 'Giải pháp Hệ sinh thái Giáo dục Thông minh'
       },
       {
         type: 'feature-grid',
         featureGridData: {
-          title: 'NZEDU Ecosystem — Unlimited Connectivity',
-          subtitle: 'Centralized management platform for education systems',
+          title: 'Hệ sinh thái NZEDU — Kết nối không giới hạn',
+          subtitle: 'Nền tảng quản lý tập trung chuyên biệt cho các hệ thống giáo dục lớn',
           status: 'Development',
           groups: [
             {
-              title: 'Multi-Branch CRM',
-              items: ['Branch-based Lead management', 'Centralized revenue reports', 'Automated Lead allocation']
+              title: 'CRM Đa chi nhánh',
+              items: ['Quản lý nguồn Lead theo chi nhánh', 'Tự động hóa chia Lead cho Telesale', 'Theo dõi tỷ lệ chuyển đổi phễu tư vấn']
             },
             {
-              title: 'Academic Core',
-              items: ['Personalized learning paths', 'Smart exam question bank', 'Internal LMS system']
+              title: 'LMS Học thuật chuyên sâu',
+              items: ['Lộ trình học tập cá nhân hóa', 'Ngân hàng câu hỏi & Đề thi thông minh', 'Hệ thống học trực tuyến tích hợp']
             },
             {
-              title: 'Finance Engine',
-              items: ['Multi-method fee collection', 'Automated tax reporting', 'Automated cash flow reconciliation']
+              title: 'Finance tự động 100%',
+              items: ['Thu phí đa kênh (QR động, thẻ)', 'Tự động hóa ghi nhận công nợ học phí', 'Báo cáo dòng tiền, doanh thu thời gian thực']
             },
             {
-              title: 'Security & Rights',
-              items: ['Unauthorized video download prevention', 'Document access permissions', 'Access history logging']
+              title: 'Bảo mật Bản quyền',
+              items: ['Công nghệ chống tải video trái phép', 'Phân quyền truy cập tài liệu chặt chẽ', 'Ghi nhật ký lịch sử tương tác học liệu']
             },
             {
-              title: 'Smart Communication',
-              items: ['Automated push notifications', 'Internal Parent-Teacher chat', 'Online absence notifications']
+              title: 'Cổng thông tin Phụ huynh',
+              items: ['Theo dõi chuyên cần & kết quả học tập', 'Kênh chat trực tiếp Phụ huynh - Giáo viên', 'Xin nghỉ học trực tuyến trên app']
             },
             {
-              title: 'Business Intelligence',
-              items: ['Student capability dashboard', 'Revenue growth charts', 'Teacher effectiveness statistics']
+              title: 'Trí tuệ Quản trị (BI)',
+              items: ['Dashboard phân tích năng lực học sinh', 'Biểu đồ tăng trưởng doanh số chi nhánh', 'Thống kê hiệu suất làm việc của giáo viên']
             }
           ]
         }
       },
       {
         type: 'heading',
-        content: 'Implementation Process at NZEDU'
+        content: 'Quy trình triển khai giải pháp tại NZEDU'
       },
       {
         type: 'process-steps',
@@ -1228,38 +1228,38 @@ export const blogPosts: BlogPost[] = [
           steps: [
             {
               id: 1,
-              title: 'Multi-Branch Analysis',
-              description: 'Survey the unique operational characteristics of each branch to build a suitable database structure.',
+              title: 'Phân tích & Chuẩn hóa Nghiệp vụ',
+              description: 'Khảo sát kỹ lưỡng mô hình vận hành của từng chi nhánh để thiết kế luồng dữ liệu chuẩn hóa, tránh xung đột thông tin.',
               activities: [
-                'Meeting with NZEDU management team',
-                'Identifying cross-branch data flows'
+                'Họp thống nhất quy trình cùng ban lãnh đạo NZEDU',
+                'Xác định cấu trúc dữ liệu liên chi nhánh'
               ]
             },
             {
               id: 2,
-              title: 'Building Academic Core',
-              description: 'Digitalize all learning materials and specialized training processes of the center.',
+              title: 'Xây dựng Core Học thuật & Bảo mật',
+              description: 'Số hóa và đóng gói toàn bộ học liệu, slide bài giảng cùng các cơ chế bảo mật bản quyền video trên nền tảng LMS.',
               activities: [
-                'Custom LMS design',
-                'Content security integration'
+                'Thiết kế giao diện LMS tùy biến thân thiện',
+                'Tích hợp công nghệ mã hóa luồng phát video'
               ]
             },
             {
               id: 3,
-              title: 'Finance Automation',
-              description: 'Deploy tuition calculation engine and payment gateway integration.',
+              title: 'Tự động hóa Tài chính & QR Động',
+              description: 'Tích hợp API ngân hàng để tự động tạo mã QR động thanh toán, đối soát dòng tiền tức thời mà không cần nhân viên kế toán can thiệp thủ công.',
               activities: [
-                'Bank API integration',
-                'Real-time financial reporting setup'
+                'Kết nối cổng API thanh toán trực tuyến',
+                'Thiết lập hệ thống báo cáo tài chính thời gian thực'
               ]
             },
             {
               id: 4,
-              title: 'Testing & Handover',
+              title: 'Kiểm thử & Bàn giao Hệ thống',
               description: 'Run pilot testing on one branch before rolling out system-wide.',
               activities: [
-                'Admin & Teacher team training',
-                'Parent Portal launch'
+                'Đào tạo sử dụng cho đội ngũ nhân sự & giáo viên',
+                'Chính thức phát hành Cổng thông tin Phụ huynh'
               ]
             }
           ]
@@ -1316,72 +1316,32 @@ export const blogPosts: BlogPost[] = [
         type: 'feature-grid',
         featureGridData: {
           title: 'Hệ sinh thái TanThanh Edu',
-          subtitle: 'Quản lý tập trung - Vận hành mượt mà',
-          status: 'Prototype',
-          groups: [
-            {
-              title: 'Quản lý Học vụ',
-              items: ['Xếp lịch dạy thông minh', 'Điểm danh bằng mã QR', 'Quản lý tài liệu theo lớp']
-            },
-            {
-              title: 'Cổng thông tin Phụ huynh',
-              items: ['Xem biểu đồ Radar năng lực', 'Nhận xét sau mỗi buổi học', 'Xin nghỉ học trực tuyến']
-            },
-            {
-              title: 'Tài chính tự động',
-              items: ['Tính học phí theo buổi học', 'Thanh toán qua mã QR động', 'Báo cáo doanh thu realtime']
-            },
-            {
-              title: 'Đánh giá 6 tiêu chí',
-              items: ['Thấu hiểu, Tập trung, Kiểm tra', 'Tự học, Chuyên cần, Tương tác']
-            }
-          ]
+       features: []
         }
-      },
-      {
-        type: 'heading',
-        content: 'Phân tích GAP: Sự khác biệt vượt trội'
-      },
-      {
-        type: 'table',
-        tableData: {
-          headers: ['Nghiệp vụ', 'Khi chưa có phần mềm (GAP)', 'Sau khi triển khai Web App'],
-          icons: ['Calendar', 'DollarSign', 'Users', 'TrendingUp'],
-          rows: [
-            ['Sắp xếp lịch dạy', 'Mất 3-5 giờ/tuần, hay bị trùng lịch', 'Tự động hóa hoàn toàn, cảnh báo trùng 100%'],
-            ['Thu phí & Đối soát', 'Dễ nhầm lẫn, mất thời gian nhắc nợ', 'Học phí tự động cập nhật, nhắc nợ qua App'],
-            ['Tương tác Phụ huynh', 'Gửi tin nhắn rời rạc qua Zalo', 'Cổng thông tin chuyên nghiệp, cập nhật tức thời'],
-            ['Báo cáo tiến độ', 'Dựa trên trí nhớ giáo viên', 'Biểu đồ năng lực trực quan theo dữ liệu thực']
-          ]
-        }
-      },
-      {
-        type: 'paragraph',
-        content: 'Dự án TanThanh Edu là minh chứng cho việc chuyển đổi số không nhất thiết phải là những hệ thống khổng lồ. Đôi khi, chỉ cần những công cụ đúng và trúng mục đích sẽ tạo nên bước nhảy vọt về hiệu quả và sự chuyên nghiệp cho các trung tâm giáo dục tư nhân.'
       }
     ]
   },
   {
     id: '12',
-    title: 'Tiếng Nhật Thuận Phát: Số hóa Đào tạo Tiếng Nhật cho học viên Xuất khẩu lao động',
-    slug: 'tieng-nhat-thuan-phat-lms-solution',
-    excerpt: 'Khám phá cách Tiếng Nhật Thuận Phát đồng bộ hóa giáo trình, đóng gói khóa học online và ứng dụng Game hóa vào giảng dạy để tối ưu hóa hiệu quả học tập.',
+    title: 'Tiếng Nhật Vui Vẻ: Số hóa Đào tạo Tiếng Nhật cho học viên Xuất khẩu lao động',
+    slug: 'tieng-nhat-vui-ve-lms-solution',
+    excerpt: 'Khám phá cách Tiếng Nhật Vui Vẻ đồng bộ hóa giáo trình, đóng gói khóa học online và ứng dụng Game hóa vào giảng dạy để tối ưu hóa hiệu quả học tập.',
     date: 'May 6, 2026',
     author: 'Tanoshi Vietnam EdTech Team',
     category: 'EdTech Solutions',
     imageUrl: '/lovable-uploads/thuan_phat_japanese_online_lms_1778070033525.png',
     keywords: [
-      'Tiếng Nhật Thuận Phát',
+      'Tiếng Nhật Vui Vẻ',
       'LMS tiếng Nhật',
       'Đào tạo XKLĐ',
       'Quiz tiếng Nhật online',
       'Gamification giáo dục'
     ],
-    metaDescription: 'Giải pháp số hóa toàn diện cho Tiếng Nhật Thuận Phát: Đóng gói khóa học, đồng bộ slide bài giảng và tích hợp hệ thống Game & Quiz Online chuyên nghiệp.',
+    metaDescription: 'Giải pháp số hóa toàn diện cho Tiếng Nhật Vui Vẻ: Đóng gói khóa học, đồng bộ slide bài giảng và tích hợp hệ thống Game & Quiz Online chuyên nghiệp.',
     content: [
       {
         type: 'paragraph',
-        content: 'Đào tạo tiếng Nhật cho học viên xuất khẩu lao động (XKLĐ) đòi hỏi sự tập trung cao độ vào tính ứng dụng và khả năng ghi nhớ nhanh. Tuy nhiên, việc duy trì chất lượng giảng dạy đồng đều trên nền tảng online thường gặp nhiều trở ngại về công cụ và tài liệu. Tiếng Nhật Thuận Phát đã cùng Tanoshi giải quyết triệt để vấn đề này thông qua hệ thống LMS 4.0.'
+        content: 'Đào tạo tiếng Nhật cho học viên xuất khẩu lao động (XKLĐ) đòi hỏi sự tập trung cao độ vào tính ứng dụng và khả năng ghi nhớ nhanh. Tuy nhiên, việc duy trì chất lượng giảng dạy đồng đều trên nền tảng online thường gặp nhiều trở ngại về công cụ và tài liệu. Tiếng Nhật Vui Vẻ đã cùng Tanoshi giải quyết triệt để vấn đề này thông qua hệ thống LMS 4.0.'
       },
       {
         type: 'heading',
@@ -1403,12 +1363,12 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        content: 'Chúng tôi đã xây dựng cho Tiếng Nhật Thuận Phát một hệ thống học tập trực tuyến tích hợp đầy đủ các công cụ hỗ trợ giảng dạy hiện đại:'
+        content: 'Chúng tôi đã xây dựng cho Tiếng Nhật Vui Vẻ một hệ thống học tập trực tuyến tích hợp đầy đủ các công cụ hỗ trợ giảng dạy hiện đại:'
       },
       {
         type: 'feature-grid',
         featureGridData: {
-          title: 'Hệ thống LMS Thuận Phát Online',
+          title: 'Hệ thống LMS Vui Vẻ Online',
           subtitle: 'Học tập tương tác - Đào tạo chuẩn hóa',
           status: 'Go-live',
           groups: [
@@ -1450,7 +1410,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        content: 'Với hệ thống mới, Tiếng Nhật Thuận Phát không chỉ nâng cao được hiệu quả đào tạo mà còn khẳng định được uy tín và sự chuyên nghiệp trong mắt học viên và các đối tác Nhật Bản. Công nghệ đã thực sự trở thành đòn bẩy để tri thức được truyền tải một cách sinh động và hiệu quả nhất.'
+        content: 'Với hệ thống mới, Tiếng Nhật Vui Vẻ không chỉ nâng cao được hiệu quả đào tạo mà còn khẳng định được uy tín và sự chuyên nghiệp trong mắt học viên và các đối tác Nhật Bản. Công nghệ đã thực sự trở thành đòn bẩy để tri thức được truyền tải một cách sinh động và hiệu quả nhất.'
       }
     ]
   },
@@ -1710,6 +1670,146 @@ export const blogPosts: BlogPost[] = [
       {
         type: 'paragraph',
         content: 'Bạn đã sẵn sàng để nâng tầm trung tâm laptop của mình? Liên hệ với Tanoshi ngay hôm nay để nhận blueprint giải pháp tối ưu nhất.'
+      }
+    ]
+  },
+  {
+    id: '15',
+    title: 'Gia Dụng Nhanh: Số hóa Chuỗi vận hành và Quản lý Kho hàng Thông minh WMS trên nền tảng Odoo ERP',
+    slug: 'giadungnhanh-odoo-digital-transformation',
+    excerpt: 'Khám phá hành trình chuyển đổi số đột phá tại Gia Dụng Nhanh - nhà phân phối đồ gia dụng và tiện ích thông minh hàng đầu. Từ việc quản lý thủ công hàng nghìn mã SKU đến hệ thống Odoo WMS tích hợp Barcode quét mã, tự động hóa luồng Wave/Batch Picking, đồng bộ đa sàn và đối soát tài chính tức thời.',
+    date: 'May 22, 2026',
+    author: 'Tanoshi Vietnam Business Team',
+    category: 'Business Solutions',
+    imageUrl: '/lovable-uploads/laptop_wholesale_dx_dashboard_1778067348103.png',
+    keywords: [
+      'Gia Dụng Nhanh',
+      'Odoo ERP',
+      'Odoo WMS',
+      'Quản lý kho hàng gia dụng',
+      'Đồng bộ thương mại điện tử',
+      'Barcode WMS',
+      'Tanoshi Vietnam'
+    ],
+    metaDescription: 'Case study chuyển đổi số toàn diện cho Gia Dụng Nhanh bằng Odoo ERP & WMS. Tối ưu hóa vận hành kho hàng bằng mã vạch, tự động hóa xử lý đơn hàng đa kênh và đối soát tài chính tức thời.',
+    content: [
+      {
+        type: 'paragraph',
+        content: 'Gia Dụng Nhanh là thương hiệu phân phối đồ gia dụng và tiện ích thông minh hàng đầu tại Việt Nam, phục vụ hàng chục nghìn đơn hàng mỗi ngày từ các kênh bán lẻ, đại lý cho đến các sàn thương mại điện tử (Shopee, Lazada, Tiktok Shop, Website). Với tốc độ tăng trưởng vượt bậc, mô hình vận hành dựa trên Excel và ghi nhớ thủ công trước đây nhanh chóng bộc lộ những lỗ hổng nghiêm trọng.'
+      },
+      {
+        type: 'heading',
+        content: 'Thách thức & Nỗi đau Vận hành Kho hàng Gia dụng'
+      },
+      {
+        type: 'split-image-list',
+        image: '/lovable-uploads/pain_icon.png',
+        items: [
+          'QUẢN LÝ SKU KHỔNG LỒ: Hàng nghìn mã hàng gia dụng với nhiều kích cỡ, màu sắc, lô sản xuất khác nhau, quản lý bằng Excel dẫn đến tình trạng sai lệch tồn kho liên tục.',
+          'TẮC NGHẼN PICK & PACK: Nhân viên kho phải đi tìm hàng theo trí nhớ, mất nhiều thời gian tìm kiếm sản phẩm, tỷ lệ nhầm lẫn mẫu mã khi đóng gói cao.',
+          'TRỄ ĐỒNG BỘ ĐA KÊNH: Tồn kho trên Shopee, Lazada, Tiktok Shop không được cập nhật thời gian thực, dẫn đến tình trạng cháy hàng ảo hoặc bỏ lỡ cơ hội bán lẻ.',
+          'ĐỐI SOÁT COD GIAN NAN: Việc đối soát dòng tiền từ các đơn vị vận chuyển (GHTK, GHN, Viettel Post...) và dòng tiền thu hộ từ các sàn tốn hàng tuần liền, dễ thất thoát doanh thu.'
+        ]
+      },
+      {
+        type: 'quote',
+        content: '"Khi quy mô đạt 3.000 đơn/ngày, việc quản lý kho bằng Excel hoàn toàn sụp đổ. Chúng tôi liên tục bị sàn phạt vì giao trễ và tỷ lệ hoàn hàng do đóng nhầm sản phẩm tăng vọt." - Đại diện vận hành Gia Dụng Nhanh chia sẻ.'
+      },
+      {
+        type: 'heading',
+        content: 'Hệ thống Odoo ERP & WMS Chuyên biệt từ Tanoshi Vietnam'
+      },
+      {
+        type: 'paragraph',
+        content: 'Để giải quyết triệt để các bài toán trên, Tanoshi Vietnam đã tư vấn và triển khai giải pháp ERP & WMS tùy biến trên nền tảng Odoo, giúp tự động hóa và tối ưu hóa 100% quy trình từ lúc khách đặt hàng cho đến khi đóng gói xuất kho.'
+      },
+      {
+        type: 'feature-grid',
+        featureGridData: {
+          title: 'Hệ thống Quản trị Gia Dụng Nhanh Odoo ERP',
+          subtitle: 'Đồng bộ toàn diện - Vận hành kho thông minh',
+          status: 'Go-live',
+          groups: [
+            {
+              title: '1. Smart WMS & Barcode',
+              items: ['Quản lý kho theo vị trí (Bin-location)', 'Quét Barcode/QR bằng máy cầm tay chuyên dụng', 'Quy trình nhập kho, kiểm kê di động thông minh']
+            },
+            {
+              title: '2. Tự động hóa Picking',
+              items: ['Áp dụng thuật toán Wave Picking (nhặt hàng theo làn)', 'Batch Picking (nhặt gom nhiều đơn cùng loại)', 'Tự động tối ưu hóa lộ trình di chuyển của nhân viên kho']
+            },
+            {
+              title: '3. Đồng bộ Đa kênh (Omnichannel)',
+              items: ['Kết nối API trực tiếp Shopee, Lazada, Tiktok Shop', 'Tự động kéo đơn hàng về Odoo xử lý', 'Cập nhật tồn kho tức thời lên các sàn khi có biến động']
+            },
+            {
+              title: '4. Đối soát Tài chính tự động',
+              items: ['Tự động đối soát COD từ hãng vận chuyển', 'Reconciliation doanh thu từ sàn TMĐT', 'Báo cáo lãi lỗ chi tiết theo từng đơn hàng']
+            }
+          ]
+        }
+      },
+      {
+        type: 'heading',
+        content: 'Phân tích GAP: Vận hành trước và sau khi số hóa'
+      },
+      {
+        type: 'table',
+        tableData: {
+          headers: ['Nghiệp vụ', 'Quy trình thủ công cũ (Excel)', 'Hệ thống Odoo ERP (Tanoshi)'],
+          icons: ['Zap', 'Package', 'ArrowRightLeft', 'TrendingUp'],
+          rows: [
+            ['Lấy hàng (Picking)', 'Tìm hàng bằng trí nhớ, mất 5-7 phút/đơn, tỷ lệ sai mẫu 4%', 'Hệ thống dẫn đường qua app Barcode, chỉ mất 1.5 phút/đơn, chính xác 99.9%'],
+            ['Đồng bộ tồn kho', 'Cập nhật tay cuối ngày trên từng sàn, dễ bị phạt vì âm kho', 'Tự động đồng bộ realtime trong 2 giây sau mỗi giao dịch'],
+            ['Đối soát COD', 'Kế toán đối chiếu file Excel thủ công mất 3-5 ngày', 'Hệ thống tự động so khớp đối soát COD chỉ trong 5 phút'],
+            ['Báo cáo quản trị', 'Chờ số liệu cuối tháng, độ trễ và sai lệch cao', 'Dashboard hiển thị realtime doanh thu, chi phí, biên lợi nhuận']
+          ]
+        }
+      },
+      {
+        type: 'heading',
+        content: 'Hiệu quả đột phá sau khi triển khai'
+      },
+      {
+        type: 'stats',
+        statsData: [
+          {
+            value: '180%',
+            label: 'Tăng tốc độ pick-pack hàng',
+            icon: 'Zap'
+          },
+          {
+            value: '99.9%',
+            label: 'Độ chính xác tồn kho và đóng gói',
+            icon: 'CheckCircle'
+          },
+          {
+            value: '85%',
+            label: 'Giảm thời gian đối soát tài chính',
+            icon: 'Clock'
+          }
+        ]
+      },
+      {
+        type: 'heading',
+        content: 'Biểu đồ Tăng trưởng & Tối ưu Vận hành'
+      },
+      {
+        type: 'chart',
+        chartData: {
+          title: 'Chỉ số cải tiến vận hành sau 3 tháng Go-live (%)',
+          data: [
+            { name: 'Tốc độ Pick-Pack', value: 95 },
+            { name: 'Chính xác Đơn hàng', value: 99.9 },
+            { name: 'Tự động hóa Đồng bộ', value: 98 },
+            { name: 'Tốc độ Đối soát', value: 90 },
+            { name: 'Giảm Chi phí Vận hành', value: 35 }
+          ]
+        }
+      },
+      {
+        type: 'paragraph',
+        content: 'Dự án chuyển đổi số tại Gia Dụng Nhanh là một minh chứng rõ nét cho thấy: Khi công nghệ WMS thông minh kết hợp cùng hệ thống ERP mạnh mẽ như Odoo, doanh nghiệp bán lẻ và phân phối có thể bứt phá giới hạn vận hành, tối ưu hóa chi phí nhân sự và mang lại trải nghiệm mua sắm hoàn hảo nhất cho khách hàng.'
       }
     ]
   }

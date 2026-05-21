@@ -20,22 +20,22 @@ const TABS = [
 const getPostTabs = (slug: string): string[] => {
   switch (slug) {
     case 'steps-english-center-digital-transformation':
-      // dự án SEPTs cho vào automation ( hiển thị luôn cả bên LMS)
-      // "steps" also maps to LMS
+    case 'nzedu-smart-education-ecosystem':
+      // hiển thị ở cả lms và automation
       return ['lms', 'automation'];
     case 'ikigai-jltc-manager-digital-transformation':
-    case 'nzedu-smart-education-ecosystem':
     case 'tanthanh-edu-digital-transformation':
-    case 'tieng-nhat-thuan-phat-lms-solution':
+    case 'tieng-nhat-vui-ve-lms-solution':
     case 'menglish-digital-transformation-case-study':
-      // dự án ikigai , nzedu, tanthanh, steps, tiengnhat thuan phat, kieu lien vào LMS
+      // dự án ikigai , tanthanh, steps, tiengnhat vui ve, kieu lien vào LMS
       return ['lms'];
     case 'ikigai-ship-track-digital-transformation':
       // dự án ikigai logictics vào LOGITICS
       return ['logistics'];
     case 'chuyen-doi-so-ban-si-laptop-tanoshi':
     case 'sess-warehouse-management-digital-transformation':
-      // dự án ECO bán sĩ laptop, sess vào WAREHOUSE
+    case 'giadungnhanh-odoo-digital-transformation':
+      // dự án ECO bán sĩ laptop, sess, gia dụng nhanh vào WAREHOUSE
       return ['warehouse'];
     case 'from-idea-to-launch-development-process':
     case 'boost-your-education-center-growth':
