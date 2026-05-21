@@ -30,8 +30,8 @@ const getPostTabs = (slug: string): string[] => {
       // dự án ikigai , tanthanh, steps, tiengnhat vui ve, kieu lien vào LMS
       return ['lms'];
     case 'ikigai-ship-track-digital-transformation':
-      // dự án ikigai logictics vào LOGITICS
-      return ['logistics'];
+      // dự án ikigai logictics vào LOGITICS và AUTOMATION
+      return ['logistics', 'automation'];
     case 'chuyen-doi-so-ban-si-laptop-tanoshi':
     case 'sess-warehouse-management-digital-transformation':
     case 'giadungnhanh-odoo-digital-transformation':
