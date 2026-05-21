@@ -14,6 +14,7 @@ const TABS = [
   { id: 'automation', label: 'AUTOMATION' },
   { id: 'logistics', label: 'LOGISTICS' },
   { id: 'warehouse', label: 'WAREHOUSE' },
+  { id: 'website', label: 'WEBSITE' },
   { id: 'supporter', label: 'SUPPORTER' }
 ];
 
