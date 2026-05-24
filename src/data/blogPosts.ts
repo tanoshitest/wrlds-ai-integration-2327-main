@@ -1838,6 +1838,28 @@ if (logisticsTemplatePost) {
   });
 }
 
+const automationTemplatePost = blogPosts.find(
+  post => post.slug === 'ikigai-ship-track-digital-transformation'
+);
+
+if (automationTemplatePost) {
+  blogPosts.push({
+    ...automationTemplatePost,
+    id: '24',
+    title: 'ADS PORTAL AUTOMATION',
+    slug: 'ads-portal-automation',
+    category: 'Automation Solutions',
+    metaDescription: 'ADS PORTAL AUTOMATION project case study based on Tanoshi Vietnam automation and digital workflow solutions.',
+    keywords: [
+      'ADS PORTAL AUTOMATION',
+      'Automation Solutions',
+      'Workflow Automation',
+      'Digital Transformation',
+      'Tanoshi Vietnam'
+    ]
+  });
+}
+
 const websiteTemplatePost = blogPosts.find(
   post => post.slug === 'tanoshi-sme-startup-all-in-one-solution'
 );

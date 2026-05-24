@@ -34,6 +34,8 @@ const getPostTabs = (slug: string): string[] => {
     case 'van-chuyen-viet-trung-quocviet-jn':
       // dự án ikigai logictics vào LOGITICS và AUTOMATION
       return ['logistics', 'automation'];
+    case 'ads-portal-automation':
+      return ['automation'];
     case 'chuyen-doi-so-ban-si-laptop-tanoshi':
     case 'sess-warehouse-management-digital-transformation':
     case 'giadungnhanh-odoo-digital-transformation':
