@@ -31,6 +31,7 @@ const getPostTabs = (slug: string): string[] => {
       // dự án ikigai , tanthanh, steps, tiengnhat vui ve, kieu lien vào LMS
       return ['lms'];
     case 'ikigai-ship-track-digital-transformation':
+    case 'van-chuyen-viet-trung-quocviet-jn':
       // dự án ikigai logictics vào LOGITICS và AUTOMATION
       return ['logistics', 'automation'];
     case 'chuyen-doi-so-ban-si-laptop-tanoshi':
@@ -38,6 +39,14 @@ const getPostTabs = (slug: string): string[] => {
     case 'giadungnhanh-odoo-digital-transformation':
       // dự án ECO bán sĩ laptop, sess, gia dụng nhanh vào WAREHOUSE
       return ['warehouse'];
+    case 'eco-tech-website':
+    case 'triple-j-homes-website':
+    case 'me-english-website':
+    case 'nz-edu-website':
+    case 'steps-website':
+    case 'hb-agency':
+    case 'betonabi-blog':
+      return ['website'];
     case 'from-idea-to-launch-development-process':
     case 'boost-your-education-center-growth':
     case 'tanoshi-sme-startup-all-in-one-solution':
@@ -133,4 +142,3 @@ const Blog = () => {
 };
 
 export default Blog;
-

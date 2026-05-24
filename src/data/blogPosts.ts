@@ -1323,25 +1323,25 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: '12',
-    title: 'Tiếng Nhật Vui Vẻ: Số hóa Đào tạo Tiếng Nhật cho học viên Xuất khẩu lao động',
+    title: 'Tieng Nhat Thuan phát: Số hóa Đào tạo Tiếng Nhật cho học viên Xuất khẩu lao động',
     slug: 'tieng-nhat-vui-ve-lms-solution',
-    excerpt: 'Khám phá cách Tiếng Nhật Vui Vẻ đồng bộ hóa giáo trình, đóng gói khóa học online và ứng dụng Game hóa vào giảng dạy để tối ưu hóa hiệu quả học tập.',
+    excerpt: 'Khám phá cách Tieng Nhat Thuan phát đồng bộ hóa giáo trình, đóng gói khóa học online và ứng dụng Game hóa vào giảng dạy để tối ưu hóa hiệu quả học tập.',
     date: 'May 6, 2026',
     author: 'Tanoshi Vietnam EdTech Team',
     category: 'EdTech Solutions',
     imageUrl: '/lovable-uploads/thuan_phat_japanese_online_lms_1778070033525.png',
     keywords: [
-      'Tiếng Nhật Vui Vẻ',
+      'Tieng Nhat Thuan phát',
       'LMS tiếng Nhật',
       'Đào tạo XKLĐ',
       'Quiz tiếng Nhật online',
       'Gamification giáo dục'
     ],
-    metaDescription: 'Giải pháp số hóa toàn diện cho Tiếng Nhật Vui Vẻ: Đóng gói khóa học, đồng bộ slide bài giảng và tích hợp hệ thống Game & Quiz Online chuyên nghiệp.',
+    metaDescription: 'Giải pháp số hóa toàn diện cho Tieng Nhat Thuan phát: Đóng gói khóa học, đồng bộ slide bài giảng và tích hợp hệ thống Game & Quiz Online chuyên nghiệp.',
     content: [
       {
         type: 'paragraph',
-        content: 'Đào tạo tiếng Nhật cho học viên xuất khẩu lao động (XKLĐ) đòi hỏi sự tập trung cao độ vào tính ứng dụng và khả năng ghi nhớ nhanh. Tuy nhiên, việc duy trì chất lượng giảng dạy đồng đều trên nền tảng online thường gặp nhiều trở ngại về công cụ và tài liệu. Tiếng Nhật Vui Vẻ đã cùng Tanoshi giải quyết triệt để vấn đề này thông qua hệ thống LMS 4.0.'
+        content: 'Đào tạo tiếng Nhật cho học viên xuất khẩu lao động (XKLĐ) đòi hỏi sự tập trung cao độ vào tính ứng dụng và khả năng ghi nhớ nhanh. Tuy nhiên, việc duy trì chất lượng giảng dạy đồng đều trên nền tảng online thường gặp nhiều trở ngại về công cụ và tài liệu. Tieng Nhat Thuan phát đã cùng Tanoshi giải quyết triệt để vấn đề này thông qua hệ thống LMS 4.0.'
       },
       {
         type: 'heading',
@@ -1363,12 +1363,12 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        content: 'Chúng tôi đã xây dựng cho Tiếng Nhật Vui Vẻ một hệ thống học tập trực tuyến tích hợp đầy đủ các công cụ hỗ trợ giảng dạy hiện đại:'
+        content: 'Chúng tôi đã xây dựng cho Tieng Nhat Thuan phát một hệ thống học tập trực tuyến tích hợp đầy đủ các công cụ hỗ trợ giảng dạy hiện đại:'
       },
       {
         type: 'feature-grid',
         featureGridData: {
-          title: 'Hệ thống LMS Vui Vẻ Online',
+          title: 'Hệ thống LMS Tieng Nhat Thuan phát Online',
           subtitle: 'Học tập tương tác - Đào tạo chuẩn hóa',
           status: 'Go-live',
           groups: [
@@ -1410,7 +1410,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'paragraph',
-        content: 'Với hệ thống mới, Tiếng Nhật Vui Vẻ không chỉ nâng cao được hiệu quả đào tạo mà còn khẳng định được uy tín và sự chuyên nghiệp trong mắt học viên và các đối tác Nhật Bản. Công nghệ đã thực sự trở thành đòn bẩy để tri thức được truyền tải một cách sinh động và hiệu quả nhất.'
+        content: 'Với hệ thống mới, Tieng Nhat Thuan phát không chỉ nâng cao được hiệu quả đào tạo mà còn khẳng định được uy tín và sự chuyên nghiệp trong mắt học viên và các đối tác Nhật Bản. Công nghệ đã thực sự trở thành đòn bẩy để tri thức được truyền tải một cách sinh động và hiệu quả nhất.'
       }
     ]
   },
@@ -1814,3 +1814,86 @@ export const blogPosts: BlogPost[] = [
     ]
   }
 ];
+
+const logisticsTemplatePost = blogPosts.find(
+  post => post.slug === 'ikigai-ship-track-digital-transformation'
+);
+
+if (logisticsTemplatePost) {
+  const logisticsTemplateIndex = blogPosts.indexOf(logisticsTemplatePost);
+
+  blogPosts.splice(logisticsTemplateIndex + 1, 0, {
+    ...logisticsTemplatePost,
+    id: '16',
+    title: 'Vận chuyển Việt - Trung Quocviet JN',
+    slug: 'van-chuyen-viet-trung-quocviet-jn',
+    metaDescription: 'Case study vận chuyển Việt - Trung Quocviet JN dựa trên nội dung giải pháp logistics IKIGAI Ship Track.',
+    keywords: [
+      'Vận chuyển Việt Trung',
+      'Quocviet JN',
+      'Logistics Digital Transformation',
+      'Shipping Management System',
+      'Tanoshi Vietnam'
+    ]
+  });
+}
+
+const websiteTemplatePost = blogPosts.find(
+  post => post.slug === 'tanoshi-sme-startup-all-in-one-solution'
+);
+
+if (websiteTemplatePost) {
+  const websitePosts = [
+    {
+      id: '17',
+      title: 'ECO TECH WEBSITE',
+      slug: 'eco-tech-website'
+    },
+    {
+      id: '18',
+      title: 'TRIPLE J HOMES WEBSITE',
+      slug: 'triple-j-homes-website'
+    },
+    {
+      id: '19',
+      title: 'ME ENGLISH WEBSITE',
+      slug: 'me-english-website'
+    },
+    {
+      id: '20',
+      title: 'NZ EDU WEBSITE',
+      slug: 'nz-edu-website'
+    },
+    {
+      id: '21',
+      title: 'STEPS WEBSITE',
+      slug: 'steps-website'
+    },
+    {
+      id: '22',
+      title: 'HB AGENCY',
+      slug: 'hb-agency'
+    },
+    {
+      id: '23',
+      title: 'BETONABI BLOG',
+      slug: 'betonabi-blog'
+    }
+  ];
+
+  blogPosts.push(
+    ...websitePosts.map(post => ({
+      ...websiteTemplatePost,
+      ...post,
+      category: 'Website Solutions',
+      metaDescription: `${post.title} project case study based on Tanoshi Vietnam website design and digital launchpad solutions.`,
+      keywords: [
+        post.title,
+        'Website Design',
+        'Web Development',
+        'Tanoshi Vietnam',
+        'Digital Solutions'
+      ]
+    }))
+  );
+}
