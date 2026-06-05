@@ -27,6 +27,8 @@ const getPostTabs = (slug: string): string[] => {
     case 'ikigai-jltc-manager-digital-transformation':
     case 'tanthanh-edu-digital-transformation':
     case 'tieng-nhat-vui-ve-lms-solution':
+    case 'tieng-nhat-vui-ve-hoc-tieng-nhat-thuan-phat':
+    case 'tieng-anh-a-to-z-lms-solution':
     case 'menglish-digital-transformation-case-study':
       // dự án ikigai , tanthanh, steps, tiengnhat vui ve, kieu lien vào LMS
       return ['lms'];

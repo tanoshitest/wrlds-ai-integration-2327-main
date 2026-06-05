@@ -55,6 +55,218 @@ export interface ContentSection {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: '15',
+    title: 'Tiếng Nhật Vui Vẻ: Học Tiếng Nhật Thuần Phát Theo Cách Thú Vị Nhất! 🎌',
+    slug: 'tieng-nhat-vui-ve-hoc-tieng-nhat-thuan-phat',
+    excerpt: 'Khám phá cách học tiếng Nhật thuần phát âm một cách vui vẻ, dễ nhớ và hiệu quả! Từ Hiragana, Katakana đến các cụm từ hàng ngày — tất cả được trình bày theo phong cách sinh động, gần gũi.',
+    date: 'June 3, 2026',
+    author: 'Tanoshi Vietnam EdTech Team',
+    category: 'EdTech Solutions',
+    imageUrl: '/lovable-uploads/edtech_lms_growth_blog.png',
+    keywords: [
+      'tiếng Nhật vui vẻ',
+      'học tiếng Nhật thuần phát',
+      'Hiragana Katakana',
+      'JLPT N5',
+      'học tiếng Nhật cho người mới',
+      'Tanoshi Vietnam',
+      'tiếng Nhật cơ bản',
+      'phát âm tiếng Nhật'
+    ],
+    metaDescription: 'Hướng dẫn học tiếng Nhật thuần phát theo cách vui vẻ nhất! Cùng Tanoshi Vietnam khám phá Hiragana, Katakana, từ vựng và các mẫu câu hàng ngày một cách thú vị và dễ nhớ.',
+    content: [
+      {
+        type: 'paragraph',
+        content: 'Bạn có bao giờ nghe một câu tiếng Nhật và thấy nó... hay ho một cách kỳ lạ không? 😄 「すみません！」(Sumimasen!) — Xin lỗi! Hay 「ありがとうございます！」(Arigatou gozaimasu!) — Cảm ơn rất nhiều! Tiếng Nhật không khó như bạn nghĩ — đặc biệt khi bạn học theo đúng cách: vui vẻ, thuần phát âm và gắn liền với thực tế!'
+      },
+      {
+        type: 'heading',
+        content: '🎵 Tại Sao Nên Học Tiếng Nhật Theo Phương Pháp Thuần Phát?'
+      },
+      {
+        type: 'paragraph',
+        content: 'Phương pháp "thuần phát" (phonetic immersion) nghĩa là bạn học tiếng Nhật thông qua âm thanh và phát âm thực tế, không cần dịch từng từ qua tiếng Việt. Não bộ của bạn sẽ kết nối trực tiếp từ âm thanh đến ý nghĩa — giống như cách bạn học tiếng mẹ đẻ hồi còn nhỏ!'
+      },
+      {
+        type: 'stats',
+        statsData: [
+          {
+            value: '46',
+            label: 'Ký tự Hiragana cơ bản cần học',
+            icon: 'BookOpen'
+          },
+          {
+            value: '3x',
+            label: 'Nhanh hơn khi học qua âm thanh',
+            icon: 'Zap'
+          },
+          {
+            value: '30',
+            label: 'Ngày để nói câu đơn giản đầu tiên',
+            icon: 'Clock'
+          }
+        ]
+      },
+      {
+        type: 'heading',
+        content: '🌸 Bước 1: Làm Quen Với Hiragana — Bảng Chữ Cái Đáng Yêu Nhất!'
+      },
+      {
+        type: 'paragraph',
+        content: 'Hiragana là nền tảng của tiếng Nhật. Chỉ cần 2-3 tuần, bạn có thể đọc được toàn bộ 46 ký tự này. Bí quyết? Học theo nhóm âm và liên tưởng hình ảnh vui vẻ!'
+      },
+      {
+        type: 'table',
+        tableData: {
+          headers: ['Nhóm Âm', 'Ký Tự Hiragana', 'Phát Âm', 'Mẹo Nhớ Vui'],
+          rows: [
+            ['Nhóm A', 'あ い う え お', 'a - i - u - e - o', '🍎 A như quả apple tròn trịa!'],
+            ['Nhóm KA', 'か き く け こ', 'ka - ki - ku - ke - ko', '🔑 KA như chiếc chìa khóa (key)!'],
+            ['Nhóm SA', 'さ し す せ そ', 'sa - shi - su - se - so', '🌊 SA như sóng biển (sa... sa...)!'],
+            ['Nhóm TA', 'た ち つ て と', 'ta - chi - tsu - te - to', '🍵 TA như ấm trà (tea - TE!)'],
+            ['Nhóm NA', 'な に ぬ ね の', 'na - ni - nu - ne - no', '🎵 NA ni nu ne no — hát lên nào!']
+          ]
+        }
+      },
+      {
+        type: 'heading',
+        content: '🎯 Bước 2: Katakana — "Người Anh Em Song Sinh" Của Hiragana'
+      },
+      {
+        type: 'paragraph',
+        content: 'Katakana được dùng để viết các từ ngoại lai — và đây là tin vui: rất nhiều từ Katakana bắt nguồn từ tiếng Anh! Khi bạn đọc được Katakana, bạn đã "biết" hàng trăm từ tiếng Nhật mà không cần học thêm!'
+      },
+      {
+        type: 'icon-list',
+        items: [
+          '🍕 ピザ (Piza) = Pizza',
+          '☕ コーヒー (Koohii) = Coffee',
+          '🚌 バス (Basu) = Bus',
+          '📱 スマートフォン (Sumaatofon) = Smartphone',
+          '🎮 ゲーム (Geemu) = Game',
+          '🍦 アイスクリーム (Aisukuriimu) = Ice Cream',
+          '🎵 ミュージック (Myuujikku) = Music',
+          '🌐 インターネット (Intaanetto) = Internet'
+        ]
+      },
+      {
+        type: 'heading',
+        content: '💬 Bước 3: 20 Câu Tiếng Nhật "Thuần Phát" Dùng Được Ngay!'
+      },
+      {
+        type: 'paragraph',
+        content: 'Đây là những câu bạn nên học ngay hôm nay — phát âm to, tự tin, và đừng ngại sai! Người Nhật luôn mỉm cười với những ai cố gắng nói tiếng của họ! 😊'
+      },
+      {
+        type: 'table',
+        tableData: {
+          headers: ['Tiếng Nhật', 'Romaji (Phát Âm)', 'Tiếng Việt', 'Dùng Khi Nào?'],
+          rows: [
+            ['おはようございます', 'Ohayou gozaimasu', 'Chào buổi sáng!', '🌅 Buổi sáng (lịch sự)'],
+            ['こんにちは', 'Konnichiwa', 'Xin chào!', '☀️ Ban ngày'],
+            ['こんばんは', 'Konbanwa', 'Chào buổi tối!', '🌙 Buổi tối'],
+            ['ありがとうございます', 'Arigatou gozaimasu', 'Cảm ơn rất nhiều!', '🙏 Cảm ơn trang trọng'],
+            ['すみません', 'Sumimasen', 'Xin lỗi / Xin phép!', '🙇 Xin lỗi hoặc gọi waiter'],
+            ['はじめまして', 'Hajimemashite', 'Rất vui được gặp bạn!', '🤝 Lần đầu gặp mặt'],
+            ['わかりました', 'Wakarimashita', 'Tôi hiểu rồi!', '✅ Sau khi nghe giải thích'],
+            ['おいしい！', 'Oishii!', 'Ngon quá!', '🍜 Khi ăn đồ ngon'],
+            ['かわいい！', 'Kawaii!', 'Dễ thương quá!', '🐱 Khi thấy thứ đáng yêu'],
+            ['がんばって！', 'Ganbatte!', 'Cố lên! Chúc may mắn!', '💪 Động viên ai đó']
+          ]
+        }
+      },
+      {
+        type: 'heading',
+        content: '🎌 Bước 4: Học Qua Văn Hóa Nhật Bản — Vui Mà Không Thấy Mình Đang Học!'
+      },
+      {
+        type: 'paragraph',
+        content: 'Bí mật lớn nhất để học tiếng Nhật nhanh là: HÃY YÊU THÍCH VĂN HÓA NHẬT! Xem anime, nghe nhạc J-pop, nấu ăn theo công thức Nhật, hoặc xem các video du lịch Nhật Bản. Khi bạn yêu thứ gì đó, não bộ sẽ tự động ghi nhớ ngôn ngữ liên quan!'
+      },
+      {
+        type: 'feature-grid',
+        featureGridData: {
+          title: 'Lộ Trình Học Tiếng Nhật Vui Vẻ 3 Tháng',
+          groups: [
+            {
+              title: '📅 Tháng 1: Nền Tảng',
+              items: ['Học Hiragana (tuần 1-2)', 'Học Katakana (tuần 3-4)', 'Số đếm 1-100', '20 câu chào hỏi cơ bản']
+            },
+            {
+              title: '📅 Tháng 2: Xây Dựng',
+              items: ['Từ vựng N5 (800 từ)', 'Mẫu câu cơ bản', 'Kanji đơn giản (N5)', 'Luyện nghe podcast tiếng Nhật']
+            },
+            {
+              title: '📅 Tháng 3: Thực Hành',
+              items: ['Giao tiếp cơ bản', 'Đọc manga đơn giản', 'Nói chuyện với người bản ngữ', 'Chuẩn bị thi JLPT N5']
+            },
+            {
+              title: '🎯 Mẹo Học Mỗi Ngày',
+              highlight: true,
+              items: ['15 phút sáng: Ôn từ vựng mới', '10 phút trưa: Nghe nhạc/podcast Nhật', '20 phút tối: Luyện viết và đọc', 'Xem 1 clip YouTube tiếng Nhật']
+            }
+          ]
+        }
+      },
+      {
+        type: 'heading',
+        content: '🌟 Cụm Từ "Thuần Nhật" Siêu Đáng Yêu Bạn Nên Biết'
+      },
+      {
+        type: 'paragraph',
+        content: 'Tiếng Nhật có nhiều cụm từ không thể dịch trực tiếp sang tiếng Việt — và đây chính là điều làm ngôn ngữ này trở nên đặc biệt và thú vị!'
+      },
+      {
+        type: 'list',
+        items: [
+          '🌸 木漏れ日 (Komorebi) — Ánh nắng lọc qua kẽ lá cây. Đẹp quá có 1 từ để nói điều này!',
+          '😊 木の葉 (Konoha) — Lá cây, nhưng nghe như tên một nhân vật anime nào đó!',
+          '🍂 物の哀れ (Mono no Aware) — Vẻ đẹp thoáng qua của vạn vật, sự buồn dịu khi thứ đẹp tàn.',
+          '🤗 甘え (Amae) — Sự nũng nịu, phụ thuộc ngọt ngào vào người thân yêu.',
+          '🏃 木漏れ日 (Ikigai) — Lý do sống, điều khiến bạn muốn thức dậy mỗi sáng.',
+          '😋 もったいない (Mottainai) — Tiếc lắm! Đừng lãng phí! (Có cả triết lý sống trong đó!)',
+          '🎭 建前と本音 (Tatemae to Honne) — Mặt ngoài và trong thật — văn hóa giao tiếp độc đáo!'
+        ]
+      },
+      {
+        type: 'quote',
+        content: '「継続は力なり」— Keizoku wa chikara nari — Kiên trì là sức mạnh. Học tiếng Nhật mỗi ngày một chút, và bạn sẽ ngạc nhiên về bản thân mình sau 3 tháng! 🌸'
+      },
+      {
+        type: 'heading',
+        content: '🚀 Bắt Đầu Hành Trình Tiếng Nhật Ngay Hôm Nay!'
+      },
+      {
+        type: 'paragraph',
+        content: 'Tanoshi Vietnam đang phát triển nền tảng học tiếng Nhật online hoàn toàn bằng phương pháp thuần phát — với hệ thống Nihongo Chiyou Lab tích hợp 50 bài Minna no Nihongo, 398K Kanji và hệ thống thi JLPT N5-N4 thông minh. Đây là cách học tiếng Nhật hiệu quả nhất cho người Việt!'
+      },
+      {
+        type: 'stats',
+        statsData: [
+          {
+            value: '50',
+            label: 'Bài học Minna no Nihongo',
+            icon: 'BookOpen'
+          },
+          {
+            value: '398K+',
+            label: 'Dữ liệu Kanji',
+            icon: 'Layout'
+          },
+          {
+            value: 'N5-N4',
+            label: 'Thi JLPT mô phỏng thật',
+            icon: 'Zap'
+          }
+        ]
+      },
+      {
+        type: 'paragraph',
+        content: 'Tiếng Nhật vui vẻ — đó không chỉ là khẩu hiệu, đó là triết lý học tập của chúng tôi! Hãy liên hệ Tanoshi Vietnam để được tư vấn lộ trình học tiếng Nhật phù hợp nhất với bạn. さあ、始めましょう！(Saa, hajimemashou!) — Nào, hãy bắt đầu thôi! 🎌'
+      }
+    ]
+  },
+  {
     id: '13',
     title: 'STEPS English Center: Nâng tầm Quản lý Đào tạo bằng Công nghệ LMS Hiện đại',
     slug: 'steps-english-center-digital-transformation',
@@ -1341,7 +1553,7 @@ export const blogPosts: BlogPost[] = [
     content: [
       {
         type: 'paragraph',
-        content: 'Đào tạo tiếng Nhật cho học viên xuất khẩu lao động (XKLĐ) đòi hỏi sự tập trung cao độ vào tính ứng dụng và khả năng ghi nhớ nhanh. Tuy nhiên, việc duy trì chất lượng giảng dạy đồng đều trên nền tảng online thường gặp nhiều trở ngại về công cụ và tài liệu. Tieng Nhat Thuan phát đã cùng Tanoshi giải quyết triệt để vấn đề này thông qua hệ thống LMS 4.0.'
+        content: 'Đào tạo tiếng Nhật cho học viên xuất khẩu lao động (XKLĐ) đòi hỏi sự tập trung cao độ vào tính ứng dụng và khả năng ghi nhớ nhanh. Tuy nhiên, việc duy trì chất lượng giảng dạy đồng đều trên nền tảng online thường gặp nhiều trở ngại về công cụ và tài liệu. Tieng Nhat Thuan phát đã cùng Tanoshi giải quyết triệt toản diện vấn đề này thông qua hệ thống LMS 4.0.'
       },
       {
         type: 'heading',
@@ -1411,6 +1623,99 @@ export const blogPosts: BlogPost[] = [
       {
         type: 'paragraph',
         content: 'Với hệ thống mới, Tieng Nhat Thuan phát không chỉ nâng cao được hiệu quả đào tạo mà còn khẳng định được uy tín và sự chuyên nghiệp trong mắt học viên và các đối tác Nhật Bản. Công nghệ đã thực sự trở thành đòn bẩy để tri thức được truyền tải một cách sinh động và hiệu quả nhất.'
+      }
+    ]
+  },
+  {
+    id: '25',
+    title: 'Tiếng Anh A to Z: Số hóa Đào tạo Tiếng Anh cho học viên Xuất khẩu lao động',
+    slug: 'tieng-anh-a-to-z-lms-solution',
+    excerpt: 'Khám phá cách Tiếng Anh A to Z đồng bộ hóa giáo trình, đóng gói khóa học online và ứng dụng Game hóa vào giảng dạy để tối ưu hóa hiệu quả học tập.',
+    date: 'May 6, 2026',
+    author: 'Tanoshi Vietnam EdTech Team',
+    category: 'EdTech Solutions',
+    imageUrl: '/lovable-uploads/english_a_to_z_lms_1780464735415.png',
+    keywords: [
+      'Tiếng Anh A to Z',
+      'LMS tiếng Anh',
+      'Đào tạo XKLĐ',
+      'Quiz tiếng Anh online',
+      'Gamification giáo dục'
+    ],
+    metaDescription: 'Giải pháp số hóa toàn diện cho Tiếng Anh A to Z: Đóng gói khóa học, đồng bộ slide bài giảng và tích hợp hệ thống Game & Quiz Online chuyên nghiệp.',
+    content: [
+      {
+        type: 'paragraph',
+        content: 'Đào tạo tiếng Anh cho học viên xuất khẩu lao động (XKLĐ) đòi hỏi sự tập trung cao độ vào tính ứng dụng và khả năng ghi nhớ nhanh. Tuy nhiên, việc duy trì chất lượng giảng dạy đồng đều trên nền tảng online thường gặp nhiều trở ngại về công cụ và tài liệu. Tiếng Anh A to Z đã cùng Tanoshi giải quyết triệt để vấn đề này thông qua hệ thống LMS 4.0.'
+      },
+      {
+        type: 'heading',
+        content: 'Painpoints: Những thách thức trong đào tạo tiếng Anh XKLĐ'
+      },
+      {
+        type: 'split-image-list',
+        image: '/lovable-uploads/pain_icon.png',
+        items: [
+          'Không đóng gói được khóa học: Tài liệu giảng dạy rời rạc, khó tái sử dụng và quản lý lộ trình học tập của từng học viên.',
+          'Slide bài giảng không đồng bộ: Mỗi giáo viên sử dụng một định dạng khác nhau, thiếu sự chuyên nghiệp và nhất quán của trung tâm.',
+          'Nội dung chưa tương thích: Kiến thức giảng dạy đôi khi quá nặng về học thuật, chưa sát với nhu cầu thực tế của tệp học viên XKLĐ.',
+          'Thiếu tương tác online: Việc học qua Zoom/Meet thuần túy dễ gây nhàm chán, học viên khó tiếp thu từ vựng và ngữ pháp phức tạp.'
+        ]
+      },
+      {
+        type: 'heading',
+        content: 'Giải pháp đột phá từ Tanoshi: LMS chuyên biệt'
+      },
+      {
+        type: 'paragraph',
+        content: 'Chúng tôi đã xây dựng cho Tiếng Anh A to Z một hệ thống học tập trực tuyến tích hợp đầy đủ các công cụ hỗ trợ giảng dạy hiện đại:'
+      },
+      {
+        type: 'feature-grid',
+        featureGridData: {
+          title: 'Hệ thống LMS Tiếng Anh A to Z Online',
+          subtitle: 'Học tập tương tác - Đào tạo chuẩn hóa',
+          status: 'Go-live',
+          groups: [
+            {
+              title: 'Đóng gói Khóa học',
+              items: ['Quản lý lộ trình theo từng bài', 'Kho video bài giảng tập trung', 'Hệ thống tài liệu PDF/Audio']
+            },
+            {
+              title: 'Đồng bộ Slide',
+              items: ['Trình xem slide tích hợp', 'Chuẩn hóa định dạng trung tâm', 'Dễ dàng cập nhật nội dung']
+            },
+            {
+              title: 'Quiz & Game Online',
+              items: ['Trắc nghiệm từ vựng hình ảnh', 'Game ghép từ vựng', 'Bảng xếp hạng thi đua']
+            },
+            {
+              title: 'Nội dung XKLĐ',
+              items: ['Học từ vựng theo ngành nghề', 'Hội thoại tình huống tại nước ngoài', 'Luyện thi chứng chỉ chuyên biệt']
+            }
+          ]
+        }
+      },
+      {
+        type: 'heading',
+        content: 'Phân tích GAP: Sự cải tiến sau khi Digital Transformation (DX)'
+      },
+      {
+        type: 'table',
+        tableData: {
+          headers: ['Hạng mục', 'Trước khi có hệ thống (GAP)', 'Sau khi số hóa cùng Tanoshi'],
+          icons: ['Package', 'Layout', 'Zap', 'Users'],
+          rows: [
+            ['Quản lý khóa học', 'Tài liệu gửi rời rạc qua Zalo/Drive', 'Đóng gói 100% trên LMS, học viên tự học mọi lúc'],
+            ['Tính đồng bộ', 'Slide mỗi người một kiểu, khó kiểm soát', 'Hệ thống slide chuẩn hóa, cập nhật đồng loạt'],
+            ['Tương tác học viên', 'Nghe giảng thụ động, dễ bỏ cuộc', 'Học qua Game & Quiz, tăng 70% hứng thú'],
+            ['Độ tương thích nội dung', 'Kiến thức chung chung, không sát thực tế', 'Giáo trình cá nhân hóa cho tệp XKLĐ']
+          ]
+        }
+      },
+      {
+        type: 'paragraph',
+        content: 'Với hệ thống mới, Tiếng Anh A to Z không chỉ nâng cao được hiệu quả đào tạo mà còn khẳng định được uy tín và sự chuyên nghiệp trong mắt học viên và các đối tác. Công nghệ đã thực sự trở thành đòn bẩy để tri thức được truyền tải một cách sinh động và hiệu quả nhất.'
       }
     ]
   },
