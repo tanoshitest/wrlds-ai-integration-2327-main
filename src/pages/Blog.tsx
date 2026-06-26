@@ -20,7 +20,6 @@ const TABS = [
 
 const getPostTabs = (slug: string): string[] => {
   switch (slug) {
-    case 'steps-english-center-digital-transformation':
     case 'nzedu-smart-education-ecosystem':
       // hiển thị ở cả lms và automation
       return ['lms', 'automation'];
@@ -30,26 +29,25 @@ const getPostTabs = (slug: string): string[] => {
     case 'tieng-nhat-vui-ve-hoc-tieng-nhat-thuan-phat':
     case 'tieng-anh-a-to-z-lms-solution':
     case 'menglish-digital-transformation-case-study':
-      // dự án ikigai , tanthanh, steps, tiengnhat vui ve, kieu lien vào LMS
+      // dự án ikigai, tanthanh, tiengnhat vui ve, kieu lien vào LMS
       return ['lms'];
     case 'ikigai-ship-track-digital-transformation':
     case 'van-chuyen-viet-trung-quocviet-jn':
       // dự án ikigai logictics vào LOGITICS và AUTOMATION
       return ['logistics', 'automation'];
-    case 'ads-portal-automation':
-      return ['automation'];
     case 'chuyen-doi-so-ban-si-laptop-tanoshi':
-    case 'sess-warehouse-management-digital-transformation':
     case 'giadungnhanh-odoo-digital-transformation':
-      // dự án ECO bán sĩ laptop, sess, gia dụng nhanh vào WAREHOUSE
+      // dự án ECO bán sĩ laptop, gia dụng nhanh vào WAREHOUSE
       return ['warehouse'];
     case 'eco-tech-website':
     case 'triple-j-homes-website':
     case 'me-english-website':
     case 'nz-edu-website':
-    case 'steps-website':
-    case 'hb-agency':
+    case 'soi-vang-textile':
     case 'betonabi-blog':
+    case 'vc-group':
+    case 'vc-group-japan':
+    case 'tieng-nhat-thuan-phat-website':
       return ['website'];
     case 'from-idea-to-launch-development-process':
     case 'boost-your-education-center-growth':

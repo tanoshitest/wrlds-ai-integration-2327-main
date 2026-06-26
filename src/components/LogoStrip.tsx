@@ -6,7 +6,6 @@ const brands = [
   { name: "TRIPLE J HOMES", id: "triplej", image: "/lovable-uploads/triple-j-homes-text-only.png" },
   { name: "SESS", id: "sess" },
   { name: "ECT JAPAN", id: "ect" },
-  { name: "STEPS", id: "steps" },
   { name: "CHARINGO", id: "charingo" },
   { name: "AMASS RESEARCH", id: "amass" },
   { name: "MINHPHUC MOBILE", id: "minhphuc" }

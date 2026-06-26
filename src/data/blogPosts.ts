@@ -267,116 +267,6 @@ export const blogPosts: BlogPost[] = [
     ]
   },
   {
-    id: '13',
-    title: 'STEPS English Center: Nâng tầm Quản lý Đào tạo bằng Công nghệ LMS Hiện đại',
-    slug: 'steps-english-center-digital-transformation',
-    excerpt: 'Hành trình số hóa toàn diện cho Trung tâm Anh ngữ STEPS, từ quản lý học viên, học phí đến hệ thống học tập trực tuyến thông minh.',
-    date: 'May 16, 2026',
-    author: 'Tanoshi Vietnam EdTech Team',
-    category: 'EdTech Solutions',
-    imageUrl: '/lovable-uploads/edtech_lms_growth_blog.png',
-    keywords: [
-      'STEPS English Center',
-      'LMS EdTech',
-      'Quản lý trung tâm ngoại ngữ',
-      'Tanoshi Vietnam'
-    ],
-    metaDescription: 'Chi tiết dự án triển khai hệ thống quản trị và học tập trực tuyến cho STEPS English Center. Giải pháp EdTech tối ưu cho sự tăng trưởng bền vững.',
-    content: [
-      {
-        type: 'paragraph',
-        content: 'Trung tâm Anh ngữ STEPS đã hợp tác cùng Tanoshi Vietnam để xây dựng hệ thống quản lý đào tạo (LMS) tùy biến, giúp tự động hóa 90% các tác vụ thủ công và tăng cường trải nghiệm học tập cho học viên.'
-      },
-      {
-        type: 'heading',
-        content: 'Các phân hệ then chốt'
-      },
-      {
-        type: 'feature-grid',
-        featureGridData: {
-          title: 'Hệ thống Quản trị STEPS LMS',
-          groups: [
-            {
-              title: 'Quản lý Học viên',
-              items: ['Hồ sơ điện tử', 'Theo dõi tiến độ', 'Điểm danh tự động']
-            },
-            {
-              title: 'Tài chính & Học phí',
-              items: ['Nhắc nợ tự động', 'Thanh toán QR', 'Báo cáo doanh thu']
-            },
-            {
-              title: 'Học tập Trực tuyến',
-              items: ['Video bài giảng', 'Làm bài tập online', 'Thi thử định kỳ']
-            }
-          ]
-        }
-      }
-    ]
-  },
-  {
-    id: '14',
-    title: 'SESS: Số hóa hệ thống Quản lý Kho hàng và Phân phối Toàn quốc',
-    slug: 'sess-warehouse-management-digital-transformation',
-    excerpt: 'Khám phá giải pháp quản trị kho thông minh dành riêng cho SESS, giúp kiểm soát hàng tồn kho thời gian thực và tối ưu hóa quy trình vận chuyển.',
-    date: 'May 16, 2026',
-    author: 'Tanoshi Vietnam Business Team',
-    category: 'Business Solutions',
-    imageUrl: '/lovable-uploads/laptop_wholesale_dx_dashboard_1778067348103.png',
-    keywords: [
-      'SESS Warehouse',
-      'Quản lý kho SESS',
-      'ERP Business Solutions',
-      'Tanoshi Vietnam'
-    ],
-    metaDescription: 'Case study về việc xây dựng hệ thống quản lý kho và phân phối cho thương hiệu SESS. Tăng 150% hiệu suất vận hành kho.',
-    content: [
-      {
-        type: 'paragraph',
-        content: 'SESS đã lựa chọn Tanoshi Vietnam làm đối tác chiến lược để xây dựng hệ thống quản trị kho hàng (WMS) tích hợp ERP, giúp doanh nghiệp nắm bắt chính xác dữ liệu hàng hóa trên toàn hệ thống.'
-      },
-      {
-        type: 'heading',
-        content: 'Hiệu quả đạt được'
-      },
-      {
-        type: 'stats',
-        statsData: [
-          {
-            value: '100%',
-            label: 'Chính xác tồn kho',
-            icon: 'CheckCircle'
-          },
-          {
-            value: '50%',
-            label: 'Giảm thời gian xuất kho',
-            icon: 'Clock'
-          },
-          {
-            value: '24/7',
-            label: 'Báo cáo realtime',
-            icon: 'BarChart3'
-          }
-        ]
-      },
-      {
-        type: 'feature-grid',
-        featureGridData: {
-          title: 'Hệ thống Quản lý Kho SESS',
-          groups: [
-            {
-              title: 'Nhập/Xuất kho',
-              items: ['Quét mã vạch', 'In tem nhãn', 'Đối soát tự động']
-            },
-            {
-              title: 'Phân phối',
-              items: ['Quản lý đội xe', 'Theo dõi vận đơn', 'Tối ưu lộ trình']
-            }
-          ]
-        }
-      }
-    ]
-  },
-  {
     id: '3',
     title: 'Your Idea, Our Process — From Concept to Launch with Tanoshi Vietnam',
     slug: 'from-idea-to-launch-development-process',
@@ -1356,29 +1246,29 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: '4',
-    title: 'NZEDU: Hệ sinh thái Giáo dục Thông minh — Cách mạng hóa Quản lý Hệ thống Trung tâm Đào tạo',
+    title: 'LMS AUTOMATION: Hệ sinh thái Giáo dục Thông minh — Cách mạng hóa Quản lý Hệ thống Trung tâm Đào tạo',
     slug: 'nzedu-smart-education-ecosystem',
-    excerpt: 'NZEDU đã hợp tác cùng Tanoshi Vietnam xây dựng hệ sinh thái quản lý giáo dục thông minh, kết nối khép kín mọi luồng dữ liệu từ Tuyển sinh, Học thuật đến Tài chính và tương tác Phụ huynh.',
+    excerpt: 'LMS AUTOMATION đã hợp tác cùng Tanoshi Vietnam xây dựng hệ sinh thái quản lý giáo dục thông minh, kết nối khép kín mọi luồng dữ liệu từ Tuyển sinh, Học thuật đến Tài chính và tương tác Phụ huynh.',
     date: 'April 15, 2026',
     author: 'Tanoshi Vietnam EdTech Team',
     category: 'EdTech Solutions',
     imageUrl: '/lovable-uploads/edtech_lms_growth_blog.png',
     keywords: [
-      'NZEDU Case Study',
+      'LMS AUTOMATION Case Study',
       'Hệ sinh thái giáo dục',
       'LMS Việt Nam',
       'Quản trị trung tâm đào tạo',
       'Tanoshi Vietnam'
     ],
-    metaDescription: 'Khám phá cách NZEDU tối ưu vận hành thông qua hệ sinh thái giáo dục thông minh. Giải pháp EdTech tùy biến cho các tổ chức giáo dục quy mô lớn.',
+    metaDescription: 'Khám phá cách LMS AUTOMATION tối ưu vận hành thông qua hệ sinh thái giáo dục thông minh. Giải pháp EdTech tùy biến cho các tổ chức giáo dục quy mô lớn.',
     content: [
       {
         type: 'paragraph',
-        content: 'Với các hệ thống đào tạo quy mô lớn, đa chi nhánh và đa dạng chương trình học như NZEDU, việc sở hữu một "trung tâm chỉ huy số" thống nhất là bài toán sống còn để tối ưu hóa nguồn lực. Dự án NZEDU tập trung thiết lập một hệ sinh thái khép kín kết nối chặt chẽ dữ liệu của 3 phân hệ cốt lõi: CRM Tuyển sinh, LMS Học vụ và Finance Tài chính.'
+        content: 'Với các hệ thống đào tạo quy mô lớn, đa chi nhánh và đa dạng chương trình học như LMS AUTOMATION, việc sở hữu một "trung tâm chỉ huy số" thống nhất là bài toán sống còn để tối ưu hóa nguồn lực. Dự án LMS AUTOMATION tập trung thiết lập một hệ sinh thái khép kín kết nối chặt chẽ dữ liệu của 3 phân hệ cốt lõi: CRM Tuyển sinh, LMS Học vụ và Finance Tài chính.'
       },
       {
         type: 'heading',
-        content: 'Thách thức vận hành tại hệ thống lớn như NZEDU'
+        content: 'Thách thức vận hành tại hệ thống lớn như LMS AUTOMATION'
       },
       {
         type: 'split-image-list',
@@ -1399,7 +1289,7 @@ export const blogPosts: BlogPost[] = [
       {
         type: 'feature-grid',
         featureGridData: {
-          title: 'Hệ sinh thái NZEDU — Kết nối không giới hạn',
+          title: 'Hệ sinh thái LMS AUTOMATION — Kết nối không giới hạn',
           subtitle: 'Nền tảng quản lý tập trung chuyên biệt cho các hệ thống giáo dục lớn',
           status: 'Development',
           groups: [
@@ -1432,7 +1322,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: 'heading',
-        content: 'Quy trình triển khai giải pháp tại NZEDU'
+        content: 'Quy trình triển khai giải pháp tại LMS AUTOMATION'
       },
       {
         type: 'process-steps',
@@ -1443,7 +1333,7 @@ export const blogPosts: BlogPost[] = [
               title: 'Phân tích & Chuẩn hóa Nghiệp vụ',
               description: 'Khảo sát kỹ lưỡng mô hình vận hành của từng chi nhánh để thiết kế luồng dữ liệu chuẩn hóa, tránh xung đột thông tin.',
               activities: [
-                'Họp thống nhất quy trình cùng ban lãnh đạo NZEDU',
+                'Họp thống nhất quy trình cùng ban lãnh đạo LMS AUTOMATION',
                 'Xác định cấu trúc dữ liệu liên chi nhánh'
               ]
             },
@@ -2143,28 +2033,6 @@ if (logisticsTemplatePost) {
   });
 }
 
-const automationTemplatePost = blogPosts.find(
-  post => post.slug === 'ikigai-ship-track-digital-transformation'
-);
-
-if (automationTemplatePost) {
-  blogPosts.push({
-    ...automationTemplatePost,
-    id: '24',
-    title: 'ADS PORTAL AUTOMATION',
-    slug: 'ads-portal-automation',
-    category: 'Automation Solutions',
-    metaDescription: 'ADS PORTAL AUTOMATION project case study based on Tanoshi Vietnam automation and digital workflow solutions.',
-    keywords: [
-      'ADS PORTAL AUTOMATION',
-      'Automation Solutions',
-      'Workflow Automation',
-      'Digital Transformation',
-      'Tanoshi Vietnam'
-    ]
-  });
-}
-
 const websiteTemplatePost = blogPosts.find(
   post => post.slug === 'tanoshi-sme-startup-all-in-one-solution'
 );
@@ -2192,19 +2060,29 @@ if (websiteTemplatePost) {
       slug: 'nz-edu-website'
     },
     {
-      id: '21',
-      title: 'STEPS WEBSITE',
-      slug: 'steps-website'
-    },
-    {
       id: '22',
-      title: 'HB AGENCY',
-      slug: 'hb-agency'
+      title: 'Sợi vàng Textile',
+      slug: 'soi-vang-textile'
     },
     {
       id: '23',
       title: 'BETONABI BLOG',
       slug: 'betonabi-blog'
+    },
+    {
+      id: '25',
+      title: 'VC Group',
+      slug: 'vc-group'
+    },
+    {
+      id: '26',
+      title: 'VC Group Japan',
+      slug: 'vc-group-japan'
+    },
+    {
+      id: '27',
+      title: 'Tieng Nhat Thuan Phat',
+      slug: 'tieng-nhat-thuan-phat-website'
     }
   ];
 
